@@ -1,0 +1,122 @@
+{
+  "identification": {
+    "id": "41435fda-93ba-48a8-bd56-79a9287b6dad",
+    "title": "Kommuneplaner (landsdekkende kopi)",
+    "abstract": "Fra 1.1.2026 vil Direktoratet for Byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for kommuneplaner og denne oppføringen blir oppdatert med distribusjoner.\n\nKommuneplanen skal være kommunens overordnede styringsdokument. Den skal gi rammer for virksomhetenes planer og tiltak, og planer for bruk og vern av arealer i kommunen. Alle kommuner skal ha en kommuneplan. En samlet kommuneplan består både av en samfunnsdel med handlingsdel og en arealdel. Kommunen bestemmer gjennom vedtak av kommunal planstrategi om kommunen skal gjennomføre en full kommuneplanrevisjon av alle delene, eller om bare deler av kommuneplanen skal revideres, og hva revisjonen skal gå ut på. Kommuneplanen skal ivareta både kommunale, regionale og nasjonale mål, interesser og oppgaver, og bør omfatte alle viktige mål og oppgaver i kommunen. Den skal ta utgangspunkt i den kommunale planstrategien og legge retningslinjer og pålegg fra statlige og regionale myndigheter til grunn. Det kan utarbeides kommunedelplan for bestemte områder, temaer eller virksomhetsområder. Kommuneplanen skal ha en handlingsdel som angir hvordan planen skal følges opp de fire påfølgende år eller mer, og revideres årlig (Regjeringen.no).\n\nDatasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holdes oppdatert med data fra de originale plandataene i kommunene. Oppdateringen skjer ved synkronisering fra kommunene.",
+    "purpose": "Dekke Norge digitalt partenes behov for overordnede arealplaner i kommunene.",
+    "language": "nor",
+    "keywords": [
+      "Kommuneplan",
+      "Kommunedelplan",
+      "Arealformål",
+      "Arealbruk",
+      "Plan"
+    ],
+    "topicCategories": [
+      "Plan og eiendom"
+    ],
+    "dates": {
+      "creation": "2025-09-16",
+      "publication": "2025-09-16",
+      "revision": "2025-09-16",
+      "metadata": "2025-09-16"
+    },
+    "responsibleParties": [
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "owner"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+    "supplementalInformation": "Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne."
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2025-09-16",
+            "2025-09-16"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.",
+      "accessConstraints": "Norge digitalt begrenset",
+      "useConstraints": "Lisens",
+      "license": "Norge digitalt-lisens",
+      "licenseUrl": "https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplan."
+  },
+  "referenceSystems": {
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "qualityElements": [
+      {
+        "name": "Produktspesifikasjon: Del 3.1 - Kommuneplanens arealdel",
+        "measure": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      }
+    ],
+    "lineage": {
+      "statement": "Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne."
+    }
+  },
+  "maintenance": {
+    "maintenanceFrequency": "Hvert halvår",
+    "maintenanceNote": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplan.",
+    "status": "Planlagt"
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2025-09-16",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Direktoratet for byggkvalitet",
+      "email": "ftb@dibk.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "41435fda-93ba-48a8-bd56-79a9287b6dad"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=41435fda-93ba-48a8-bd56-79a9287b6dad"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=41435fda-93ba-48a8-bd56-79a9287b6dad",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    }
+  ]
+}
