@@ -1,0 +1,547 @@
+@startuml
+title Reguleringsplaner (landsdekkende kopi) - Objekttyper
+
+skinparam class {
+  AttributeIconSize 0
+}
+
+package "Objekttyper" {
+
+  class "RpOmråde" as RpOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + plannavn [0..1] : CharacterString
+    + plantype [0..1] : CharacterString
+    + planstatus [0..1] : CharacterString
+    + planbestemmelse [0..1] : CharacterString
+    + ikrafttredelsesdato [0..1] : Date
+    + vedtakendeligplandato [0..1] : Date
+    + kunngjoringsdato [0..1] : Date
+    + forslagsstillertype [0..1] : CharacterString
+    + lovreferanse [0..1] : CharacterString
+    + lovreferansebeskrivelse [0..1] : CharacterString
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + prosesshistorie [0..1] : CharacterString
+    + informasjon [0..1] : CharacterString
+    + link [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpArealformålOmråde" as RpArealform_lOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + arealformal [0..1] : CharacterString
+    + eierform [0..1] : CharacterString
+    + utnyttingstype [0..1] : CharacterString
+    + byggverkbestemmelse [0..1] : CharacterString
+    + avkjorselsbestemmelse [0..1] : CharacterString
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+    + beskrivelse [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + uteoppholdsareal [0..1] : Integer
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "PblMidlByggAnleggOmråde" as PblMidlByggAnleggOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + bestemmelseomradenavn [0..1] : CharacterString
+    + saksar [0..1] : CharacterString
+    + sakssekvensnummer [0..1] : CharacterString
+    + avgjorelsesdato [0..1] : Date
+    + gyldigtildato [0..1] : Date
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpAngittHensynSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + angitthensyn [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpBåndleggingSone" as RpB_ndleggingSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + bandlegging [0..1] : CharacterString
+    + bandlagtfremtil [0..1] : Date
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpDetaljeringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + detaljering [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpFareSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + fare [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpGjennomføringSone" as RpGjennomf_ringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + gjennomforing [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpInfrastrukturSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + infrastruktur [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpSikringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + sikring [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpStøySone" as RpSt_ySone <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + stoy [0..1] : CharacterString
+    + hensynsonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + type [0..1] : CharacterString
+    + bestemmelseomradenavn [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpRegulertHøyde" as RpRegulertH_yde <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + regulerthoyde [0..1] : Real
+    + hoydereferansesystem [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpJuridiskLinje <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + juridisklinje [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class RpJuridiskPunkt <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + objekt_x [0..1] : Real
+    + objekt_y [0..1] : Real
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + juridiskpunkt [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+    + rotasjon [0..1] : Integer
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RpPåskrift" as RpP_skrift <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + objekt_x [0..1] : Real
+    + objekt_y [0..1] : Real
+    + landskode [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + generelltekststreng [0..1] : CharacterString
+    + paskrifttype [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbFormålOmråde" as RbForm_lOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + reguleringsformalsutdyping [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+    + uteoppholdsareal [0..1] : Integer
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + utnyttingstype [0..1] : CharacterString
+    + byggverkbestemmelse [0..1] : CharacterString
+    + avkjorselsbestemmelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbBevaringOmråde" as RbBevaringOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "RbFareOmråde" as RbFareOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objtype [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + reguleringsformalsutdyping [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonid [0..1] : CharacterString
+    + omradeid [0..1] : CharacterString
+    + originaldatavert [0..1] : CharacterString
+    + kopidato [0..1] : DateTime
+    + forstedigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + reguleringsformal [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + vertikalniva [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+}
+
+@enduml

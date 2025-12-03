@@ -1,0 +1,120 @@
+{
+  "identification": {
+    "id": "dac27348-5c2e-4a6a-9497-c4c792108cae",
+    "title": "Reguleringsplaner (landsdekkende kopi)",
+    "abstract": "Fra 1.1.2026 vil Direktoratet for Byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen blir oppdatert med distribusjoner. \n\nReguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.\n\nDatasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering eller periodisk kopiering fra kommunene sine data.",
+    "purpose": "Dekke Norge digitalt parter sine behov for tilgang til reguleringsplaner (geografiske data - vektordata).\nVise plan for bruk, vern og utforming av arealer og fysiske omgivelser i bestemte områder.",
+    "language": "nor",
+    "keywords": [
+      "Reguleringsplan",
+      "Arealplan",
+      "Områdeplan",
+      "Detaljregulering",
+      "Norges fastland",
+      "Norge",
+      "Kommune",
+      "Arealbruk",
+      "Plan"
+    ],
+    "topicCategories": [
+      "Plan og eiendom"
+    ],
+    "dates": {
+      "creation": "2025-09-16",
+      "publication": "2025-09-16",
+      "revision": "2025-09-16",
+      "metadata": "2025-09-16"
+    },
+    "responsibleParties": [
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "owner"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+    "supplementalInformation": "Det er kun de geografiske dataene (vektordataene) av reguleringsplanene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.\n\nEn reguleringsplan kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.\nDatasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.\n- Under grunnen (tunnel) = 1\n- På grunnen/vannoverflate = 2\n- Over grunnen (bru) = 3\n- På bunnen (vann/sjø) = 4\n- I vannsøylen = 5"
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2025-09-16",
+            "2025-09-16"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "useLimitation": "Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.",
+      "accessConstraints": "Norge digitalt begrenset",
+      "useConstraints": "Lisens",
+      "license": "Norge digitalt-lisens",
+      "licenseUrl": "https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner."
+  },
+  "referenceSystems": {
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    },
+    "lineage": {
+      "statement": "Det er kun de geografiske dataene (vektordataene) av reguleringsplanene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.\n\nEn reguleringsplan kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.\nDatasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.\n- Under grunnen (tunnel) = 1\n- På grunnen/vannoverflate = 2\n- Over grunnen (bru) = 3\n- På bunnen (vann/sjø) = 4\n- I vannsøylen = 5"
+    }
+  },
+  "maintenance": {
+    "maintenanceFrequency": "Daglig",
+    "maintenanceNote": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.",
+    "status": "Planlagt"
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2025-09-16",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Direktoratet for byggkvalitet",
+      "email": "ftb@dibk.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "dac27348-5c2e-4a6a-9497-c4c792108cae"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=dac27348-5c2e-4a6a-9497-c4c792108cae"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=dac27348-5c2e-4a6a-9497-c4c792108cae",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    }
+  ]
+}
