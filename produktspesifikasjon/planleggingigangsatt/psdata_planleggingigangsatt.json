@@ -1,0 +1,110 @@
+{
+  "identification": {
+    "id": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
+    "title": "Planområde for planlegging igangsatt",
+    "abstract": "Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.",
+    "purpose": "Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet og kan medvirke i prosessen.",
+    "language": "nor",
+    "keywords": [
+      "planområde",
+      "planomriss",
+      "Arealplan",
+      "Plan"
+    ],
+    "topicCategories": [
+      "Plan og eiendom"
+    ],
+    "dates": {
+      "creation": "2025-10-17",
+      "publication": "2025-10-17",
+      "revision": "2025-10-17",
+      "metadata": "2025-10-17"
+    },
+    "responsibleParties": [
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "owner"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "pointOfContact"
+      },
+      {
+        "name": "Olaug Hana Nesheim",
+        "organization": "Direktoratet for byggkvalitet",
+        "email": "ftb@dibk.no",
+        "role": "publisher"
+      }
+    ],
+    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
+  },
+  "scope": {
+    "level": "dataset",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2025-10-17",
+            "2025-10-17"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Norsk lisens for offentlige data (NLOD) 2.0",
+      "licenseUrl": "https://data.norge.no/nlod/no/2.0",
+      "securityConstraints": "Ugradert"
+    }
+  },
+  "dataContent": {
+    "usage": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
+  },
+  "referenceSystems": {
+    "spatialRepresentationType": "Vektor"
+  },
+  "dataQuality": {
+    "scope": {
+      "level": "dataset"
+    }
+  },
+  "maintenance": {
+    "maintenanceFrequency": "Kontinuerlig",
+    "maintenanceNote": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.",
+    "status": "Planlagt"
+  },
+  "metadata": {
+    "standard": "ISO19115",
+    "standardVersion": "2003",
+    "metadataDate": "2025-10-17",
+    "language": "nor",
+    "pointOfContact": {
+      "organization": "Direktoratet for byggkvalitet",
+      "email": "ftb@dibk.no",
+      "role": "pointOfContact"
+    },
+    "identifiers": [
+      {
+        "authority": "geonorge",
+        "code": "779a554b-fc3e-48a6-b202-561b07e9d4c2"
+      }
+    ],
+    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2"
+  },
+  "links": [
+    {
+      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2",
+      "rel": "describedby",
+      "type": "application/xml",
+      "title": "Metadata (ISO 19139)"
+    }
+  ]
+}
