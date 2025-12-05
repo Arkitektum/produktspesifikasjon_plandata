@@ -1,108 +1,3 @@
----
-title: "Planområde for planlegging igangsatt"
-updated: "2025-12-03"
-organization: "Direktoratet for byggkvalitet"
-logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
----
-
-# Produktspesifikasjon: Planområde for planlegging igangsatt
-
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
-## Generelt om spesifikasjonen
-
-
-### Unik identifisering
-
-779a554b-fc3e-48a6-b202-561b07e9d4c2
-
-#### Fullstendig navn
-
-Planområde for planlegging igangsatt
-
-#### Versjon
-
-2025-10-17
-
-### Referansedato
-
-2025-10-17
-
-### Ansvarlig organisasjon
-
-Direktoratet for byggkvalitet
-
-### Språk
-
-nor
-
-### Hovedtema
-
-planområde, planomriss, Arealplan, Plan
-
-### Temakategori
-
-Plan og eiendom
-
-### Sammendrag
-
-Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.
-
-### Formål
-
-Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet og kan medvirke i prosessen.
-
-## Spesifikasjonsomfang
-
-**Nivå**: dataset
-
-**Utstrekning**:
-
-- **romlig**: - **romlig omfang**: National
-- **tidsmessig**: - **intervall**: - 2025-10-17, 2025-10-17
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Åpne data
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
-- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
-- **Sikkerhetsbegrensninger**: Ugradert
-
-## Innhold og struktur
-
-**Bruk**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
-
-### Datamodell
-
-
-
-
-
-![Planleggingigangsatt feature catalogue](planleggingigangsatt_feature_catalogue.png)
-
 #### Arealplan
 
 Dataobjekt for igangsatt planlegging etter pbl
@@ -111,9 +6,9 @@ Geometri:
 - itemType: feature
 - type: geometry-any
 - storageCrs:
-  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><http://www.opengis.net/def/crs/OGC/1.3/CRS84></a>
+  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84">http://www.opengis.net/def/crs/OGC/1.3/CRS84</a>
 - crs:
-  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><http://www.opengis.net/def/crs/OGC/1.3/CRS84></a>
+  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84">http://www.opengis.net/def/crs/OGC/1.3/CRS84</a>
 
 Egenskaper
 
@@ -596,15 +491,15 @@ Geometri:
 - itemType: feature
 - type: geometry-any
 - storageCrs:
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/25833"><http://www.opengis.net/def/crs/EPSG/0/25833></a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/25833">http://www.opengis.net/def/crs/EPSG/0/25833</a>
 - crs:
-  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><http://www.opengis.net/def/crs/OGC/1.3/CRS84></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/25832"><http://www.opengis.net/def/crs/EPSG/0/25832></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/25833"><http://www.opengis.net/def/crs/EPSG/0/25833></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/25835"><http://www.opengis.net/def/crs/EPSG/0/25835></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/4258"><http://www.opengis.net/def/crs/EPSG/0/4258></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/4326"><http://www.opengis.net/def/crs/EPSG/0/4326></a>
-  - <a href="http://www.opengis.net/def/crs/EPSG/0/3857"><http://www.opengis.net/def/crs/EPSG/0/3857></a>
+  - <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84">http://www.opengis.net/def/crs/OGC/1.3/CRS84</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/25832">http://www.opengis.net/def/crs/EPSG/0/25832</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/25833">http://www.opengis.net/def/crs/EPSG/0/25833</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/25835">http://www.opengis.net/def/crs/EPSG/0/25835</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/4258">http://www.opengis.net/def/crs/EPSG/0/4258</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a>
+  - <a href="http://www.opengis.net/def/crs/EPSG/0/3857">http://www.opengis.net/def/crs/EPSG/0/3857</a>
 
 Egenskaper
 
@@ -1103,72 +998,3 @@ Egenskaper
     </tr>
   </tbody>
 </table>
-
-## Referansesystem
-
-**Romlig representasjonstype**: Vektor
-
-## Kvalitet
-
-**Nivå**: dataset
-
-
-
-
-
-## Datafangst
-
-
-
-## Datavedlikehold
-
-**Vedlikeholdsfrekvens**: Kontinuerlig
-
-**Vedlikeholdsnotat**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
-
-**Status**: Planlagt
-
-## Presentasjon
-
-
-
-## Leveranse
-
-**Distribusjoner**:
-
-- **format**: - **format**: OGC:API-Features
-  **tilgang**:
-
-  - **lenke**: <https://plandata.ft-test.dibk.no/services/planleggingigangsatt/>
-  - **protokoll**: OGC:API-Features
-
-- **tittel**: OGC API-Features
-  **format**: - **format**: OGC API-Features
-  **tilgang**:
-
-  - **lenke**: <https://plandata.ft-test.dibk.no/services/planleggingigangsatt/>
-  - **protokoll**: OGC:API-Features
-
-## Metadata
-
-**Standard**: ISO19115
-
-**Standardversjon**: 2003
-
-**Metadatadato**: 2025-12-04
-
-**språk**: nor
-
-**Kontaktpunkt**:
-
-- **organisasjon**: Direktoratet for byggkvalitet
-- **epost**: ftb@dibk.no
-- **rolle**: pointOfContact
-
-**Identifikatorer**:
-
-- **Utsteder**: geonorge
-  **kode**: 779a554b-fc3e-48a6-b202-561b07e9d4c2
-
-**Metadatalenke**:
-<https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2>

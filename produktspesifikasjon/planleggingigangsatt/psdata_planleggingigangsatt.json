@@ -18,7 +18,7 @@
       "creation": "2025-10-17",
       "publication": "2025-10-17",
       "revision": "2025-10-17",
-      "metadata": "2025-10-17"
+      "metadata": "2025-12-04"
     },
     "responsibleParties": [
       {
@@ -81,10 +81,33 @@
     "maintenanceNote": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.",
     "status": "Planlagt"
   },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "OGC:API-Features"
+        },
+        "access": {
+          "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+          "protocol": "OGC:API-Features"
+        }
+      },
+      {
+        "title": "OGC API-Features",
+        "format": {
+          "format": "OGC API-Features"
+        },
+        "access": {
+          "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+          "protocol": "OGC:API-Features"
+        }
+      }
+    ]
+  },
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2025-10-17",
+    "metadataDate": "2025-12-04",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
@@ -105,6 +128,12 @@
       "rel": "describedby",
       "type": "application/xml",
       "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
     }
   ]
 }
