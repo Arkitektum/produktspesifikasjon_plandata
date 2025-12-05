@@ -26,7 +26,7 @@ jobs:
           if [ -n "$input" ]; then
             paths=("$input")
           else
-            mapfile -t paths < <(find . -maxdepth 1 -type f -name '*.yml' -printf '%P\n' | sort)
+            mapfile -t paths < <(find . -maxdepth 1 -type f -name '*.yml' ! -name '*.schema.yml' -printf '%P\n' | sort)
           fi
 
           if [ "${#paths[@]}" -eq 0 ]; then
