@@ -21,7 +21,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -29,189 +28,162 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lovreferansebeskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lovreferansebeskrivelse"
       },
       {
         "name": "ikrafttredelsesdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "ikrafttredelsesdato"
       },
       {
         "name": "plannavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "plannavn"
       },
       {
         "name": "vedtakendeligplandato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "vedtakendeligplandato"
       },
       {
         "name": "kunngjoringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kunngjoringsdato"
       },
       {
         "name": "opprinneligplanid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "opprinneligplanid"
       },
       {
         "name": "opprinneligadministrativenhet",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "opprinneligadministrativenhet"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "plantype",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "plantype"
       },
       {
         "name": "planstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "planstatus"
       },
       {
         "name": "planbestemmelse",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "planbestemmelse"
       },
       {
         "name": "lovreferanse",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "lovreferanse"
       },
       {
         "name": "prosesshistorie",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "prosesshistorie"
       },
       {
         "name": "informasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "informasjon"
       },
       {
         "name": "link",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "link"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -240,7 +212,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -248,147 +219,126 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "arealbruksutdyping",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "arealbruksutdyping"
       },
       {
         "name": "omradenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "omradenavn"
       },
       {
         "name": "utnyttingstall",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "utnyttingstall"
       },
       {
         "name": "utnyttingstall_minimum",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "utnyttingstall_minimum"
       },
       {
         "name": "uteoppholdsareal",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "uteoppholdsareal"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "arealbruk",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruk"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "utnyttingstype",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "utnyttingstype"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -417,7 +367,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -425,133 +374,114 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "omradenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "omradenavn"
       },
       {
         "name": "uteoppholdsareal",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "uteoppholdsareal"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "arealformal",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealformal"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "eierform",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "eierform"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -580,7 +510,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -588,105 +517,90 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "bestemmelseomradenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "bestemmelseomradenavn"
       },
       {
         "name": "bestemmelsehjemmel",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "bestemmelsehjemmel"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -715,7 +629,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -723,105 +636,90 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "arealbruksrestriksjoner",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksrestriksjoner"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -850,7 +748,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -858,98 +755,84 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "arealbruksretningslinjer",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksretningslinjer"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -978,7 +861,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -986,112 +868,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "angitthensyn",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "angitthensyn"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1120,7 +986,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1128,126 +993,108 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "bandlagtfremtil",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "bandlagtfremtil"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "bandlegging",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "bandlegging"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1276,7 +1123,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1284,112 +1130,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "detaljering",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "detaljering"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1418,7 +1248,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1426,112 +1255,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "fare",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "fare"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1560,7 +1373,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1568,112 +1380,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "gjennomforing",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "gjennomforing"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1702,7 +1498,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1710,112 +1505,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "infrastruktur",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "infrastruktur"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1844,7 +1623,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1852,112 +1630,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "sikring",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "sikring"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -1986,7 +1748,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -1994,112 +1755,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "hensynsonenavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hensynsonenavn"
       },
       {
         "name": "beskrivelse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "beskrivelse"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "stoy",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "stoy"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
@@ -2128,7 +1873,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -2136,112 +1880,96 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "regulerthoyde",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "regulerthoyde"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "noyaktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "noyaktighet"
       },
       {
         "name": "malemetode",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "malemetode"
       },
       {
         "name": "hoydereferansesystem",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "hoydereferansesystem"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
@@ -2270,7 +1998,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -2278,105 +2005,90 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "noyaktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "noyaktighet"
       },
       {
         "name": "malemetode",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "malemetode"
       },
       {
         "name": "juridisklinje",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "juridisklinje"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
@@ -2405,7 +2117,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -2413,133 +2124,114 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "noyaktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "noyaktighet"
       },
       {
         "name": "malemetode",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "malemetode"
       },
       {
         "name": "samferdselslinje",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "samferdselslinje"
       },
       {
         "name": "vertikalniva",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "vertikalniva"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "viktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "viktighet"
       },
       {
         "name": "holdningsklasse",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "holdningsklasse"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
@@ -2568,7 +2260,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -2576,126 +2267,108 @@
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "symbolretning",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "symbolretning"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "noyaktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "noyaktighet"
       },
       {
         "name": "malemetode",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "malemetode"
       },
       {
         "name": "samferdselspunkt",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "samferdselspunkt"
       },
       {
         "name": "vertikalniva",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "vertikalniva"
       },
       {
         "name": "arealbruksstatus",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealbruksstatus"
       },
       {
         "name": "viktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "viktighet"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
@@ -2724,7 +2397,6 @@
     "attributes": [
       {
         "name": "objectid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objectid",
@@ -2732,280 +2404,240 @@
       },
       {
         "name": "featureid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "featureid"
       },
       {
         "name": "zorder",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "zorder"
       },
       {
         "name": "annotationclassid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "annotationclassid"
       },
       {
         "name": "element",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "element"
       },
       {
         "name": "symbolid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "symbolid"
       },
       {
         "name": "status",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "status"
       },
       {
         "name": "textstring",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "textstring"
       },
       {
         "name": "fontname",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "fontname"
       },
       {
         "name": "fontsize",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "fontsize"
       },
       {
         "name": "bold",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "bold"
       },
       {
         "name": "italic",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "italic"
       },
       {
         "name": "underline",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "underline"
       },
       {
         "name": "verticalalignment",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "verticalalignment"
       },
       {
         "name": "horizontalalignment",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "horizontalalignment"
       },
       {
         "name": "xoffset",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "xoffset"
       },
       {
         "name": "yoffset",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "yoffset"
       },
       {
         "name": "angle",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "angle"
       },
       {
         "name": "fontleading",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "fontleading"
       },
       {
         "name": "wordspacing",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "wordspacing"
       },
       {
         "name": "characterwidth",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "characterwidth"
       },
       {
         "name": "characterspacing",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "characterspacing"
       },
       {
         "name": "flipangle",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "flipangle"
       },
       {
         "name": "override",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "override"
       },
       {
         "name": "shape_length",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_length"
       },
       {
         "name": "shape_area",
-        "valueType": "number",
         "type": "number",
         "cardinality": "0..1",
         "description": "shape_area"
       },
       {
         "name": "objtype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "objtype"
       },
       {
         "name": "generelltekststreng",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "generelltekststreng"
       },
       {
         "name": "planidentifikasjon",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "planidentifikasjon"
       },
       {
         "name": "lokalid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lokalid"
       },
       {
         "name": "navnerom",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "navnerom"
       },
       {
         "name": "versjonid",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "versjonid"
       },
       {
         "name": "omradeid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "omradeid"
       },
       {
         "name": "originaldatavert",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "originaldatavert"
       },
       {
         "name": "kopidato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "kopidato"
       },
       {
         "name": "forstedigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forstedigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "noyaktighet",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "noyaktighet"
       },
       {
         "name": "malemetode",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "malemetode"
       },
       {
         "name": "paskrifttype",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "paskrifttype"
       },
       {
         "name": "kommunenummer",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "kommunenummer"
