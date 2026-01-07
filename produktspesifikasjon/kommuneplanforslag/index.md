@@ -7,30 +7,6 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Kommuneplanforslag - Høring og offentlig ettersyn
 
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
 ## Generelt om spesifikasjonen
 
 
@@ -98,19 +74,9 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Bruk**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
 
-### Datamodell
-
-
-
-
-
-
-
-
-
 ## Referansesystem
 
-**Romlig representasjonstype**: Vektor
+**Romlig representasjonstype**: Rasterbilde
 
 ## Kvalitet
 
@@ -120,10 +86,6 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Beskrivelse**: Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
 
-## Datafangst
-
-
-
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Hvert halvår
@@ -132,13 +94,31 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Status**: Planlagt
 
-## Presentasjon
-
-
-
 ## Leveranse
 
+**Distribusjoner**:
 
+- **format**: - **format**: OGC:WMS
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: WMS-tjeneste
+  **format**: - **format**: WMS-tjeneste
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: Kommuneplanforslag - Høring og offentlig ettersyn
+  **format**: - **format**: PNG
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
+  - **protokoll**: WMS-tjeneste
+  - **Lisens**: Tilgangsbegrensede data
+  **Notater**: Tjeneste
 
 ## Metadata
 
@@ -146,7 +126,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-10-17
+**Metadatadato**: 2025-12-19
 
 **språk**: nor
 
