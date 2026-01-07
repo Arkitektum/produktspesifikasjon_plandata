@@ -18,7 +18,7 @@
       "creation": "2025-10-17",
       "publication": "2025-10-17",
       "revision": "2025-10-17",
-      "metadata": "2025-12-04"
+      "metadata": "2025-12-16"
     },
     "responsibleParties": [
       {
@@ -88,7 +88,7 @@
           "format": "OGC:API-Features"
         },
         "access": {
-          "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+          "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
           "protocol": "OGC:API-Features"
         }
       },
@@ -98,16 +98,28 @@
           "format": "OGC API-Features"
         },
         "access": {
-          "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+          "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
           "protocol": "OGC:API-Features"
         }
+      },
+      {
+        "title": "Planområde for planlegging igangsatt",
+        "format": {
+          "format": "PNG"
+        },
+        "access": {
+          "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Åpne data"
+        },
+        "notes": "Tjeneste"
       }
     ]
   },
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2025-12-04",
+    "metadataDate": "2025-12-16",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
@@ -130,10 +142,22 @@
       "title": "Metadata (ISO 19139)"
     },
     {
-      "href": "https://plandata.ft-test.dibk.no/services/planleggingigangsatt/",
+      "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
       "rel": "enclosure",
       "type": "text/html",
       "title": "Nedlasting"
+    },
+    {
+      "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "Kartvisning"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
     }
   ]
 }
