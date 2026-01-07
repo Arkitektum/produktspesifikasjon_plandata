@@ -7,30 +7,6 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Reguleringsplaner (landsdekkende kopi)
 
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
 ## Generelt om spesifikasjonen
 
 
@@ -68,7 +44,7 @@ Plan og eiendom
 
 ### Sammendrag
 
-Fra 1.1.2026 vil Direktoratet for Byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen blir oppdatert med distribusjoner. 
+Fra 1.1.2026 vil Direktoratet for byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen er oppdatert med distribusjoner.
 
 Reguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.
 
@@ -11308,10 +11284,6 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 - På bunnen (vann/sjø) = 4
 - I vannsøylen = 5
 
-## Datafangst
-
-
-
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Daglig
@@ -11320,13 +11292,31 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Status**: Planlagt
 
-## Presentasjon
-
-
-
 ## Leveranse
 
+**Distribusjoner**:
 
+- **format**: - **format**: OGC:WMS
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: WMS-tjeneste
+  **format**: - **format**: WMS-tjeneste
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: Reguleringsplaner (landsdekkende kopi)
+  **format**: - **format**: PNG
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: WMS-tjeneste
+  - **Lisens**: Tilgangsbegrensede data
+  **Notater**: Tjeneste
 
 ## Metadata
 
@@ -11334,7 +11324,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-09-16
+**Metadatadato**: 2026-01-06
 
 **språk**: nor
 
