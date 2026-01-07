@@ -7,30 +7,6 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Reguleringsplanforslag - Høring og offentlig ettersyn
 
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
 ## Generelt om spesifikasjonen
 
 
@@ -95,16 +71,6 @@ Dekke Norge digitalt parter sine behov for tilgang til reguleringsplanforslag (g
 
 **Bruk**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
 
-### Datamodell
-
-
-
-
-
-
-
-
-
 ## Referansesystem
 
 **Romlig representasjonstype**: Vektor
@@ -125,10 +91,6 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 - På bunnen (vann/sjø) = 4
 - I vannsøylen = 5
 
-## Datafangst
-
-
-
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
@@ -137,13 +99,31 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Status**: Planlagt
 
-## Presentasjon
-
-
-
 ## Leveranse
 
+**Distribusjoner**:
 
+- **format**: - **format**: OGC:WMS
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: WMS-tjeneste
+  **format**: - **format**: WMS-tjeneste
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: Reguleringsplanforslag - Høring og offentlig ettersyn
+  **format**: - **format**: PNG
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
+  - **protokoll**: WMS-tjeneste
+  - **Lisens**: Tilgangsbegrensede data
+  **Notater**: Tjeneste
 
 ## Metadata
 
@@ -151,7 +131,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-10-17
+**Metadatadato**: 2025-12-19
 
 **språk**: nor
 

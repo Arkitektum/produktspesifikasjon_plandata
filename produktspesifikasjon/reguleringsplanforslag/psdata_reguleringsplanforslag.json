@@ -20,7 +20,7 @@
       "creation": "2025-10-17",
       "publication": "2025-10-17",
       "revision": "2025-10-17",
-      "metadata": "2025-10-17"
+      "metadata": "2025-12-19"
     },
     "responsibleParties": [
       {
@@ -87,10 +87,45 @@
     "maintenanceNote": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.",
     "status": "Planlagt"
   },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "OGC:WMS"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities",
+          "protocol": "OGC:WMS"
+        }
+      },
+      {
+        "title": "WMS-tjeneste",
+        "format": {
+          "format": "WMS-tjeneste"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities",
+          "protocol": "OGC:WMS"
+        }
+      },
+      {
+        "title": "Reguleringsplanforslag - Høring og offentlig ettersyn",
+        "format": {
+          "format": "PNG"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Tilgangsbegrensede data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2025-10-17",
+    "metadataDate": "2025-12-19",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
@@ -111,6 +146,18 @@
       "rel": "describedby",
       "type": "application/xml",
       "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
     }
   ]
 }
