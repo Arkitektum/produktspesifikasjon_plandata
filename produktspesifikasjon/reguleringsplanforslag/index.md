@@ -131,7 +131,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-12-19
+**Metadatadato**: 2026-01-08
 
 **språk**: nor
 
