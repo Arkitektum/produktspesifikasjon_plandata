@@ -77,9 +77,26 @@ jobs:
               raise SystemExit(f"Config file not found: {config_path}") from exc
 
           values = {}
+          scopes = []
+          in_scopes = False
           for raw in lines:
               line = raw.split("#", 1)[0].strip()
-              if not line or ":" not in line:
+              if not line:
+                  continue
+              if line.startswith("scopes:"):
+                  in_scopes = True
+                  continue
+              if in_scopes:
+                  if not line.startswith("-") and ":" in line and not line.startswith("name:"):
+                      # A new top-level key means scopes section ended.
+                      in_scopes = False
+                  if in_scopes and "name:" in line:
+                      _, value = line.split("name:", 1)
+                      name = value.strip().strip("'").strip('"')
+                      if name:
+                          scopes.append(name)
+                  continue
+              if ":" not in line:
                   continue
               key, value = line.split(":", 1)
               values[key.strip()] = value.strip().strip("'").strip('"')
@@ -114,6 +131,8 @@ jobs:
                   value = values.get(source)
                   if value:
                       gh_out.write(f"{dest}={value}\n")
+              if scopes:
+                  gh_out.write("scopes=" + ",".join(scopes) + "\n")
           PY
 
       - id: prepare
@@ -123,7 +142,7 @@ jobs:
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
-          scopes: ${{ github.event.inputs.scopes }}
+          scopes: ${{ github.event.inputs.scopes != '' && github.event.inputs.scopes || steps.config.outputs.scopes }}
           updated: ${{ steps.config.outputs.updated }}
           xmi-model: ${{ steps.config.outputs.xmi-model }}
       
