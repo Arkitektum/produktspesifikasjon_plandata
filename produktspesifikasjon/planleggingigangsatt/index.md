@@ -52,25 +52,32 @@ Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at n
 
 ## Spesifikasjonsomfang
 
-- **datafangst**: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
-- **innsynstjeneste**: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+### Spesifikasjonsomfang - datafangst
+
+
+
+Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+
+### Spesifikasjonsomfang - innsynstjeneste
+
+
+
+Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Innhold og struktur
 
 **Bruk**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
 
-### Datamodell
+### Datamodell - datafangst
 
 
 
-
-
-
-
-
-
-Objektkataloger:
 - [Objektkatalog - datafangst](datafangst/objektkatalog.md)
+
+### Datamodell - innsynstjeneste
+
+
+
 - [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.md)
 
 ## Referansesystem
