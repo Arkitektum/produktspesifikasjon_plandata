@@ -7,30 +7,6 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Kommuneplaner (landsdekkende kopi)
 
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
 ## Generelt om spesifikasjonen
 
 
@@ -68,7 +44,7 @@ Plan og eiendom
 
 ### Sammendrag
 
-Fra 1.1.2026 vil Direktoratet for Byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for kommuneplaner og denne oppføringen blir oppdatert med distribusjoner.
+Fra 1.1.2026 vil Direktoratet for byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for kommuneplaner og denne oppføringen er oppdatert med distribusjoner.
 
 Kommuneplanen skal være kommunens overordnede styringsdokument. Den skal gi rammer for virksomhetenes planer og tiltak, og planer for bruk og vern av arealer i kommunen. Alle kommuner skal ha en kommuneplan. En samlet kommuneplan består både av en samfunnsdel med handlingsdel og en arealdel. Kommunen bestemmer gjennom vedtak av kommunal planstrategi om kommunen skal gjennomføre en full kommuneplanrevisjon av alle delene, eller om bare deler av kommuneplanen skal revideres, og hva revisjonen skal gå ut på. Kommuneplanen skal ivareta både kommunale, regionale og nasjonale mål, interesser og oppgaver, og bør omfatte alle viktige mål og oppgaver i kommunen. Den skal ta utgangspunkt i den kommunale planstrategien og legge retningslinjer og pålegg fra statlige og regionale myndigheter til grunn. Det kan utarbeides kommunedelplan for bestemte områder, temaer eller virksomhetsområder. Kommuneplanen skal ha en handlingsdel som angir hvordan planen skal følges opp de fire påfølgende år eller mer, og revideres årlig (Regjeringen.no).
 
@@ -10252,10 +10228,6 @@ Egenskaper
 
 **Beskrivelse**: Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
 
-## Datafangst
-
-
-
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Hvert halvår
@@ -10264,13 +10236,31 @@ Egenskaper
 
 **Status**: Planlagt
 
-## Presentasjon
-
-
-
 ## Leveranse
 
+**Distribusjoner**:
 
+- **format**: - **format**: OGC:WMS
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: WMS-tjeneste
+  **format**: - **format**: WMS-tjeneste
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: OGC:WMS
+
+- **tittel**: Kommuneplaner (landsdekkende kopi)
+  **format**: - **format**: PNG
+  **tilgang**:
+
+  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
+  - **protokoll**: WMS-tjeneste
+  - **Lisens**: Tilgangsbegrensede data
+  **Notater**: Tjeneste
 
 ## Metadata
 
@@ -10278,7 +10268,7 @@ Egenskaper
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-09-16
+**Metadatadato**: 2026-01-06
 
 **språk**: nor
 

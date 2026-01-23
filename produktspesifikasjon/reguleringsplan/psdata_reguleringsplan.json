@@ -2,7 +2,7 @@
   "identification": {
     "id": "dac27348-5c2e-4a6a-9497-c4c792108cae",
     "title": "Reguleringsplaner (landsdekkende kopi)",
-    "abstract": "Fra 1.1.2026 vil Direktoratet for Byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen blir oppdatert med distribusjoner. \n\nReguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.\n\nDatasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering eller periodisk kopiering fra kommunene sine data.",
+    "abstract": "Fra 1.1.2026 vil Direktoratet for byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen er oppdatert med distribusjoner.\n\nReguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.\n\nDatasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering eller periodisk kopiering fra kommunene sine data.",
     "purpose": "Dekke Norge digitalt parter sine behov for tilgang til reguleringsplaner (geografiske data - vektordata).\nVise plan for bruk, vern og utforming av arealer og fysiske omgivelser i bestemte områder.",
     "language": "nor",
     "keywords": [
@@ -23,7 +23,7 @@
       "creation": "2025-09-16",
       "publication": "2025-09-16",
       "revision": "2025-09-16",
-      "metadata": "2025-09-16"
+      "metadata": "2026-01-06"
     },
     "responsibleParties": [
       {
@@ -91,10 +91,45 @@
     "maintenanceNote": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.",
     "status": "Planlagt"
   },
+  "delivery": {
+    "distributions": [
+      {
+        "format": {
+          "format": "OGC:WMS"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+          "protocol": "OGC:WMS"
+        }
+      },
+      {
+        "title": "WMS-tjeneste",
+        "format": {
+          "format": "WMS-tjeneste"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+          "protocol": "OGC:WMS"
+        }
+      },
+      {
+        "title": "Reguleringsplaner (landsdekkende kopi)",
+        "format": {
+          "format": "PNG"
+        },
+        "access": {
+          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+          "protocol": "WMS-tjeneste",
+          "license": "Tilgangsbegrensede data"
+        },
+        "notes": "Tjeneste"
+      }
+    ]
+  },
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2025-09-16",
+    "metadataDate": "2026-01-06",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
@@ -115,6 +150,18 @@
       "rel": "describedby",
       "type": "application/xml",
       "title": "Metadata (ISO 19139)"
+    },
+    {
+      "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+      "rel": "enclosure",
+      "type": "text/html",
+      "title": "Nedlasting"
+    },
+    {
+      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://nap.ft.dibk.no/services/wms/reguleringsplaner/",
+      "rel": "service",
+      "type": "text/html",
+      "title": "Tjeneste"
     }
   ]
 }

@@ -7,30 +7,6 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Planområde for planlegging igangsatt
 
-## Innledning, historikk og endringslogg
-
-
-### Innledning
-
-
-### Historikk
-
-
-### Endringslogg
-
-
-### Normative referanser
-
-
-## Definisjoner og forkortelser
-
-
-### Definisjoner
-
-
-### Forkortelser
-
-
 ## Generelt om spesifikasjonen
 
 
@@ -1116,10 +1092,6 @@ Egenskaper
 
 
 
-## Datafangst
-
-
-
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
@@ -1128,10 +1100,6 @@ Egenskaper
 
 **Status**: Planlagt
 
-## Presentasjon
-
-
-
 ## Leveranse
 
 **Distribusjoner**:
@@ -1139,15 +1107,24 @@ Egenskaper
 - **format**: - **format**: OGC:API-Features
   **tilgang**:
 
-  - **lenke**: <https://plandata.ft-test.dibk.no/services/planleggingigangsatt/>
+  - **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
   - **protokoll**: OGC:API-Features
 
 - **tittel**: OGC API-Features
   **format**: - **format**: OGC API-Features
   **tilgang**:
 
-  - **lenke**: <https://plandata.ft-test.dibk.no/services/planleggingigangsatt/>
+  - **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
   - **protokoll**: OGC:API-Features
+
+- **tittel**: Planområde for planlegging igangsatt
+  **format**: - **format**: PNG
+  **tilgang**:
+
+  - **lenke**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
+  - **protokoll**: WMS-tjeneste
+  - **Lisens**: Åpne data
+  **Notater**: Tjeneste
 
 ## Metadata
 
@@ -1155,7 +1132,7 @@ Egenskaper
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-12-04
+**Metadatadato**: 2025-12-16
 
 **språk**: nor
 

@@ -15,7 +15,6 @@
     "attributes": [
       {
         "name": "objid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objid",
@@ -23,20 +22,17 @@
       },
       {
         "name": "nasjonalArealplanId",
-        "valueType": "object",
         "type": "object",
         "cardinality": "0..1",
         "attributes": [
           {
             "name": "planid",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "nasjonalArealplanId.planid"
           },
           {
             "name": "kommunenummer",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "nasjonalArealplanId.kommunenummer"
@@ -45,62 +41,53 @@
       },
       {
         "name": "plannavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "plannavn"
       },
       {
         "name": "plantype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "plantype"
       },
       {
         "name": "kunngjoringsdatoVarselOmPlanoppstart",
-        "valueType": "date (string)",
         "type": "date (string)",
         "cardinality": "0..1",
         "description": "kunngjoringsdatoVarselOmPlanoppstart"
       },
       {
         "name": "forslagsstillertype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "forslagsstillertype"
       },
       {
         "name": "lovreferanse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lovreferanse"
       },
       {
         "name": "identifikasjon",
-        "valueType": "object",
         "type": "object",
         "cardinality": "0..1",
         "attributes": [
           {
             "name": "lokalId",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.lokalId"
           },
           {
             "name": "navnerom",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.navnerom"
           },
           {
             "name": "versjonId",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.versjonId"
@@ -109,35 +96,30 @@
       },
       {
         "name": "forsteDigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forsteDigitaliseringsdato"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "link",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "link"
       },
       {
         "name": "linkPlanomrade",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "linkPlanomrade"
       },
       {
         "name": "linkPlandokumenter",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "linkPlandokumenter"
@@ -166,7 +148,6 @@
     "attributes": [
       {
         "name": "objid",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "objid",
@@ -174,27 +155,23 @@
       },
       {
         "name": "identifikasjon",
-        "valueType": "object",
         "type": "object",
         "cardinality": "0..1",
         "attributes": [
           {
             "name": "lokalId",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.lokalId"
           },
           {
             "name": "navnerom",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.navnerom"
           },
           {
             "name": "versjonId",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "identifikasjon.versjonId"
@@ -203,34 +180,29 @@
       },
       {
         "name": "arealplan",
-        "valueType": "integer",
         "type": "integer",
         "cardinality": "0..1",
         "description": "arealplan"
       },
       {
         "name": "forsteDigitaliseringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "forsteDigitaliseringsdato"
       },
       {
         "name": "nasjonalArealplanId",
-        "valueType": "object",
         "type": "object",
         "cardinality": "0..1",
         "attributes": [
           {
             "name": "planid",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "nasjonalArealplanId.planid"
           },
           {
             "name": "kommunenummer",
-            "valueType": "string",
             "type": "string",
             "cardinality": "0..1",
             "description": "nasjonalArealplanId.kommunenummer"
@@ -239,63 +211,54 @@
       },
       {
         "name": "plannavn",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "plannavn"
       },
       {
         "name": "plantype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "plantype"
       },
       {
         "name": "kunngjoringsdatoVarselOmPlanoppstart",
-        "valueType": "date (string)",
         "type": "date (string)",
         "cardinality": "0..1",
         "description": "kunngjoringsdatoVarselOmPlanoppstart"
       },
       {
         "name": "forslagsstillertype",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "forslagsstillertype"
       },
       {
         "name": "lovreferanse",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "lovreferanse"
       },
       {
         "name": "oppdateringsdato",
-        "valueType": "date-time (string)",
         "type": "date-time (string)",
         "cardinality": "0..1",
         "description": "oppdateringsdato"
       },
       {
         "name": "link",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "link"
       },
       {
         "name": "linkArealplan",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "linkArealplan"
       },
       {
         "name": "linkPlandokumenter",
-        "valueType": "string",
         "type": "string",
         "cardinality": "0..1",
         "description": "linkPlandokumenter"
