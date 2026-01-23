@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Arealplan",
+    "description": "Dataobjekt for igangsatt planlegging etter pbl",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-any",
+      "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+      "format": "geometry-any",
+      "ogcRole": "primary-geometry"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "0..1",
+        "description": "objid",
+        "ogcRole": "id"
+      },
+      {
+        "name": "nasjonalArealplanId",
+        "type": "object",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "planid",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "nasjonalArealplanId.planid"
+          },
+          {
+            "name": "kommunenummer",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "nasjonalArealplanId.kommunenummer"
+          }
+        ]
+      },
+      {
+        "name": "plannavn",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "plannavn"
+      },
+      {
+        "name": "plantype",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "plantype"
+      },
+      {
+        "name": "kunngjoringsdatoVarselOmPlanoppstart",
+        "type": "date (string)",
+        "cardinality": "0..1",
+        "description": "kunngjoringsdatoVarselOmPlanoppstart"
+      },
+      {
+        "name": "forslagsstillertype",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "forslagsstillertype"
+      },
+      {
+        "name": "lovreferanse",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "lovreferanse"
+      },
+      {
+        "name": "identifikasjon",
+        "type": "object",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.lokalId"
+          },
+          {
+            "name": "navnerom",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.navnerom"
+          },
+          {
+            "name": "versjonId",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.versjonId"
+          }
+        ]
+      },
+      {
+        "name": "forsteDigitaliseringsdato",
+        "type": "date-time (string)",
+        "cardinality": "0..1",
+        "description": "forsteDigitaliseringsdato"
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "date-time (string)",
+        "cardinality": "0..1",
+        "description": "oppdateringsdato"
+      },
+      {
+        "name": "link",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "link"
+      },
+      {
+        "name": "linkPlanomrade",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "linkPlanomrade"
+      },
+      {
+        "name": "linkPlandokumenter",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "linkPlandokumenter"
+      }
+    ]
+  },
+  {
+    "name": "Planområde",
+    "description": "Geometriske områder og tilhørende metadata fra \"Varsel om Oppstart av Reguleringsplanarbeider\"-databasen",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-any",
+      "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+        "http://www.opengis.net/def/crs/EPSG/0/25832",
+        "http://www.opengis.net/def/crs/EPSG/0/25833",
+        "http://www.opengis.net/def/crs/EPSG/0/25835",
+        "http://www.opengis.net/def/crs/EPSG/0/4258",
+        "http://www.opengis.net/def/crs/EPSG/0/4326",
+        "http://www.opengis.net/def/crs/EPSG/0/3857"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/EPSG/0/25833",
+      "format": "geometry-any",
+      "ogcRole": "primary-geometry"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "0..1",
+        "description": "objid",
+        "ogcRole": "id"
+      },
+      {
+        "name": "identifikasjon",
+        "type": "object",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.lokalId"
+          },
+          {
+            "name": "navnerom",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.navnerom"
+          },
+          {
+            "name": "versjonId",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "identifikasjon.versjonId"
+          }
+        ]
+      },
+      {
+        "name": "arealplan",
+        "type": "integer",
+        "cardinality": "0..1",
+        "description": "arealplan"
+      },
+      {
+        "name": "forsteDigitaliseringsdato",
+        "type": "date-time (string)",
+        "cardinality": "0..1",
+        "description": "forsteDigitaliseringsdato"
+      },
+      {
+        "name": "nasjonalArealplanId",
+        "type": "object",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "planid",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "nasjonalArealplanId.planid"
+          },
+          {
+            "name": "kommunenummer",
+            "type": "string",
+            "cardinality": "0..1",
+            "description": "nasjonalArealplanId.kommunenummer"
+          }
+        ]
+      },
+      {
+        "name": "plannavn",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "plannavn"
+      },
+      {
+        "name": "plantype",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "plantype"
+      },
+      {
+        "name": "kunngjoringsdatoVarselOmPlanoppstart",
+        "type": "date (string)",
+        "cardinality": "0..1",
+        "description": "kunngjoringsdatoVarselOmPlanoppstart"
+      },
+      {
+        "name": "forslagsstillertype",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "forslagsstillertype"
+      },
+      {
+        "name": "lovreferanse",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "lovreferanse"
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "date-time (string)",
+        "cardinality": "0..1",
+        "description": "oppdateringsdato"
+      },
+      {
+        "name": "link",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "link"
+      },
+      {
+        "name": "linkArealplan",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "linkArealplan"
+      },
+      {
+        "name": "linkPlandokumenter",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "linkPlandokumenter"
+      }
+    ]
+  }
+]
