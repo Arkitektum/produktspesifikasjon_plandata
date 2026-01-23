@@ -76,7 +76,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 ## Referansesystem
 
-**Romlig representasjonstype**: Rasterbilde
+**Romlig representasjonstype**: Vektor
 
 ## Kvalitet
 
@@ -126,7 +126,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-12-19
+**Metadatadato**: 2026-01-08
 
 **språk**: nor
 
