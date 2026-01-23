@@ -8,6 +8,6 @@ scopes:
     generator: xmi
     description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
   - name: innsynstjeneste
-    url: https://plandata.ft-test.dibk.no/services/planleggingigangsatt/collections
+    url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
     generator: ogc_feature_api
     description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
