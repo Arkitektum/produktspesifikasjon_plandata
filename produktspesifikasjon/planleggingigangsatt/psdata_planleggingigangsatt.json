@@ -42,7 +42,7 @@
     ],
     "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
   },
-  "scope": "- **datafangst**: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n- **innsynstjeneste**: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.",
+  "scope": "### Spesifikasjonsomfang - datafangst\n\n\n\nDatamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n\n### Spesifikasjonsomfang - innsynstjeneste\n\n\n\nTjeneste for innsyn i planområder som er varslet for planlegging igangsatt.",
   "dataContent": {
     "usage": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
   },
