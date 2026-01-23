@@ -11,6 +11,10 @@ on:
         description: Optional path to a single config YAML in repo root. Leave empty to process all root-level configs.
         default: ""
         required: false
+      scopes:
+        description: Optional comma-separated list of scope names to include (must match config scopes).
+        default: ""
+        required: false
 
 jobs:
   discover:
@@ -113,12 +117,13 @@ jobs:
           PY
 
       - id: prepare
-        uses: arkitektum/ps.editor.actions@main
+        uses: arkitektum/ps.editor.actions@scopes
         with:
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
+          scopes: ${{ github.event.inputs.scopes }}
           updated: ${{ steps.config.outputs.updated }}
           xmi-model: ${{ steps.config.outputs.xmi-model }}
       
@@ -168,7 +173,7 @@ jobs:
           echo "path=$png" >> "$GITHUB_OUTPUT"
 
       - id: assemble
-        uses: arkitektum/ps.editor.actions/assemble@main
+        uses: arkitektum/ps.editor.actions/assemble@scopes
         with:
           psdata-path: ${{ steps.prepare.outputs.psdata-path }}
           output-path: ${{ steps.prepare.outputs.spec-markdown }}
