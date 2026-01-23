@@ -11,10 +11,6 @@ on:
         description: Optional path to a single config YAML in repo root. Leave empty to process all root-level configs.
         default: ""
         required: false
-      scopes:
-        description: Optional comma-separated list of scope names to include (must match config scopes).
-        default: ""
-        required: false
 
 jobs:
   discover:
@@ -79,27 +75,56 @@ jobs:
           values = {}
           scopes = []
           in_scopes = False
+          scopes_indent = None
+          current_scope = None
           for raw in lines:
-              line = raw.split("#", 1)[0].strip()
-              if not line:
+              line_no_comment = raw.split("#", 1)[0].rstrip("\n")
+              if not line_no_comment.strip():
                   continue
-              if line.startswith("scopes:"):
+              if line_no_comment.strip().startswith("scopes:"):
                   in_scopes = True
+                  scopes_indent = None
+                  current_scope = None
                   continue
               if in_scopes:
-                  if not line.startswith("-") and ":" in line and not line.startswith("name:"):
-                      # A new top-level key means scopes section ended.
+                  raw_line = line_no_comment
+                  indent = len(raw_line) - len(raw_line.lstrip(" "))
+                  if scopes_indent is None and raw_line.lstrip(" ").startswith("- "):
+                      scopes_indent = indent
+                  if scopes_indent is not None and indent < scopes_indent:
+                      # End of scopes list.
+                      if current_scope:
+                          scopes.append(current_scope)
+                          current_scope = None
                       in_scopes = False
-                  if in_scopes and "name:" in line:
-                      _, value = line.split("name:", 1)
-                      name = value.strip().strip("'").strip('"')
-                      if name:
-                          scopes.append(name)
+                  if not in_scopes:
+                      continue
+                  content = raw_line.lstrip(" ")
+                  if content.startswith("- "):
+                      if current_scope:
+                          scopes.append(current_scope)
+                      current_scope = {}
+                      content = content[2:]
+                      if ":" in content:
+                          key, value = content.split(":", 1)
+                          key = key.strip()
+                          value = value.strip().strip("'").strip('"')
+                          if key:
+                              current_scope[key] = value
+                  elif ":" in content and current_scope is not None:
+                      key, value = content.split(":", 1)
+                      key = key.strip()
+                      value = value.strip().strip("'").strip('"')
+                      if key:
+                          current_scope[key] = value
                   continue
-              if ":" not in line:
+              if ":" not in line_no_comment:
                   continue
-              key, value = line.split(":", 1)
+              key, value = line_no_comment.strip().split(":", 1)
               values[key.strip()] = value.strip().strip("'").strip('"')
+
+          if in_scopes and current_scope:
+              scopes.append(current_scope)
 
           required_map = {
               "metadataId": "metadata-id",
@@ -132,7 +157,8 @@ jobs:
                   if value:
                       gh_out.write(f"{dest}={value}\n")
               if scopes:
-                  gh_out.write("scopes=" + ",".join(scopes) + "\n")
+                  import json
+                  gh_out.write("scopes=" + json.dumps(scopes) + "\n")
           PY
 
       - id: prepare
@@ -142,7 +168,7 @@ jobs:
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
-          scopes: ${{ github.event.inputs.scopes != '' && github.event.inputs.scopes || steps.config.outputs.scopes }}
+          scopes: ${{ steps.config.outputs.scopes }}
           updated: ${{ steps.config.outputs.updated }}
           xmi-model: ${{ steps.config.outputs.xmi-model }}
       
