@@ -19,10 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v4
-      - uses: arkitektum/ps.editor.actions/publish@scopes
-        with:
-          checkout: false
-          upload-path: site
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -70,6 +66,10 @@ jobs:
               html_path.write_text(page, encoding="utf-8")
               print(f"Rendered {md_path} -> {html_path}")
           PY
+      - uses: arkitektum/ps.editor.actions/publish@scopes
+        with:
+          checkout: false
+          upload-path: site
 
   deploy:
     runs-on: ubuntu-latest
