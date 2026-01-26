@@ -38,14 +38,13 @@ jobs:
               raise SystemExit("Missing markdown dependency") from exc
 
           src_root = Path("produktspesifikasjon")
-          out_root = Path("site") / "produktspesifikasjon"
 
           if not src_root.exists():
               raise SystemExit("Source directory not found: produktspesifikasjon")
 
           for md_path in src_root.rglob("objektkatalog.md"):
               rel = md_path.relative_to(src_root)
-              html_path = out_root / rel.with_suffix(".html")
+              html_path = src_root / rel.with_suffix(".html")
               html_path.parent.mkdir(parents=True, exist_ok=True)
               text = md_path.read_text(encoding="utf-8")
               body = markdown.markdown(text, extensions=["tables"])
