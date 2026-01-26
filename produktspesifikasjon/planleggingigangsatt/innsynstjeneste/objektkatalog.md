@@ -36,7 +36,7 @@ package "Objekttyper" {
     + nasjonalArealplanId [0..1] : Object
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
-    + kunngjoringsdatoVarselOmPlanoppstart [0..1] : Date
+    + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
     + forslagsstillertype [0..1] : CharacterString
     + lovreferanse [0..1] : CharacterString
     + identifikasjon [0..1] : Object
@@ -68,11 +68,11 @@ package "Objekttyper" {
     + objid [0..1] : Integer
     + identifikasjon [0..1] : Object
     + arealplan [0..1] : Integer
-    + forsteDigitaliseringsdato [0..1] : DateTime
+    + førsteDigitaliseringsdato [0..1] : DateTime
     + nasjonalArealplanId [0..1] : Object
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
-    + kunngjoringsdatoVarselOmPlanoppstart [0..1] : Date
+    + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
     + forslagsstillertype [0..1] : CharacterString
     + lovreferanse [0..1] : CharacterString
     + oppdateringsdato [0..1] : DateTime
@@ -298,11 +298,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>kunngjoringsdatoVarselOmPlanoppstart</strong></td>
+      <td><strong>kunngjøringsdatoVarselOmPlanoppstart</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>kunngjoringsdatoVarselOmPlanoppstart</td>
+      <td>kunngjøringsdatoVarselOmPlanoppstart</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -777,11 +777,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>forsteDigitaliseringsdato</strong></td>
+      <td><strong>førsteDigitaliseringsdato</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>forsteDigitaliseringsdato</td>
+      <td>førsteDigitaliseringsdato</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -923,11 +923,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>kunngjoringsdatoVarselOmPlanoppstart</strong></td>
+      <td><strong>kunngjøringsdatoVarselOmPlanoppstart</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>kunngjoringsdatoVarselOmPlanoppstart</td>
+      <td>kunngjøringsdatoVarselOmPlanoppstart</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>

@@ -29,7 +29,7 @@ package "Objekttyper" {
     + nasjonalArealplanId [0..1] : Object
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
-    + kunngjoringsdatoVarselOmPlanoppstart [0..1] : Date
+    + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
     + forslagsstillertype [0..1] : CharacterString
     + lovreferanse [0..1] : CharacterString
     + identifikasjon [0..1] : Object
@@ -61,11 +61,11 @@ package "Objekttyper" {
     + objid [0..1] : Integer
     + identifikasjon [0..1] : Object
     + arealplan [0..1] : Integer
-    + forsteDigitaliseringsdato [0..1] : DateTime
+    + førsteDigitaliseringsdato [0..1] : DateTime
     + nasjonalArealplanId [0..1] : Object
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
-    + kunngjoringsdatoVarselOmPlanoppstart [0..1] : Date
+    + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
     + forslagsstillertype [0..1] : CharacterString
     + lovreferanse [0..1] : CharacterString
     + oppdateringsdato [0..1] : DateTime

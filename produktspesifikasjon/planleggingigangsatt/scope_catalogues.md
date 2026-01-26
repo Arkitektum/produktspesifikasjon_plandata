@@ -2,10 +2,10 @@
 
 
 
-- [Objektkatalog - datafangst](datafangst/objektkatalog.html)
+- [Objektkatalog - datafangst](datafangst/objektkatalog.md)
 
 ### Datamodell - innsynstjeneste
 
 
 
-- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.html)
+- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.md)

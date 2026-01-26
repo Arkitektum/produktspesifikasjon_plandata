@@ -52,17 +52,25 @@ Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at n
 
 ## Spesifikasjonsomfang
 
-### Spesifikasjonsomfang - datafangst
-
-
-
+**Nivå**:
+#### datafangst
 Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 
-### Spesifikasjonsomfang - innsynstjeneste
-
-
-
+#### innsynstjeneste
 Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+
+**Utstrekning**:
+
+- **romlig**: - **romlig omfang**: National
+- **tidsmessig**: - **intervall**: - 2025-10-17, 2025-10-17
+
+**Juridiske begrensninger**:
+
+- **Tilgangsbegrensninger**: Åpne data
+- **Bruksbegrensninger**: Lisens
+- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
+- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
+- **Sikkerhetsbegrensninger**: Ugradert
 
 ## Innhold og struktur
 
@@ -72,13 +80,13 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 
 
-- [Objektkatalog - datafangst](datafangst/objektkatalog.html)
+- [Objektkatalog - datafangst](datafangst/objektkatalog.md)
 
 ### Datamodell - innsynstjeneste
 
 
 
-- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.html)
+- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.md)
 
 ## Referansesystem
 
