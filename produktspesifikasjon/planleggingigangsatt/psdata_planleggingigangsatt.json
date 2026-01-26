@@ -42,7 +42,29 @@
     ],
     "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
   },
-  "scope": "### Spesifikasjonsomfang - datafangst\n\n\n\nDatamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n\n### Spesifikasjonsomfang - innsynstjeneste\n\n\n\nTjeneste for innsyn i planområder som er varslet for planlegging igangsatt.",
+  "scope": {
+    "level": "#### datafangst\nDatamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n\n#### innsynstjeneste\nTjeneste for innsyn i planområder som er varslet for planlegging igangsatt.",
+    "extent": {
+      "spatial": {
+        "spatialScope": "National"
+      },
+      "temporal": {
+        "interval": [
+          [
+            "2025-10-17",
+            "2025-10-17"
+          ]
+        ]
+      }
+    },
+    "legalConstraints": {
+      "accessConstraints": "Åpne data",
+      "useConstraints": "Lisens",
+      "license": "Norsk lisens for offentlige data (NLOD) 2.0",
+      "licenseUrl": "https://data.norge.no/nlod/no/2.0",
+      "securityConstraints": "Ugradert"
+    }
+  },
   "dataContent": {
     "usage": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
   },

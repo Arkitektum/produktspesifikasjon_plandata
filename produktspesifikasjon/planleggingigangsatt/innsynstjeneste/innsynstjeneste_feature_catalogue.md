@@ -189,11 +189,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>kunngjoringsdatoVarselOmPlanoppstart</strong></td>
+      <td><strong>kunngjøringsdatoVarselOmPlanoppstart</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>kunngjoringsdatoVarselOmPlanoppstart</td>
+      <td>kunngjøringsdatoVarselOmPlanoppstart</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -668,11 +668,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>forsteDigitaliseringsdato</strong></td>
+      <td><strong>førsteDigitaliseringsdato</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>forsteDigitaliseringsdato</td>
+      <td>førsteDigitaliseringsdato</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -814,11 +814,11 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>kunngjoringsdatoVarselOmPlanoppstart</strong></td>
+      <td><strong>kunngjøringsdatoVarselOmPlanoppstart</strong></td>
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>kunngjoringsdatoVarselOmPlanoppstart</td>
+      <td>kunngjøringsdatoVarselOmPlanoppstart</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>

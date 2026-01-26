@@ -52,10 +52,10 @@
         "description": "plantype"
       },
       {
-        "name": "kunngjoringsdatoVarselOmPlanoppstart",
+        "name": "kunngjøringsdatoVarselOmPlanoppstart",
         "type": "date (string)",
         "cardinality": "0..1",
-        "description": "kunngjoringsdatoVarselOmPlanoppstart"
+        "description": "kunngjøringsdatoVarselOmPlanoppstart"
       },
       {
         "name": "forslagsstillertype",
@@ -185,10 +185,10 @@
         "description": "arealplan"
       },
       {
-        "name": "forsteDigitaliseringsdato",
+        "name": "førsteDigitaliseringsdato",
         "type": "date-time (string)",
         "cardinality": "0..1",
-        "description": "forsteDigitaliseringsdato"
+        "description": "førsteDigitaliseringsdato"
       },
       {
         "name": "nasjonalArealplanId",
@@ -222,10 +222,10 @@
         "description": "plantype"
       },
       {
-        "name": "kunngjoringsdatoVarselOmPlanoppstart",
+        "name": "kunngjøringsdatoVarselOmPlanoppstart",
         "type": "date (string)",
         "cardinality": "0..1",
-        "description": "kunngjoringsdatoVarselOmPlanoppstart"
+        "description": "kunngjøringsdatoVarselOmPlanoppstart"
       },
       {
         "name": "forslagsstillertype",
