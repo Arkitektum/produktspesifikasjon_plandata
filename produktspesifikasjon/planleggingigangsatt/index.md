@@ -72,13 +72,13 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 
 
-- [Objektkatalog - datafangst](datafangst/objektkatalog.md)
+- [Objektkatalog - datafangst](datafangst/objektkatalog.html)
 
 ### Datamodell - innsynstjeneste
 
 
 
-- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.md)
+- [Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.html)
 
 ## Referansesystem
 

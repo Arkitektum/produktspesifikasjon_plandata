@@ -23,6 +23,53 @@ jobs:
         with:
           checkout: false
           upload-path: site
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install markdown renderer
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install markdown
+      - name: Render objektkatalog to HTML
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import html
+
+          try:
+              import markdown
+          except ImportError as exc:
+              raise SystemExit("Missing markdown dependency") from exc
+
+          src_root = Path("produktspesifikasjon")
+          out_root = Path("site") / "produktspesifikasjon"
+
+          if not src_root.exists():
+              raise SystemExit("Source directory not found: produktspesifikasjon")
+
+          for md_path in src_root.rglob("objektkatalog.md"):
+              rel = md_path.relative_to(src_root)
+              html_path = out_root / rel.with_suffix(".html")
+              html_path.parent.mkdir(parents=True, exist_ok=True)
+              text = md_path.read_text(encoding="utf-8")
+              body = markdown.markdown(text, extensions=["tables"])
+              title = html.escape(md_path.stem.replace("_", " ").title())
+              page = (
+                  "<!doctype html>\n"
+                  "<html lang=\"no\">\n"
+                  "<head>\n"
+                  "  <meta charset=\"utf-8\" />\n"
+                  "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n"
+                  f"  <title>{title}</title>\n"
+                  "</head>\n"
+                  "<body>\n"
+                  f"{body}\n"
+                  "</body>\n"
+                  "</html>\n"
+              )
+              html_path.write_text(page, encoding="utf-8")
+              print(f"Rendered {md_path} -> {html_path}")
+          PY
 
   deploy:
     runs-on: ubuntu-latest

@@ -173,17 +173,23 @@ jobs:
           xmi-model: ${{ steps.config.outputs.xmi-model }}
       
       - name: Render UML to PNG
-        if: steps.prepare.outputs.feature-catalogue-uml != '' || steps.prepare.outputs.xmi-feature-catalogue-uml != ''
         run: |
           sudo apt-get update
           sudo apt-get install -y plantuml graphviz
           set -euo pipefail
-          files=()
-          if [ -n "${{ steps.prepare.outputs.feature-catalogue-uml }}" ]; then
-            files+=("${{ steps.prepare.outputs.feature-catalogue-uml }}")
+          root="${{ steps.config.outputs.output-directory }}"
+          if [ -z "$root" ]; then
+            echo "No output directory set; skipping PlantUML render."
+            exit 0
           fi
-          if [ -n "${{ steps.prepare.outputs.xmi-feature-catalogue-uml }}" ]; then
-            files+=("${{ steps.prepare.outputs.xmi-feature-catalogue-uml }}")
+          if [ ! -d "$root" ]; then
+            echo "Output directory not found: $root"
+            exit 0
+          fi
+          mapfile -t files < <(find "$root" -type f -name '*.puml' | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No .puml files found under $root"
+            exit 0
           fi
           for file in "${files[@]}"; do
             if [ "${file:0:1}" != "/" ]; then
