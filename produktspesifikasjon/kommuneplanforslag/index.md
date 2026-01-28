@@ -98,18 +98,18 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Distribusjoner**:
 
-- **format**: - **format**: OGC:WMS
+- **format**: - **format**: GEONORGE:FILEDOWNLOAD
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
+  - **protokoll**: GEONORGE:FILEDOWNLOAD
 
-- **tittel**: WMS-tjeneste
-  **format**: - **format**: WMS-tjeneste
+- **tittel**: Geonorge filnedlastning
+  **format**: - **format**: Geonorge filnedlastning
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
+  - **protokoll**: GEONORGE:FILEDOWNLOAD
 
 - **tittel**: Kommuneplanforslag - Høring og offentlig ettersyn
   **format**: - **format**: PNG
@@ -126,7 +126,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2026-01-08
+**Metadatadato**: 2026-01-27
 
 **språk**: nor
 
