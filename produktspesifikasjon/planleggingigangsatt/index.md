@@ -1,6 +1,6 @@
 ---
 title: "Planområde for planlegging igangsatt"
-updated: "2025-12-03"
+updated: "2026-01-28"
 organization: "Direktoratet for byggkvalitet"
 logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ---
