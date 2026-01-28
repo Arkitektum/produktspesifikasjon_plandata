@@ -98,7 +98,7 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Referansesystem
 
-**Romlig representasjonstype**: Vektor
+**Romlig representasjonstype**: Rasterbilde
 
 ## Kvalitet
 
@@ -148,7 +148,7 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2025-12-16
+**Metadatadato**: 2026-01-28
 
 **språk**: nor
 
