@@ -162,7 +162,7 @@ jobs:
           PY
 
       - id: prepare
-        uses: arkitektum/ps.editor.actions@scopes
+        uses: arkitektum/ps.editor.actions@main
         with:
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
@@ -224,7 +224,7 @@ jobs:
           echo "path=$png" >> "$GITHUB_OUTPUT"
 
       - id: assemble
-        uses: arkitektum/ps.editor.actions/assemble@scopes
+        uses: arkitektum/ps.editor.actions/assemble@main
         with:
           psdata-path: ${{ steps.prepare.outputs.psdata-path }}
           output-path: ${{ steps.prepare.outputs.spec-markdown }}
