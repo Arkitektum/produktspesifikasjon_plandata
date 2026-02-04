@@ -59,7 +59,7 @@
             "cardinality": "0..1",
             "valueDomain": {
               "definition": "ekstern kodeliste for kommunenummer\nKoder med status Gyldig refererer til dagens kommuner, mens koder med status Utgått referer til utgåtte kommunenummer",
-              "asDictionary": "true#NOTES#Values: true,false",
+              "asDictionary": "true",
               "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer"
             }
           },
@@ -93,8 +93,8 @@
         "cardinality": "1",
         "valueDomain": {
           "definition": "ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan.",
-          "asDictionary": "true#NOTES#Values: true,false",
-          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url"
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype"
         }
       },
       {
@@ -110,8 +110,8 @@
         "cardinality": "1",
         "valueDomain": {
           "definition": "ekstern kodeliste for gjeldende pbl.",
-          "asDictionary": "true#NOTES#Values: true,false",
-          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url"
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse"
         }
       }
     ],
@@ -132,19 +132,20 @@
   {
     "name": "Planområde",
     "description": "område for planlegging igangsatt etter pbl 2008.\n\nOmrådet skal være sammenhengende i grunnriss, men kan dekke flere vertikalnivåer",
-    "attributes": [],
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_Surface",
+        "description": "planens utstrekning i grunnriss uavhengig av vertikalnivå",
+        "cardinality": "1"
+      }
+    ],
     "abstract": false,
     "relationships": {
       "inheritance": [
         "Fellesegenskaper"
       ],
       "associations": []
-    },
-    "geometry": {
-      "name": "område",
-      "type": "GM_Surface",
-      "ogcRole": "primary-geometry",
-      "description": "planens utstrekning i grunnriss uavhengig av vertikalnivå"
     }
   }
 ]
