@@ -267,7 +267,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
-      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype</a></td>
     </tr>
   </tbody>
 </table>
@@ -321,7 +321,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
-      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse</a></td>
     </tr>
   </tbody>
 </table>
@@ -338,8 +338,6 @@ Planområde – rolle: planleggingIgangsatt – kardinalitet: 1..*
 
 område for planlegging igangsatt etter pbl 2008.<br /><br />Området skal være sammenhengende i grunnriss, men kan dekke flere vertikalnivåer
 
-Geometri:<br />Type: GM_Surface
-
 Egenskaper
 
 <table class="feature-attribute-table">
@@ -350,15 +348,19 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>geometry</strong></td>
+      <td><strong>område</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>planens utstrekning i grunnriss uavhengig av vertikalnivå</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>GM_Surface</td>
-    </tr>
-    <tr>
-      <th scope="row">OGC-rolle:</th>
-      <td>primary-geometry</td>
     </tr>
   </tbody>
 </table>
@@ -385,7 +387,7 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true#NOTES#Values: true,false</td>
+      <td>true</td>
     </tr>
     <tr>
       <th scope="row">codeList</th>
@@ -433,11 +435,11 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true#NOTES#Values: true,false</td>
+      <td>true</td>
     </tr>
     <tr>
       <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype</a></td>
     </tr>
   </tbody>
 </table>
@@ -456,11 +458,11 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true#NOTES#Values: true,false</td>
+      <td>true</td>
     </tr>
     <tr>
       <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse</a></td>
     </tr>
   </tbody>
 </table>
