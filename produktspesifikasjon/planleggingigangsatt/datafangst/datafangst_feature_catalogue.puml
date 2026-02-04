@@ -25,11 +25,12 @@ skinparam stereotypeCFontColor #2D201A
 package "Objekttyper" {
 
   abstract class Fellesegenskaper <<featureType>> {
-    + identifikasjon [1] : Identifikasjon
-    + oppdateringsdato [1] : Date
+    ' Ingen attributter
   }
 
   class Arealplan <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
     + nasjonalArealplanId [1] : NasjonalArealplanId
     + plantype [1] : RpPlantype
     + plannavn [0..1] : CharacterString
@@ -37,6 +38,8 @@ package "Objekttyper" {
   }
 
   class "Planområde" as Planomr_de <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
     + område [1] : GM_Surface
   }
 
