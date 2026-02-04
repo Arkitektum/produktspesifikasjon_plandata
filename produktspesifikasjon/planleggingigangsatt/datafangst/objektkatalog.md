@@ -215,6 +215,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>Landkode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- NO – Norge. Aktuell kode for administrativ enhet for statlig vedtatte planer</td>
+    </tr>
   </tbody>
 </table>
 
@@ -265,6 +269,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>RpPlantype</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -314,6 +322,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>Lovreferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
     </tr>
   </tbody>
 </table>
@@ -376,8 +388,37 @@ Profilparametre i tagged values
   </colgroup>
   <tbody>
     <tr>
+      <th scope="row">asDictionary</th>
+      <td>true#NOTES#Values: true,false</td>
+    </tr>
+    <tr>
       <th scope="row">codeList</th>
       <td><a href="https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer">https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Landkode
+
+**Definisjon:** alfanumerisk kode for nasjonalt nivå / Norge.
+
+Avledet fra "ISO 3166 Codes for the representation of names of countries and their subdivisions"
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO</td>
+      <td>Norge. Aktuell kode for administrativ enhet for statlig vedtatte planer</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
@@ -386,6 +427,44 @@ Profilparametre i tagged values
 
 **Definisjon:** ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan.
 
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true#NOTES#Values: true,false</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+    </tr>
+  </tbody>
+</table>
+
 #### «CodeList» Lovreferanse
 
 **Definisjon:** ekstern kodeliste for gjeldende pbl.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true#NOTES#Values: true,false</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default</a>: <a href="http://skjema.geonorge.no/legg_inn_riktig_url">http://skjema.geonorge.no/legg_inn_riktig_url</a></td>
+    </tr>
+  </tbody>
+</table>

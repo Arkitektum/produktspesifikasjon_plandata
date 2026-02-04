@@ -59,6 +59,7 @@
             "cardinality": "0..1",
             "valueDomain": {
               "definition": "ekstern kodeliste for kommunenummer\nKoder med status Gyldig refererer til dagens kommuner, mens koder med status Utgått referer til utgåtte kommunenummer",
+              "asDictionary": "true#NOTES#Values: true,false",
               "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer"
             }
           },
@@ -66,7 +67,16 @@
             "name": "landkode",
             "type": "Landkode",
             "description": "landkode = NO anvendes kun av statlig vedtaksmyndighet",
-            "cardinality": "0..1"
+            "cardinality": "0..1",
+            "valueDomain": {
+              "listedValues": [
+                {
+                  "value": "NO",
+                  "label": "Norge. Aktuell kode for administrativ enhet for statlig vedtatte planer"
+                }
+              ],
+              "definition": "alfanumerisk kode for nasjonalt nivå / Norge.\n\nAvledet fra \"ISO 3166 Codes for the representation of names of countries and their subdivisions\""
+            }
           },
           {
             "name": "planid",
@@ -82,7 +92,9 @@
         "description": "type reguleringsplan (pbl. §§ 12-2 og 12-3)",
         "cardinality": "1",
         "valueDomain": {
-          "definition": "ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan."
+          "definition": "ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan.",
+          "asDictionary": "true#NOTES#Values: true,false",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url"
         }
       },
       {
@@ -97,7 +109,9 @@
         "description": "kode for hvilken lov planen vedtas etter\n\nFor reguleringsplanforslag og planlegging igangsatt skal lovreferanse = 6 (pbl 2008)",
         "cardinality": "1",
         "valueDomain": {
-          "definition": "ekstern kodeliste for gjeldende pbl."
+          "definition": "ekstern kodeliste for gjeldende pbl.",
+          "asDictionary": "true#NOTES#Values: true,false",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url"
         }
       }
     ],
