@@ -23,7 +23,7 @@
       "creation": "2025-09-16",
       "publication": "2025-09-16",
       "revision": "2025-09-16",
-      "metadata": "2026-01-08"
+      "metadata": "2026-01-28"
     },
     "responsibleParties": [
       {
@@ -95,21 +95,21 @@
     "distributions": [
       {
         "format": {
-          "format": "OGC:WMS"
+          "format": "WWW:DOWNLOAD-1.0-http--download"
         },
         "access": {
-          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
-          "protocol": "OGC:WMS"
+          "href": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
+          "protocol": "WWW:DOWNLOAD-1.0-http--download"
         }
       },
       {
-        "title": "WMS-tjeneste",
+        "title": "Egen nedlastningsside",
         "format": {
-          "format": "WMS-tjeneste"
+          "format": "Egen nedlastningsside"
         },
         "access": {
-          "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
-          "protocol": "OGC:WMS"
+          "href": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
+          "protocol": "WWW:DOWNLOAD-1.0-http--download"
         }
       },
       {
@@ -129,7 +129,7 @@
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2026-01-08",
+    "metadataDate": "2026-01-28",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
@@ -152,10 +152,16 @@
       "title": "Metadata (ISO 19139)"
     },
     {
-      "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+      "href": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
       "rel": "enclosure",
       "type": "text/html",
       "title": "Nedlasting"
+    },
+    {
+      "href": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "Kartvisning"
     },
     {
       "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://nap.ft.dibk.no/services/wms/reguleringsplaner/",

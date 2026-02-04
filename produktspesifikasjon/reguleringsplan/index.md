@@ -110,18 +110,18 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Distribusjoner**:
 
-- **format**: - **format**: OGC:WMS
+- **format**: - **format**: WWW:DOWNLOAD-1.0-http--download
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
 
-- **tittel**: WMS-tjeneste
-  **format**: - **format**: WMS-tjeneste
+- **tittel**: Egen nedlastningsside
+  **format**: - **format**: Egen nedlastningsside
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
 
 - **tittel**: Reguleringsplaner (landsdekkende kopi)
   **format**: - **format**: PNG
@@ -138,7 +138,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2026-01-08
+**Metadatadato**: 2026-01-28
 
 **språk**: nor
 
