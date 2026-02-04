@@ -1,5 +1,5 @@
 {
-  "identification": {
+  "identificationSection": {
     "id": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
     "title": "Planområde for planlegging igangsatt",
     "abstract": "Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.",
@@ -76,10 +76,17 @@
       "level": "dataset"
     }
   },
-  "maintenance": {
-    "maintenanceFrequency": "Kontinuerlig",
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Kontinuerlig",
     "maintenanceNote": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.",
-    "status": "Planlagt"
+    "maintenanceAndUpdateStatement": "Planlagt",
+    "dataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent"
+        }
+      ]
+    }
   },
   "delivery": {
     "distributions": [
