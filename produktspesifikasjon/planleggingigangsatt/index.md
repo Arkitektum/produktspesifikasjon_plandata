@@ -116,6 +116,10 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 **Status**: Planlagt
 
+**dataAcquisitionAndProcessing**:
+
+- **processStep**: - **description**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
+
 ## Leveranse
 
 **Distribusjoner**:
