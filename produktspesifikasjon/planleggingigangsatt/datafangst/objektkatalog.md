@@ -359,3 +359,33 @@ Relasjoner
 
 **Arv**
 Fellesegenskaper
+
+### Kodelister
+
+#### «CodeList» Kommunenummer
+
+**Definisjon:** ekstern kodeliste for kommunenummer
+Koder med status Gyldig refererer til dagens kommuner, mens koder med status Utgått referer til utgåtte kommunenummer
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer">https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «CodeList» RpPlantype
+
+**Definisjon:** ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan.
+
+#### «CodeList» Lovreferanse
+
+**Definisjon:** ekstern kodeliste for gjeldende pbl.
