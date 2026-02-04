@@ -56,6 +56,5 @@ package "Objekttyper" {
   Fellesegenskaper <|-- Arealplan
   Arealplan --> Planomr_de : planleggingIgangsatt [1..*]
   Fellesegenskaper <|-- Planomr_de
-  Planomr_de --> Arealplan
 
 @enduml
