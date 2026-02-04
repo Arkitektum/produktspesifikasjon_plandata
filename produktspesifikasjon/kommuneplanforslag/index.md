@@ -126,7 +126,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2026-01-27
+**Metadatadato**: 2026-01-28
 
 **språk**: nor
 
