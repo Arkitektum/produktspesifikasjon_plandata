@@ -18,7 +18,7 @@
       "creation": "2025-10-17",
       "publication": "2025-10-17",
       "revision": "2025-10-17",
-      "metadata": "2025-12-16"
+      "metadata": "2026-01-28"
     },
     "responsibleParties": [
       {
@@ -69,7 +69,7 @@
     "usage": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
   },
   "referenceSystems": {
-    "spatialRepresentationType": "Vektor"
+    "spatialRepresentationType": "Rasterbilde"
   },
   "dataQuality": {
     "scope": {
@@ -119,7 +119,7 @@
   "metadata": {
     "standard": "ISO19115",
     "standardVersion": "2003",
-    "metadataDate": "2025-12-16",
+    "metadataDate": "2026-01-28",
     "language": "nor",
     "pointOfContact": {
       "organization": "Direktoratet for byggkvalitet",
