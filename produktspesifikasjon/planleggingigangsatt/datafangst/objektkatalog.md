@@ -1,68 +1,6 @@
 ### Datamodell
 
-```plantuml
-@startuml
-title Planområde for planlegging igangsatt - datafangst - Objekttyper
-
-skinparam backgroundColor #F5F5F5
-skinparam shadowing false
-skinparam RoundCorner 6
-skinparam ArrowColor #6C8198
-skinparam class {
-  BackgroundColor #FBF2E8
-  BorderColor #9C8578
-  FontColor #2D201A
-  HeaderBackgroundColor #EFE1D6
-  HeaderFontColor #2D201A
-  AttributeIconSize 0
-}
-skinparam note {
-  BackgroundColor #FFFFFF
-  BorderColor #6C8198
-  FontColor #2D201A
-}
-skinparam stereotypeCBackgroundColor #EAD9CE
-skinparam stereotypeCBorderColor #9C8578
-skinparam stereotypeCFontColor #2D201A
-
-package "Objekttyper" {
-
-  abstract class Fellesegenskaper <<featureType>> {
-    + identifikasjon [1] : Identifikasjon
-    + oppdateringsdato [1] : Date
-  }
-
-  class Arealplan <<featureType>> {
-    + nasjonalArealplanId [1] : NasjonalArealplanId
-    + plantype [1] : RpPlantype
-    + plannavn [0..1] : CharacterString
-    + lovreferanse [1] : Lovreferanse
-  }
-
-  class "Planområde" as Planomr_de <<featureType>> {
-    + område [1] : GM_Surface
-  }
-
-  class Identifikasjon {
-    + lokalId [1] : CharacterString
-    + navnerom [1] : CharacterString
-    + versjonId [0..1] : CharacterString
-  }
-
-  class NasjonalArealplanId {
-    + kommunenummer [0..1] : Kommunenummer
-    + landkode [0..1] : Landkode
-    + planid [1] : CharacterString
-  }
-}
-
-  Fellesegenskaper <|-- Arealplan
-  Arealplan --> Planomr_de : planleggingIgangsatt [1..*]
-  Fellesegenskaper <|-- Planomr_de
-  Planomr_de --> Arealplan
-
-@enduml
-```
+<a href="datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
 
 #### Fellesegenskaper (abstrakt)
 
