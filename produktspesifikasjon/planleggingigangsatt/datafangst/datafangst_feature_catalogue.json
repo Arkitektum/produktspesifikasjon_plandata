@@ -117,11 +117,7 @@
       "inheritance": [
         "Fellesegenskaper"
       ],
-      "associations": [
-        {
-          "target": "Arealplan"
-        }
-      ]
+      "associations": []
     },
     "geometry": {
       "name": "område",

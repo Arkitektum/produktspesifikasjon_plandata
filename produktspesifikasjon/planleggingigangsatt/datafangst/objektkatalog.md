@@ -359,6 +359,3 @@ Relasjoner
 
 **Arv**
 Fellesegenskaper
-
-**Assosiasjoner**
-Arealplan
