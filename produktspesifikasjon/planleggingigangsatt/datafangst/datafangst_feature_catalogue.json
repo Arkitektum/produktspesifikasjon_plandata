@@ -58,6 +58,7 @@
             "description": "kode som viser til offisiell nummerering av kommuner\n\nMerknad: Det presiseres at kommunenummer alltid skal ha 4 siffer, dvs. eventuelt med ledende null. Kommunenummer benyttes for kobling mot en rekke andre registre som også benytter 4 siffer.",
             "cardinality": "0..1",
             "valueDomain": {
+              "definition": "ekstern kodeliste for kommunenummer\nKoder med status Gyldig refererer til dagens kommuner, mens koder med status Utgått referer til utgåtte kommunenummer",
               "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer"
             }
           },
@@ -79,7 +80,10 @@
         "name": "plantype",
         "type": "RpPlantype",
         "description": "type reguleringsplan (pbl. §§ 12-2 og 12-3)",
-        "cardinality": "1"
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan."
+        }
       },
       {
         "name": "plannavn",
@@ -91,7 +95,10 @@
         "name": "lovreferanse",
         "type": "Lovreferanse",
         "description": "kode for hvilken lov planen vedtas etter\n\nFor reguleringsplanforslag og planlegging igangsatt skal lovreferanse = 6 (pbl 2008)",
-        "cardinality": "1"
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "ekstern kodeliste for gjeldende pbl."
+        }
       }
     ],
     "abstract": false,
