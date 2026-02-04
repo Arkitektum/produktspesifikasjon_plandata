@@ -1,5 +1,5 @@
 {
-  "identification": {
+  "identificationSection": {
     "id": "c114a146-821f-4570-aefe-a65e67c0edba",
     "title": "Reguleringsplanforslag - Høring og offentlig ettersyn",
     "abstract": "Reguleringsplanforslag er et forslag til et nytt arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder - planområdet. Reguleringsplanforslaget er utarbeidet som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Datasettet genereres fra den landsdekkende kopien av reguleringsplanforslag. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering fra kommunene sine data.",
@@ -82,10 +82,10 @@
       "statement": "Det er kun de geografiske dataene (vektordataene) av reguleringsplanforslagene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.\nEt reguleringsplanforslag kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.\nDatasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.\n- Under grunnen (tunnel) = 1\n- På grunnen/vannoverflate = 2\n- Over grunnen (bru) = 3\n- På bunnen (vann/sjø) = 4\n- I vannsøylen = 5"
     }
   },
-  "maintenance": {
-    "maintenanceFrequency": "Kontinuerlig",
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Kontinuerlig",
     "maintenanceNote": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.",
-    "status": "Planlagt"
+    "maintenanceAndUpdateStatement": "Planlagt"
   },
   "delivery": {
     "distributions": [
