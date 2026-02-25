@@ -1,68 +1,6 @@
 ### Datamodell
 
-```plantuml
-@startuml
-title Planområde for planlegging igangsatt - datafangst - Objekttyper
-
-skinparam backgroundColor #F5F5F5
-skinparam shadowing false
-skinparam RoundCorner 6
-skinparam ArrowColor #6C8198
-skinparam class {
-  BackgroundColor #FBF2E8
-  BorderColor #9C8578
-  FontColor #2D201A
-  HeaderBackgroundColor #EFE1D6
-  HeaderFontColor #2D201A
-  AttributeIconSize 0
-}
-skinparam note {
-  BackgroundColor #FFFFFF
-  BorderColor #6C8198
-  FontColor #2D201A
-}
-skinparam stereotypeCBackgroundColor #EAD9CE
-skinparam stereotypeCBorderColor #9C8578
-skinparam stereotypeCFontColor #2D201A
-
-package "Objekttyper" {
-
-  abstract class Fellesegenskaper <<featureType>> {
-    + identifikasjon [1] : Identifikasjon
-    + oppdateringsdato [1] : Date
-  }
-
-  class Arealplan <<featureType>> {
-    + nasjonalArealplanId [1] : NasjonalArealplanId
-    + plantype [1] : RpPlantype
-    + plannavn [0..1] : CharacterString
-    + lovreferanse [1] : Lovreferanse
-  }
-
-  class "Planområde" as Planomr_de <<featureType>> {
-    + område [1] : GM_Surface
-  }
-
-  class Identifikasjon {
-    + lokalId [1] : CharacterString
-    + navnerom [1] : CharacterString
-    + versjonId [0..1] : CharacterString
-  }
-
-  class NasjonalArealplanId {
-    + kommunenummer [0..1] : Kommunenummer
-    + landkode [0..1] : Landkode
-    + planid [1] : CharacterString
-  }
-}
-
-  Fellesegenskaper <|-- Arealplan
-  Arealplan --> Planomr_de : planleggingIgangsatt [1..*]
-  Fellesegenskaper <|-- Planomr_de
-  Planomr_de --> Arealplan
-
-@enduml
-```
+<a href="datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
 
 #### Fellesegenskaper (abstrakt)
 
@@ -277,6 +215,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>Landkode</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- NO – Norge. Aktuell kode for administrativ enhet for statlig vedtatte planer</td>
+    </tr>
   </tbody>
 </table>
 
@@ -326,6 +268,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>RpPlantype</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype</a></td>
     </tr>
   </tbody>
 </table>
@@ -377,6 +323,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>Lovreferanse</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- Kodeliste: <a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -392,8 +342,6 @@ Planområde – rolle: planleggingIgangsatt – kardinalitet: 1..*
 
 område for planlegging igangsatt etter pbl 2008.<br /><br />Området skal være sammenhengende i grunnriss, men kan dekke flere vertikalnivåer
 
-Geometri:<br />Type: GM_Surface
-
 Egenskaper
 
 <table class="feature-attribute-table">
@@ -404,15 +352,19 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>geometry</strong></td>
+      <td><strong>område</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>planens utstrekning i grunnriss uavhengig av vertikalnivå</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>1</td>
     </tr>
     <tr>
       <th scope="row">Type:</th>
       <td>GM_Surface</td>
-    </tr>
-    <tr>
-      <th scope="row">OGC-rolle:</th>
-      <td>primary-geometry</td>
     </tr>
   </tbody>
 </table>
@@ -422,5 +374,99 @@ Relasjoner
 **Arv**
 Fellesegenskaper
 
-**Assosiasjoner**
-Arealplan
+### Kodelister
+
+#### «CodeList» Kommunenummer
+
+**Definisjon:** ekstern kodeliste for kommunenummer
+Koder med status Gyldig refererer til dagens kommuner, mens koder med status Utgått referer til utgåtte kommunenummer
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer">https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Landkode
+
+**Definisjon:** alfanumerisk kode for nasjonalt nivå / Norge.
+
+Avledet fra "ISO 3166 Codes for the representation of names of countries and their subdivisions"
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NO</td>
+      <td>Norge. Aktuell kode for administrativ enhet for statlig vedtatte planer</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «CodeList» RpPlantype
+
+**Definisjon:** ekstern kodeliste for type reguleringsplan (pbl. §§ 12-2 og 12-3) ihht til gjeldende lov. Angir om planen er en områdeplan eller detaljplan.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rpplantype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «CodeList» Lovreferanse
+
+**Definisjon:** ekstern kodeliste for gjeldende pbl.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse">https://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/lovreferanse</a></td>
+    </tr>
+  </tbody>
+</table>

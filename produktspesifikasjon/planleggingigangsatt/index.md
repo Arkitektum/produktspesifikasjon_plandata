@@ -1,6 +1,6 @@
 ---
 title: "Planområde for planlegging igangsatt"
-updated: "2025-12-03"
+updated: "2026-01-28"
 organization: "Direktoratet for byggkvalitet"
 logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ---
@@ -115,6 +115,10 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 **Vedlikeholdsnotat**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
 
 **Status**: Planlagt
+
+**dataAcquisitionAndProcessing**:
+
+- **processStep**: - **description**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
 
 ## Leveranse
 

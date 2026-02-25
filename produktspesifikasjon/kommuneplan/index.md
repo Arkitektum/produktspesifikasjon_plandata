@@ -101,18 +101,18 @@ Dekke Norge digitalt partenes behov for overordnede arealplaner i kommunene.
 
 **Distribusjoner**:
 
-- **format**: - **format**: OGC:WMS
+- **format**: - **format**: WWW:DOWNLOAD-1.0-http--download
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
 
-- **tittel**: WMS-tjeneste
-  **format**: - **format**: WMS-tjeneste
+- **tittel**: Egen nedlastningsside
+  **format**: - **format**: Egen nedlastningsside
   **tilgang**:
 
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
-  - **protokoll**: OGC:WMS
+  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
 
 - **tittel**: Kommuneplaner (landsdekkende kopi)
   **format**: - **format**: PNG
@@ -129,7 +129,7 @@ Dekke Norge digitalt partenes behov for overordnede arealplaner i kommunene.
 
 **Standardversjon**: 2003
 
-**Metadatadato**: 2026-01-08
+**Metadatadato**: 2026-01-28
 
 **språk**: nor
 
