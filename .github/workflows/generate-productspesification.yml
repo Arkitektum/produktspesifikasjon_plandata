@@ -73,19 +73,26 @@ jobs:
               raise SystemExit(f"Config file not found: {config_path}") from exc
 
           values = {}
+          list_values = {}
+          current_list_key = None
           scopes = []
           in_scopes = False
           scopes_indent = None
           current_scope = None
+
           for raw in lines:
               line_no_comment = raw.split("#", 1)[0].rstrip("\n")
               if not line_no_comment.strip():
                   continue
+
+              # Handle scopes section (list of dicts)
               if line_no_comment.strip().startswith("scopes:"):
                   in_scopes = True
                   scopes_indent = None
                   current_scope = None
+                  current_list_key = None
                   continue
+
               if in_scopes:
                   raw_line = line_no_comment
                   indent = len(raw_line) - len(raw_line.lstrip(" "))
@@ -98,30 +105,50 @@ jobs:
                           current_scope = None
                       in_scopes = False
                   if not in_scopes:
-                      continue
-                  content = raw_line.lstrip(" ")
-                  if content.startswith("- "):
-                      if current_scope:
-                          scopes.append(current_scope)
-                      current_scope = {}
-                      content = content[2:]
-                      if ":" in content:
+                      pass  # fall through to normal parsing for this line
+                  else:
+                      content = raw_line.lstrip(" ")
+                      if content.startswith("- "):
+                          if current_scope:
+                              scopes.append(current_scope)
+                          current_scope = {}
+                          content = content[2:]
+                          if ":" in content:
+                              key, value = content.split(":", 1)
+                              key = key.strip()
+                              value = value.strip().strip("'").strip('"')
+                              if key:
+                                  current_scope[key] = value
+                      elif ":" in content and current_scope is not None:
                           key, value = content.split(":", 1)
                           key = key.strip()
                           value = value.strip().strip("'").strip('"')
                           if key:
                               current_scope[key] = value
-                  elif ":" in content and current_scope is not None:
-                      key, value = content.split(":", 1)
-                      key = key.strip()
-                      value = value.strip().strip("'").strip('"')
-                      if key:
-                          current_scope[key] = value
+                      continue
+
+              # Handle simple list items (e.g. include_only_features)
+              lstrip = line_no_comment.lstrip()
+              if lstrip.startswith("- ") and current_list_key:
+                  item = lstrip[2:].strip().strip("'").strip('"')
+                  if item:
+                      list_values.setdefault(current_list_key, []).append(item)
                   continue
+
               if ":" not in line_no_comment:
                   continue
+
               key, value = line_no_comment.strip().split(":", 1)
-              values[key.strip()] = value.strip().strip("'").strip('"')
+              key = key.strip()
+              value = value.strip().strip("'").strip('"')
+
+              if value == "":
+                  current_list_key = key
+                  list_values.setdefault(key, [])
+                  continue
+
+              current_list_key = None
+              values[key] = value
 
           if in_scopes and current_scope:
               scopes.append(current_scope)
@@ -148,6 +175,16 @@ jobs:
                   + ", ".join(missing)
               )
 
+          feature_filter = []
+          if list_values.get("include_only_features"):
+              feature_filter = list_values["include_only_features"]
+          elif values.get("include_only_features"):
+              feature_filter = [
+                  item.strip()
+                  for item in values["include_only_features"].split(",")
+                  if item.strip()
+              ]
+
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh_out:
               for source, dest in required_map.items():
                   if values.get(source):
@@ -156,6 +193,12 @@ jobs:
                   value = values.get(source)
                   if value:
                       gh_out.write(f"{dest}={value}\n")
+              if feature_filter:
+                  gh_out.write(
+                      "feature-type-filter="
+                      + ",".join(feature_filter)
+                      + "\n"
+                  )
               if scopes:
                   import json
                   gh_out.write("scopes=" + json.dumps(scopes) + "\n")
@@ -164,6 +207,7 @@ jobs:
       - id: prepare
         uses: arkitektum/ps.editor.actions@main
         with:
+          feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
           output-directory: ${{ steps.config.outputs.output-directory }}
@@ -171,7 +215,7 @@ jobs:
           scopes: ${{ steps.config.outputs.scopes }}
           updated: ${{ steps.config.outputs.updated }}
           xmi-model: ${{ steps.config.outputs.xmi-model }}
-      
+
       - name: Render UML to PNG
         run: |
           sudo apt-get update
