@@ -54,29 +54,15 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 ## Spesifikasjonsomfang
 
-**Nivå**: dataset
+- **Omfang**:
 
-**Utstrekning**:
-
-- **romlig**: - **romlig omfang**: National
-- **tidsmessig**: - **intervall**: - 2025-10-17, 2025-10-17
-
-**Juridiske begrensninger**:
-
-- **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
-- **Tilgangsbegrensninger**: Norge digitalt begrenset
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norge digitalt-lisens
-- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
-- **Sikkerhetsbegrensninger**: Ugradert
+  - **Identifikasjon**: hele datasettet
+  - **Nivå**: dataset
+  - **Utstrekning**: - **Beskrivelse**: National
 
 ## Innhold og struktur
 
-**Bruk**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
-
-## Referansesystem
-
-**Romlig representasjonstype**: Vektor
+**Beskrivelse**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
 
 ## Kvalitet
 
@@ -90,56 +76,90 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 
 **Vedlikeholdsfrekvens**: Hvert halvår
 
-**Vedlikeholdsnotat**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
-
 **Status**: Planlagt
 
 ## Leveranse
 
-**Distribusjoner**:
+- **Leveranse**:
 
-- **format**: - **format**: GEONORGE:FILEDOWNLOAD
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: GEONORGE:FILEDOWNLOAD
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteegenskap**:
+        - **type**: GEONORGE:FILEDOWNLOAD
+        - **Verdi**: GEONORGE:FILEDOWNLOAD
 
-  - **lenke**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
-  - **protokoll**: GEONORGE:FILEDOWNLOAD
+- **Leveranse**:
 
-- **tittel**: Geonorge filnedlastning
-  **format**: - **format**: Geonorge filnedlastning
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: Geonorge filnedlastning
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
+      - **Tjenesteegenskap**:
+        - **type**: Geonorge filnedlastning
+        - **Verdi**: GEONORGE:FILEDOWNLOAD
 
-  - **lenke**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
-  - **protokoll**: GEONORGE:FILEDOWNLOAD
+- **Leveranse**:
 
-- **tittel**: Kommuneplanforslag - Høring og offentlig ettersyn
-  **format**: - **format**: PNG
-  **tilgang**:
-
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
-  - **protokoll**: WMS-tjeneste
-  - **Lisens**: Tilgangsbegrensede data
-  **Notater**: Tjeneste
+  - **Leveransemedium**:
+    - **Medienavn**: Kommuneplanforslag - Høring og offentlig ettersyn
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
+      - **Tjenesteegenskap**:
+        - **type**: Kommuneplanforslag - Høring og offentlig ettersyn
+        - **Verdi**: WMS-tjeneste
+  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseomfang**: Tjeneste
 
 ## Metadata
 
-**Standard**: ISO19115
+**Metadatastandard**: ISO19115
 
-**Standardversjon**: 2003
+**Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-01-28
+**Metadatadato**: 2026-02-27
 
 **språk**: nor
 
-**Kontaktpunkt**:
+**Kontakt**:
 
-- **organisasjon**: Direktoratet for byggkvalitet
-- **epost**: ftb@dibk.no
+- **Organisasjon**: Direktoratet for byggkvalitet
+- **Kontaktperson**: Olaug Hana Nesheim
+- **Logo**: <https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg>
+- **Epost**: ftb@dibk.no
 - **rolle**: pointOfContact
 
-**Identifikatorer**:
+**Metadataidentifikator**:
 
-- **Utsteder**: geonorge
-  **kode**: de8cade6-06be-4626-a867-fcd603bda27b
+- **Utsteder**: Geonorge
+- **kode**: de8cade6-06be-4626-a867-fcd603bda27b
+- **koderom**: <https://kartkatalog.geonorge.no/metadata/>
+- **Metadatalenke**: <https://kartkatalog.geonorge.no/metadata/de8cade6-06be-4626-a867-fcd603bda27b>
 
-**Metadatalenke**:
-<https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=de8cade6-06be-4626-a867-fcd603bda27b>
+**Lenker**:
+
+- **lenke**: <https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=de8cade6-06be-4626-a867-fcd603bda27b>
+  **relasjon**: describedby
+  **type**: application/xml
+  **tittel**: Metadata (ISO 19139)
+
+- **lenke**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
+  **relasjon**: enclosure
+  **type**: text/html
+  **tittel**: Nedlasting
+
+- **lenke**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+  **relasjon**: enclosure
+  **type**: text/html
+  **tittel**: Distribusjon
+
+- **lenke**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
+  **relasjon**: alternate
+  **type**: text/html
+  **tittel**: Kartvisning
+
+- **lenke**: #!?zoom=3&lon=306722&lat=7197864&wms=<https://nap.ft.dibk.no/services/wms/kommuneplanforslag>
+  **relasjon**: service
+  **type**: text/html
+  **tittel**: Tjeneste
