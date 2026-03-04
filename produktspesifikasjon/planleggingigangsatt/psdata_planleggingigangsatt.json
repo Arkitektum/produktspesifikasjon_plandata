@@ -72,6 +72,12 @@
     ],
     "maintenance": "Kontinuerlig",
     "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2025-10-17",
@@ -123,20 +129,7 @@
     {
       "delivery": {
         "deliveryMedium": {
-          "deliveryMediumName": "OGC:API-Features",
-          "deliveryService": {
-            "serviceEndpoint": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
-            "serviceProperty": {
-              "type": "OGC:API-Features",
-              "value": "OGC:API-Features"
-            }
-          }
-        }
-      }
-    },
-    {
-      "delivery": {
-        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "OGC API-Features",
           "deliveryService": {
             "serviceEndpoint": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
@@ -145,7 +138,44 @@
               "value": "OGC:API-Features"
             }
           }
-        }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WMS-tjeneste",
+          "deliveryService": {
+            "serviceEndpoint": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
+            "serviceProperty": {
+              "type": "WMS-tjeneste",
+              "value": "OGC:WMS"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          },
+          {
+            "formatName": "BMP"
+          },
+          {
+            "formatName": "GeoTIFF"
+          },
+          {
+            "formatName": "JPEG"
+          },
+          {
+            "formatName": "TIFF"
+          }
+        ]
       }
     },
     {

@@ -50,6 +50,49 @@ Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes 
 
 Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet og kan medvirke i prosessen.
 
+### Bruksområde
+
+Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
+
+### Romlig representasjonstype
+
+Rasterbilde/digital terrengmodell
+
+### Romlig oppløsning
+
+**Avstand**:
+
+- **Måleenhet**: meter
+- **Verdi**: 0.01
+
+### Utstrekning
+
+**Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-10-17
+  - **Til**: 2025-10-17
+
+### Begrensninger
+
+**Juridiske begrensninger**:
+
+- **Tilgangsbegrensninger**: Åpne data
+- **Bruksbegrensninger**: Lisens
+- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
+- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
+
+**Sikkerhetsbegrensninger**:
+
+- **Klassifisering**: Ugradert
+
 ## Spesifikasjonsomfang
 
 - **Omfang**:
@@ -113,22 +156,35 @@ Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at n
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **Medienavn**: OGC:API-Features
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
-      - **Tjenesteegenskap**:
-        - **type**: OGC:API-Features
-        - **Verdi**: OGC:API-Features
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
     - **Medienavn**: OGC API-Features
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
       - **Tjenesteegenskap**:
         - **type**: OGC API-Features
         - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: WMS-tjeneste
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
+      - **Tjenesteegenskap**:
+        - **type**: WMS-tjeneste
+        - **Verdi**: OGC:WMS
+  - **Leveranseformat**:
+    - **Formatnavn**: PNG
+
+    - **Formatnavn**: BMP
+
+    - **Formatnavn**: GeoTIFF
+
+    - **Formatnavn**: JPEG
+
+    - **Formatnavn**: TIFF
 
 - **Leveranse**:
 
