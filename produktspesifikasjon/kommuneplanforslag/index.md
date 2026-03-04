@@ -52,6 +52,50 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette 
 
 Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene.
 
+### Bruksområde
+
+Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
+
+### Romlig representasjonstype
+
+Vektor
+
+### Utstrekning
+
+**Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-10-17
+  - **Til**: 2025-10-17
+
+### Tilleggsinformasjon
+
+Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
+
+### Begrensninger
+
+**Ressursbegrensninger**:
+
+- **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
+
+**Juridiske begrensninger**:
+
+- **Tilgangsbegrensninger**: Norge digitalt begrenset
+- **Bruksbegrensninger**: Lisens
+- **Lisens**: Norge digitalt-lisens
+- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+
+**Sikkerhetsbegrensninger**:
+
+- **Klassifisering**: Ugradert
+
 ## Spesifikasjonsomfang
 
 - **Omfang**:
@@ -83,22 +127,124 @@ Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **Medienavn**: GEONORGE:FILEDOWNLOAD
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: WMS-tjeneste
     - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
       - **Tjenesteegenskap**:
-        - **type**: GEONORGE:FILEDOWNLOAD
-        - **Verdi**: GEONORGE:FILEDOWNLOAD
+        - **type**: WMS-tjeneste
+        - **Verdi**: OGC:WMS
+  - **Leveranseformat**:
+    - **Formatnavn**: PNG
+
+    - **Formatnavn**: JPEG
+
+    - **Formatnavn**: GeoTIFF
+
+    - **Formatnavn**: BMP
+
+    - **Formatnavn**: TIFF
 
 - **Leveranse**:
 
   - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommuneplanforslag>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommunedelplanforslag>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Atom Feed
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/atom>
+      - **Tjenesteegenskap**:
+        - **type**: Atom Feed
+        - **Verdi**: W3C:AtomFeed
+  - **Leveranseformat**: - **Formatnavn**: PostGIS
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Atom Feed
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommunedelplanforslag/atom>
+      - **Tjenesteegenskap**:
+        - **type**: Atom Feed
+        - **Verdi**: W3C:AtomFeed
+  - **Leveranseformat**: - **Formatnavn**: PostGIS
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
     - **Medienavn**: Geonorge filnedlastning
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
       - **Tjenesteegenskap**:
         - **type**: Geonorge filnedlastning
         - **Verdi**: GEONORGE:FILEDOWNLOAD
+  - **Leveranseformat**: - **Formatnavn**: PostGIS
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Egen nedlastningsside
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+      - **Tjenesteegenskap**:
+        - **type**: Egen nedlastningsside
+        - **Verdi**: WWW:DOWNLOAD-1.0-http--download
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Geonorge filnedlastning
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommunedelplanforslag/download>
+      - **Tjenesteegenskap**:
+        - **type**: Geonorge filnedlastning
+        - **Verdi**: GEONORGE:FILEDOWNLOAD
+  - **Leveranseformat**: - **Formatnavn**: PostGIS
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Geonorge nedlastning
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteegenskap**:
+        - **type**: Geonorge nedlastning
+        - **Verdi**: GEONORGE:DOWNLOAD
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoPackage
+
+    - **Formatnavn**: GML
+
+    - **Formatnavn**: PostGIS
 
 - **Leveranse**:
 

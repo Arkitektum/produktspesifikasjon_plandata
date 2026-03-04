@@ -70,6 +70,12 @@
     ],
     "maintenance": "Hvert halvår",
     "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2025-10-17",
@@ -114,20 +120,119 @@
     {
       "delivery": {
         "deliveryMedium": {
-          "deliveryMediumName": "GEONORGE:FILEDOWNLOAD",
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WMS-tjeneste",
           "deliveryService": {
-            "serviceEndpoint": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities",
             "serviceProperty": {
-              "type": "GEONORGE:FILEDOWNLOAD",
-              "value": "GEONORGE:FILEDOWNLOAD"
+              "type": "WMS-tjeneste",
+              "value": "OGC:WMS"
             }
           }
-        }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          },
+          {
+            "formatName": "JPEG"
+          },
+          {
+            "formatName": "GeoTIFF"
+          },
+          {
+            "formatName": "BMP"
+          },
+          {
+            "formatName": "TIFF"
+          }
+        ]
       }
     },
     {
       "delivery": {
         "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/kommuneplanforslag",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/kommunedelplanforslag",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommuneplanforslag/atom",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommunedelplanforslag/atom",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "Geonorge filnedlastning",
           "deliveryService": {
             "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommuneplanforslag/download",
@@ -136,7 +241,78 @@
               "value": "GEONORGE:FILEDOWNLOAD"
             }
           }
-        }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge filnedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommunedelplanforslag/download",
+            "serviceProperty": {
+              "type": "Geonorge filnedlastning",
+              "value": "GEONORGE:FILEDOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoPackage"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          }
+        ]
       }
     },
     {
