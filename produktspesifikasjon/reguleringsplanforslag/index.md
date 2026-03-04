@@ -52,28 +52,15 @@ Dekke Norge digitalt parter sine behov for tilgang til reguleringsplanforslag (g
 
 ## Spesifikasjonsomfang
 
-**Nivå**: dataset
+- **Omfang**:
 
-**Utstrekning**:
-
-- **romlig**: - **romlig omfang**: National
-- **tidsmessig**: - **intervall**: - 2025-10-17, 2025-10-17
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Norge digitalt begrenset
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norge digitalt-lisens
-- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
-- **Sikkerhetsbegrensninger**: Ugradert
+  - **Identifikasjon**: hele datasettet
+  - **Nivå**: dataset
+  - **Utstrekning**: - **Beskrivelse**: National
 
 ## Innhold og struktur
 
-**Bruk**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
-
-## Referansesystem
-
-**Romlig representasjonstype**: Vektor
+**Beskrivelse**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
 
 ## Kvalitet
 
@@ -95,56 +82,90 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
 
-**Vedlikeholdsnotat**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
-
 **Status**: Planlagt
 
 ## Leveranse
 
-**Distribusjoner**:
+- **Leveranse**:
 
-- **format**: - **format**: WWW:DOWNLOAD-1.0-http--download
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: WWW:DOWNLOAD-1.0-http--download
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteegenskap**:
+        - **type**: WWW:DOWNLOAD-1.0-http--download
+        - **Verdi**: WWW:DOWNLOAD-1.0-http--download
 
-  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
-  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
+- **Leveranse**:
 
-- **tittel**: Egen nedlastningsside
-  **format**: - **format**: Egen nedlastningsside
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: Egen nedlastningsside
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+      - **Tjenesteegenskap**:
+        - **type**: Egen nedlastningsside
+        - **Verdi**: WWW:DOWNLOAD-1.0-http--download
 
-  - **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
-  - **protokoll**: WWW:DOWNLOAD-1.0-http--download
+- **Leveranse**:
 
-- **tittel**: Reguleringsplanforslag - Høring og offentlig ettersyn
-  **format**: - **format**: PNG
-  **tilgang**:
-
-  - **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
-  - **protokoll**: WMS-tjeneste
-  - **Lisens**: Tilgangsbegrensede data
-  **Notater**: Tjeneste
+  - **Leveransemedium**:
+    - **Medienavn**: Reguleringsplanforslag - Høring og offentlig ettersyn
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
+      - **Tjenesteegenskap**:
+        - **type**: Reguleringsplanforslag - Høring og offentlig ettersyn
+        - **Verdi**: WMS-tjeneste
+  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseomfang**: Tjeneste
 
 ## Metadata
 
-**Standard**: ISO19115
+**Metadatastandard**: ISO19115
 
-**Standardversjon**: 2003
+**Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-01-28
+**Metadatadato**: 2026-02-27
 
 **språk**: nor
 
-**Kontaktpunkt**:
+**Kontakt**:
 
-- **organisasjon**: Direktoratet for byggkvalitet
-- **epost**: ftb@dibk.no
+- **Organisasjon**: Direktoratet for byggkvalitet
+- **Kontaktperson**: Olaug Hana Nesheim
+- **Logo**: <https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg>
+- **Epost**: ftb@dibk.no
 - **rolle**: pointOfContact
 
-**Identifikatorer**:
+**Metadataidentifikator**:
 
-- **Utsteder**: geonorge
-  **kode**: c114a146-821f-4570-aefe-a65e67c0edba
+- **Utsteder**: Geonorge
+- **kode**: c114a146-821f-4570-aefe-a65e67c0edba
+- **koderom**: <https://kartkatalog.geonorge.no/metadata/>
+- **Metadatalenke**: <https://kartkatalog.geonorge.no/metadata/c114a146-821f-4570-aefe-a65e67c0edba>
 
-**Metadatalenke**:
-<https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=c114a146-821f-4570-aefe-a65e67c0edba>
+**Lenker**:
+
+- **lenke**: <https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=c114a146-821f-4570-aefe-a65e67c0edba>
+  **relasjon**: describedby
+  **type**: application/xml
+  **tittel**: Metadata (ISO 19139)
+
+- **lenke**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
+  **relasjon**: enclosure
+  **type**: text/html
+  **tittel**: Nedlasting
+
+- **lenke**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+  **relasjon**: enclosure
+  **type**: text/html
+  **tittel**: Distribusjon
+
+- **lenke**: <https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities>
+  **relasjon**: alternate
+  **type**: text/html
+  **tittel**: Kartvisning
+
+- **lenke**: #!?zoom=3&lon=306722&lat=7197864&wms=<https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/>
+  **relasjon**: service
+  **type**: text/html
+  **tittel**: Tjeneste
