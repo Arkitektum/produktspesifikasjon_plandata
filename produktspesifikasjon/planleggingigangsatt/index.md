@@ -52,29 +52,21 @@ Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at n
 
 ## Spesifikasjonsomfang
 
-**Nivå**:
-#### datafangst
-Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+- **Omfang**:
 
-#### innsynstjeneste
-Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+  - **Identifikasjon**: hele datasettet
+  - **Nivå**: dataset
+  - **Utstrekning**: - **Beskrivelse**: National
+  - **Nivåbeskrivelse**:
+    #### datafangst
+    Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 
-**Utstrekning**:
-
-- **romlig**: - **romlig omfang**: National
-- **tidsmessig**: - **intervall**: - 2025-10-17, 2025-10-17
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Åpne data
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
-- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
-- **Sikkerhetsbegrensninger**: Ugradert
+    #### innsynstjeneste
+    Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Innhold og struktur
 
-**Bruk**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
+**Beskrivelse**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
 
 ### Datamodell - datafangst
 
@@ -96,10 +88,6 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 <a href="innsynstjeneste/innsynstjeneste_feature_catalogue.png" title="Klikk for stor visning"><img src="innsynstjeneste/innsynstjeneste_feature_catalogue.png" alt="Datamodell innsynstjeneste" style="max-width: 100%; height: auto;" /></a>
 
-## Referansesystem
-
-**Romlig representasjonstype**: Rasterbilde
-
 ## Kvalitet
 
 **Nivå**: dataset
@@ -108,64 +96,95 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 
 
+## Datafangst
+
+**Datainnsamling og prosessering**:
+
+- **Prosesstrinn**: - **Beskrivelse**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
+
 ## Datavedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
 
-**Vedlikeholdsnotat**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
-
 **Status**: Planlagt
-
-**dataAcquisitionAndProcessing**:
-
-- **processStep**: - **description**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
 
 ## Leveranse
 
-**Distribusjoner**:
+- **Leveranse**:
 
-- **format**: - **format**: OGC:API-Features
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: OGC:API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
+      - **Tjenesteegenskap**:
+        - **type**: OGC:API-Features
+        - **Verdi**: OGC:API-Features
 
-  - **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
-  - **protokoll**: OGC:API-Features
+- **Leveranse**:
 
-- **tittel**: OGC API-Features
-  **format**: - **format**: OGC API-Features
-  **tilgang**:
+  - **Leveransemedium**:
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
 
-  - **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
-  - **protokoll**: OGC:API-Features
+- **Leveranse**:
 
-- **tittel**: Planområde for planlegging igangsatt
-  **format**: - **format**: PNG
-  **tilgang**:
-
-  - **lenke**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
-  - **protokoll**: WMS-tjeneste
-  - **Lisens**: Åpne data
-  **Notater**: Tjeneste
+  - **Leveransemedium**:
+    - **Medienavn**: Planområde for planlegging igangsatt
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
+      - **Tjenesteegenskap**:
+        - **type**: Planområde for planlegging igangsatt
+        - **Verdi**: WMS-tjeneste
+  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseomfang**: Tjeneste
 
 ## Metadata
 
-**Standard**: ISO19115
+**Metadatastandard**: ISO19115
 
-**Standardversjon**: 2003
+**Metadatastandardversjon**: 2003
 
 **Metadatadato**: 2026-01-28
 
 **språk**: nor
 
-**Kontaktpunkt**:
+**Kontakt**:
 
-- **organisasjon**: Direktoratet for byggkvalitet
-- **epost**: ftb@dibk.no
+- **Organisasjon**: Direktoratet for byggkvalitet
+- **Kontaktperson**: Olaug Hana Nesheim
+- **Logo**: <https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg>
+- **Epost**: ftb@dibk.no
 - **rolle**: pointOfContact
 
-**Identifikatorer**:
+**Metadataidentifikator**:
 
-- **Utsteder**: geonorge
-  **kode**: 779a554b-fc3e-48a6-b202-561b07e9d4c2
+- **Utsteder**: Geonorge
+- **kode**: 779a554b-fc3e-48a6-b202-561b07e9d4c2
+- **koderom**: <https://kartkatalog.geonorge.no/metadata/>
+- **Metadatalenke**: <https://kartkatalog.geonorge.no/metadata/779a554b-fc3e-48a6-b202-561b07e9d4c2>
 
-**Metadatalenke**:
-<https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2>
+**Lenker**:
+
+- **lenke**: <https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2>
+  **relasjon**: describedby
+  **type**: application/xml
+  **tittel**: Metadata (ISO 19139)
+
+- **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
+  **relasjon**: enclosure
+  **type**: text/html
+  **tittel**: Nedlasting
+
+- **lenke**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
+  **relasjon**: alternate
+  **type**: text/html
+  **tittel**: Kartvisning
+
+- **lenke**: #!?zoom=3&lon=306722&lat=7197864&wms=<https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/>
+  **relasjon**: service
+  **type**: text/html
+  **tittel**: Tjeneste

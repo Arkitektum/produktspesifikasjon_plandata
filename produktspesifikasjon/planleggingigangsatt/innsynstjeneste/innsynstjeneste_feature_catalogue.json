@@ -24,18 +24,17 @@
         "name": "nasjonalArealplanId",
         "type": "object",
         "cardinality": "0..1",
+        "description": "nasjonalArealplanId",
         "attributes": [
           {
             "name": "planid",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "nasjonalArealplanId.planid"
+            "cardinality": "0..1"
           },
           {
             "name": "kommunenummer",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "nasjonalArealplanId.kommunenummer"
+            "cardinality": "0..1"
           }
         ]
       },
@@ -73,24 +72,22 @@
         "name": "identifikasjon",
         "type": "object",
         "cardinality": "0..1",
+        "description": "identifikasjon",
         "attributes": [
           {
             "name": "lokalId",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.lokalId"
+            "cardinality": "0..1"
           },
           {
             "name": "navnerom",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.navnerom"
+            "cardinality": "0..1"
           },
           {
             "name": "versjonId",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.versjonId"
+            "cardinality": "0..1"
           }
         ]
       },
@@ -157,24 +154,22 @@
         "name": "identifikasjon",
         "type": "object",
         "cardinality": "0..1",
+        "description": "identifikasjon",
         "attributes": [
           {
             "name": "lokalId",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.lokalId"
+            "cardinality": "0..1"
           },
           {
             "name": "navnerom",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.navnerom"
+            "cardinality": "0..1"
           },
           {
             "name": "versjonId",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "identifikasjon.versjonId"
+            "cardinality": "0..1"
           }
         ]
       },
@@ -194,18 +189,17 @@
         "name": "nasjonalArealplanId",
         "type": "object",
         "cardinality": "0..1",
+        "description": "nasjonalArealplanId",
         "attributes": [
           {
             "name": "planid",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "nasjonalArealplanId.planid"
+            "cardinality": "0..1"
           },
           {
             "name": "kommunenummer",
             "type": "string",
-            "cardinality": "0..1",
-            "description": "nasjonalArealplanId.kommunenummer"
+            "cardinality": "0..1"
           }
         ]
       },
