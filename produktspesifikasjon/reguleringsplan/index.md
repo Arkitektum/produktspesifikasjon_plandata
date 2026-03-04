@@ -55,6 +55,66 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
 Dekke Norge digitalt parter sine behov for tilgang til reguleringsplaner (geografiske data - vektordata).
 Vise plan for bruk, vern og utforming av arealer og fysiske omgivelser i bestemte områder.
 
+### Bruksområde
+
+Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.
+
+### Romlig representasjonstype
+
+Vektor
+
+### Romlig oppløsning
+
+**Avstand**:
+
+- **Måleenhet**: meter
+- **Verdi**: 0.01
+
+### Utstrekning
+
+**Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-09-16
+  - **Til**: 2025-09-16
+
+### Tilleggsinformasjon
+
+Det er kun de geografiske dataene (vektordataene) av reguleringsplanene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
+
+En reguleringsplan kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.
+Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.
+- Under grunnen (tunnel) = 1
+- På grunnen/vannoverflate = 2
+- Over grunnen (bru) = 3
+- På bunnen (vann/sjø) = 4
+- I vannsøylen = 5
+
+### Begrensninger
+
+**Ressursbegrensninger**:
+
+- **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
+
+**Juridiske begrensninger**:
+
+- **Tilgangsbegrensninger**: Norge digitalt begrenset
+- **Bruksbegrensninger**: Lisens
+- **Lisens**: Norge digitalt-lisens
+- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+- **Andre begrensninger**: Nedlasting av data begrenset til Norge digitalt avtaleparter.
+
+**Sikkerhetsbegrensninger**:
+
+- **Klassifisering**: Ugradert
+
 ## Spesifikasjonsomfang
 
 - **Omfang**:
@@ -95,22 +155,115 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **Medienavn**: WWW:DOWNLOAD-1.0-http--download
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: WMS-tjeneste
     - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities>
       - **Tjenesteegenskap**:
-        - **type**: WWW:DOWNLOAD-1.0-http--download
-        - **Verdi**: WWW:DOWNLOAD-1.0-http--download
+        - **type**: WMS-tjeneste
+        - **Verdi**: OGC:WMS
+  - **Leveranseformat**: - **Formatnavn**: PNG
 
 - **Leveranse**:
 
   - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn1>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn2>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn3>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn4>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: OGC API-Features
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn5>
+      - **Tjenesteegenskap**:
+        - **type**: OGC API-Features
+        - **Verdi**: OGC:API-Features
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Atom Feed
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/reguleringsplaner/atom>
+      - **Tjenesteegenskap**:
+        - **type**: Atom Feed
+        - **Verdi**: W3C:AtomFeed
+  - **Leveranseformat**: - **Formatnavn**: PostGIS
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
     - **Medienavn**: Egen nedlastningsside
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
       - **Tjenesteegenskap**:
         - **type**: Egen nedlastningsside
         - **Verdi**: WWW:DOWNLOAD-1.0-http--download
+  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+
+- **Leveranse**:
+
+  - **Leveransemedium**:
+    - **unitsOfDelivery**: landsfiler
+    - **Medienavn**: Geonorge nedlastning
+    - **Leveransetjeneste**:
+      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
+      - **Tjenesteegenskap**:
+        - **type**: Geonorge nedlastning
+        - **Verdi**: GEONORGE:DOWNLOAD
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoPackage
+
+    - **Formatnavn**: GML
+
+    - **Formatnavn**: PostGIS
 
 - **Leveranse**:
 
