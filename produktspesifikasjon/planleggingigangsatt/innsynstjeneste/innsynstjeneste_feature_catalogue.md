@@ -71,6 +71,10 @@ Egenskaper
       <td><strong>nasjonalArealplanId</strong></td>
     </tr>
     <tr>
+      <th scope="row">Definisjon:</th>
+      <td>nasjonalArealplanId</td>
+    </tr>
+    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -92,10 +96,6 @@ Egenskaper
       <td><strong>nasjonalArealplanId.planid</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>nasjonalArealplanId.planid</td>
-    </tr>
-    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -115,10 +115,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>nasjonalArealplanId.kommunenummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>nasjonalArealplanId.kommunenummer</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -267,6 +263,10 @@ Egenskaper
       <td><strong>identifikasjon</strong></td>
     </tr>
     <tr>
+      <th scope="row">Definisjon:</th>
+      <td>identifikasjon</td>
+    </tr>
+    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -286,10 +286,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>identifikasjon.lokalId</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.lokalId</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -313,10 +309,6 @@ Egenskaper
       <td><strong>identifikasjon.navnerom</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.navnerom</td>
-    </tr>
-    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -336,10 +328,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>identifikasjon.versjonId</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.versjonId</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -550,6 +538,10 @@ Egenskaper
       <td><strong>identifikasjon</strong></td>
     </tr>
     <tr>
+      <th scope="row">Definisjon:</th>
+      <td>identifikasjon</td>
+    </tr>
+    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -569,10 +561,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>identifikasjon.lokalId</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.lokalId</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -596,10 +584,6 @@ Egenskaper
       <td><strong>identifikasjon.navnerom</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.navnerom</td>
-    </tr>
-    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -619,10 +603,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>identifikasjon.versjonId</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>identifikasjon.versjonId</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
@@ -696,6 +676,10 @@ Egenskaper
       <td><strong>nasjonalArealplanId</strong></td>
     </tr>
     <tr>
+      <th scope="row">Definisjon:</th>
+      <td>nasjonalArealplanId</td>
+    </tr>
+    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -717,10 +701,6 @@ Egenskaper
       <td><strong>nasjonalArealplanId.planid</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>nasjonalArealplanId.planid</td>
-    </tr>
-    <tr>
       <th scope="row">Multiplisitet:</th>
       <td>0..1</td>
     </tr>
@@ -740,10 +720,6 @@ Egenskaper
     <tr>
       <th scope="row">Navn:</th>
       <td><strong>nasjonalArealplanId.kommunenummer</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>nasjonalArealplanId.kommunenummer</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>

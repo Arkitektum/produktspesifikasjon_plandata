@@ -1,86 +1,117 @@
 {
+  "title": "Planområde for planlegging igangsatt",
+  "date": {
+    "creation": "2025-10-17",
+    "revision": "2025-10-17"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Olaug Hana Nesheim",
+    "organizationName": "Direktoratet for byggkvalitet",
+    "logo": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+    "electronicMailAddress": "ftb@dibk.no",
+    "role": "owner"
+  },
   "identificationSection": {
-    "id": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
     "title": "Planområde for planlegging igangsatt",
     "abstract": "Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.",
-    "purpose": "Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet og kan medvirke i prosessen.",
-    "language": "nor",
-    "keywords": [
+    "purpose": {
+      "summary": "Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet og kan medvirke i prosessen.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
+      }
+    },
+    "topicCategory": [
+      "Plan og eiendom"
+    ],
+    "spatialRepresentationType": "Rasterbilde/digital terrengmodell",
+    "spatialResolution": {
+      "distance": {
+        "uom": "meter",
+        "value": 0.01
+      }
+    },
+    "uniqueId": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
+    "keyword": [
       "planområde",
       "planomriss",
       "Arealplan",
       "Plan"
     ],
-    "topicCategories": [
-      "Plan og eiendom"
-    ],
-    "dates": {
-      "creation": "2025-10-17",
-      "publication": "2025-10-17",
-      "revision": "2025-10-17",
-      "metadata": "2026-01-28"
+    "restriction": {
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD) 2.0",
+        "licenseUrl": "https://data.norge.no/nlod/no/2.0"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
     },
-    "responsibleParties": [
+    "contact": [
       {
-        "name": "Olaug Hana Nesheim",
-        "organization": "Direktoratet for byggkvalitet",
-        "email": "ftb@dibk.no",
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
         "role": "owner"
       },
       {
-        "name": "Olaug Hana Nesheim",
-        "organization": "Direktoratet for byggkvalitet",
-        "email": "ftb@dibk.no",
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
         "role": "pointOfContact"
       },
       {
-        "name": "Olaug Hana Nesheim",
-        "organization": "Direktoratet for byggkvalitet",
-        "email": "ftb@dibk.no",
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
         "role": "publisher"
       }
     ],
-    "organizationLogoUrl": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
-  },
-  "scope": {
-    "level": "#### datafangst\nDatamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n\n#### innsynstjeneste\nTjeneste for innsyn i planområder som er varslet for planlegging igangsatt.",
+    "maintenance": "Kontinuerlig",
     "extent": {
-      "spatial": {
-        "spatialScope": "National"
-      },
-      "temporal": {
-        "interval": [
-          [
-            "2025-10-17",
-            "2025-10-17"
-          ]
-        ]
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2025-10-17",
+          "endPosition": "2025-10-17"
+        }
       }
     },
-    "legalConstraints": {
-      "accessConstraints": "Åpne data",
-      "useConstraints": "Lisens",
-      "license": "Norsk lisens for offentlige data (NLOD) 2.0",
-      "licenseUrl": "https://data.norge.no/nlod/no/2.0",
-      "securityConstraints": "Ugradert"
+    "date": {
+      "creation": "2025-10-17",
+      "publication": "2025-10-17",
+      "revision": "2025-10-17"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "hele datasettet",
+        "level": "dataset",
+        "extent": {
+          "description": "National"
+        },
+        "levelDescription": "#### datafangst\nDatamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.\n\n#### innsynstjeneste\nTjeneste for innsyn i planområder som er varslet for planlegging igangsatt."
+      }
     }
+  ],
+  "dataContentAndStructureSection": {
+    "narrativeDescription": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
   },
-  "dataContent": {
-    "usage": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
-  },
-  "referenceSystems": {
-    "spatialRepresentationType": "Rasterbilde"
-  },
-  "dataQuality": {
+  "dataQualitySection": {
     "scope": {
       "level": "dataset"
     }
   },
   "maintenanceSection": {
     "maintenanceAndUpdateFrequency": "Kontinuerlig",
-    "maintenanceNote": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.",
-    "maintenanceAndUpdateStatement": "Planlagt",
-    "dataAcquisitionAndProcessing": {
+    "maintenanceAndUpdateStatement": "Planlagt"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
       "processStep": [
         {
           "description": "datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent"
@@ -88,83 +119,99 @@
       ]
     }
   },
-  "delivery": {
-    "distributions": [
-      {
-        "format": {
-          "format": "OGC:API-Features"
-        },
-        "access": {
-          "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
-          "protocol": "OGC:API-Features"
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "OGC:API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
+            "serviceProperty": {
+              "type": "OGC:API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
         }
-      },
-      {
-        "title": "OGC API-Features",
-        "format": {
-          "format": "OGC API-Features"
-        },
-        "access": {
-          "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
-          "protocol": "OGC:API-Features"
-        }
-      },
-      {
-        "title": "Planområde for planlegging igangsatt",
-        "format": {
-          "format": "PNG"
-        },
-        "access": {
-          "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
-          "protocol": "WMS-tjeneste",
-          "license": "Åpne data"
-        },
-        "notes": "Tjeneste"
       }
-    ]
-  },
-  "metadata": {
-    "standard": "ISO19115",
-    "standardVersion": "2003",
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        }
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Planområde for planlegging igangsatt",
+          "deliveryService": {
+            "serviceEndpoint": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
+            "serviceProperty": {
+              "type": "Planområde for planlegging igangsatt",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
     "metadataDate": "2026-01-28",
     "language": "nor",
-    "pointOfContact": {
-      "organization": "Direktoratet for byggkvalitet",
-      "email": "ftb@dibk.no",
+    "contact": {
+      "organizationName": "Direktoratet for byggkvalitet",
+      "individualName": "Olaug Hana Nesheim",
+      "logo": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+      "electronicMailAddress": "ftb@dibk.no",
       "role": "pointOfContact"
     },
-    "identifiers": [
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/779a554b-fc3e-48a6-b202-561b07e9d4c2"
+    },
+    "links": [
       {
-        "authority": "geonorge",
-        "code": "779a554b-fc3e-48a6-b202-561b07e9d4c2"
+        "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2",
+        "rel": "describedby",
+        "type": "application/xml",
+        "title": "Metadata (ISO 19139)"
+      },
+      {
+        "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
+        "rel": "enclosure",
+        "type": "text/html",
+        "title": "Nedlasting"
+      },
+      {
+        "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
+        "rel": "alternate",
+        "type": "text/html",
+        "title": "Kartvisning"
+      },
+      {
+        "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/",
+        "rel": "service",
+        "type": "text/html",
+        "title": "Tjeneste"
       }
-    ],
-    "metadataUrl": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2"
-  },
-  "links": [
-    {
-      "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2",
-      "rel": "describedby",
-      "type": "application/xml",
-      "title": "Metadata (ISO 19139)"
-    },
-    {
-      "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
-      "rel": "enclosure",
-      "type": "text/html",
-      "title": "Nedlasting"
-    },
-    {
-      "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
-      "rel": "alternate",
-      "type": "text/html",
-      "title": "Kartvisning"
-    },
-    {
-      "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/",
-      "rel": "service",
-      "type": "text/html",
-      "title": "Tjeneste"
-    }
-  ]
+    ]
+  }
 }
