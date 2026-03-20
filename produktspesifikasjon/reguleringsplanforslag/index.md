@@ -29,20 +29,20 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** c114a146-821f-4570-aefe-a65e67c0edba\
-**Fullstendig navn:** Reguleringsplanforslag - Høring og offentlig ettersyn\
-**Versjon:** 2025-10-17\
-**Opprettet dato:** 2025-10-17\
-**Endret dato:** 2025-10-17\
-**Språk:** nor\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Unik identifikator:** c114a146-821f-4570-aefe-a65e67c0edba<br>
+> **Fullstendig navn:** Reguleringsplanforslag - Høring og offentlig ettersyn<br>
+> **Versjon:** 2025-10-17<br>
+> **Opprettet dato:** 2025-10-17<br>
+> **Endret dato:** 2025-10-17<br>
+> **Språk:** nor<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ## Om produktet Reguleringsplanforslag - Høring og offentlig ettersyn
 
 
-**Romlig representasjonstype:** Vektor\
-**Romlig oppløsning:** \
-**Begrensninger:** **Juridiske begrensninger**:
+> **Romlig representasjonstype:** Vektor<br>
+> **Romlig oppløsning:** <br>
+> **Begrensninger:** **Juridiske begrensninger**:
 
 - **Tilgangsbegrensninger**: Norge digitalt begrenset
 - **Bruksbegrensninger**: Lisens
@@ -52,8 +52,8 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+- **Klassifisering**: Ugradert<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
