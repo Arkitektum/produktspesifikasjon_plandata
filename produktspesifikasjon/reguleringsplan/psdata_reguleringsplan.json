@@ -82,6 +82,12 @@
     ],
     "maintenance": "Daglig",
     "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2025-09-16",
@@ -126,20 +132,147 @@
     {
       "delivery": {
         "deliveryMedium": {
-          "deliveryMediumName": "WWW:DOWNLOAD-1.0-http--download",
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WMS-tjeneste",
           "deliveryService": {
-            "serviceEndpoint": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/wms/reguleringsplaner/?service=WMS&request=GetCapabilities",
             "serviceProperty": {
-              "type": "WWW:DOWNLOAD-1.0-http--download",
-              "value": "WWW:DOWNLOAD-1.0-http--download"
+              "type": "WMS-tjeneste",
+              "value": "OGC:WMS"
             }
           }
-        }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          }
+        ]
       }
     },
     {
       "delivery": {
         "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn1",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn2",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn3",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn4",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn5",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/reguleringsplaner/atom",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
           "deliveryMediumName": "Egen nedlastningsside",
           "deliveryService": {
             "serviceEndpoint": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
@@ -148,7 +281,38 @@
               "value": "WWW:DOWNLOAD-1.0-http--download"
             }
           }
-        }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoPackage"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          }
+        ]
       }
     },
     {
