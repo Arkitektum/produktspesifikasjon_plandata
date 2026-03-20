@@ -17,7 +17,7 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holde
 
 **Emnekategorier:** Plan og eiendom
 
-**Geografisk utstrekning:** **Geografisk utstrekning**:
+**Geografisk utstrekning**:
 
 - **Vest**: 2.0
 - **Øst**: 33.0
@@ -33,9 +33,7 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holde
 ## Om spesifikasjonen
 
 
-> **Unik identifikator:** 41435fda-93ba-48a8-bd56-79a9287b6dad<br>
-> **Fullstendig navn:** Kommuneplaner (landsdekkende kopi)<br>
-> **Versjon:** 2025-09-16<br>
+> **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2025-09-16<br>
 > **Endret dato:** 2025-09-16<br>
 > **Språk:** nor<br>
@@ -45,22 +43,25 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holde
 
 
 > **Romlig representasjonstype:** Vektor<br>
-> **Romlig oppløsning:** <br>
-> **Begrensninger:** **Ressursbegrensninger**:
-
-- **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Norge digitalt begrenset
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norge digitalt-lisens
-- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
-
-**Sikkerhetsbegrensninger**:
-
-- **Klassifisering**: Ugradert<br>
+> **Unik identifikator:** 41435fda-93ba-48a8-bd56-79a9287b6dad<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
+>
+> **Romlig oppløsning:** 
+>
+> **Begrensninger:** **Ressursbegrensninger**:
+>
+> - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
+>
+> **Juridiske begrensninger**:
+>
+> - **Tilgangsbegrensninger**: Norge digitalt begrenset
+> - **Bruksbegrensninger**: Lisens
+> - **Lisens**: Norge digitalt-lisens
+> - **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+>
+> **Sikkerhetsbegrensninger**:
+>
+> - **Klassifisering**: Ugradert
 
 ### Formål
 
@@ -76,7 +77,8 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
   - **Identifikasjon**: hele datasettet
   - **Nivå**: dataset
-  - **Utstrekning**: - **Beskrivelse**: National
+  - **Utstrekning**:
+    - **Beskrivelse**: National
 
 ## Datainnhold og struktur
 
@@ -103,79 +105,85 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: WMS-tjeneste
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/kommuneplaner/?service=WMS&request=GetCapabilities>
       - **Tjenesteegenskap**:
         - **type**: WMS-tjeneste
         - **Verdi**: OGC:WMS
-  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseformat**:
+    - **Formatnavn**: PNG
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: OGC API-Features
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommuneplaner/>
       - **Tjenesteegenskap**:
         - **type**: OGC API-Features
         - **Verdi**: OGC:API-Features
-  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoJSON
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: OGC API-Features
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommunedelplaner>
       - **Tjenesteegenskap**:
         - **type**: OGC API-Features
         - **Verdi**: OGC:API-Features
-  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoJSON
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: Atom Feed
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplaner/atom>
       - **Tjenesteegenskap**:
         - **type**: Atom Feed
         - **Verdi**: W3C:AtomFeed
-  - **Leveranseformat**: - **Formatnavn**: PostGIS
+  - **Leveranseformat**:
+    - **Formatnavn**: PostGIS
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: Atom Feed
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommunedelplaner/atom>
       - **Tjenesteegenskap**:
         - **type**: Atom Feed
         - **Verdi**: W3C:AtomFeed
-  - **Leveranseformat**: - **Formatnavn**: PostGIS
+  - **Leveranseformat**:
+    - **Formatnavn**: PostGIS
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: Egen nedlastningsside
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
       - **Tjenesteegenskap**:
         - **type**: Egen nedlastningsside
         - **Verdi**: WWW:DOWNLOAD-1.0-http--download
-  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoJSON
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: Geonorge nedlastning
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
@@ -198,7 +206,8 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
       - **Tjenesteegenskap**:
         - **type**: Kommuneplaner (landsdekkende kopi)
         - **Verdi**: WMS-tjeneste
-  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseformat**:
+    - **Formatnavn**: PNG
   - **Leveranseomfang**: Tjeneste
 
 ## Metadata
