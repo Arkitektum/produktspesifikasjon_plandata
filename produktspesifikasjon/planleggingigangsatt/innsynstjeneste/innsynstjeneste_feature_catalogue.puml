@@ -66,6 +66,9 @@ package "Objekttyper" {
     + navnerom [0..1] : CharacterString
     + versjonId [0..1] : CharacterString
   }
+
+  class Plandokumenter {
+  }
 }
 
   Arealplan --> Planomr_de : planomrade [0..1]
