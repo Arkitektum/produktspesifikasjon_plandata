@@ -33,20 +33,20 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holde
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** 41435fda-93ba-48a8-bd56-79a9287b6dad\
-**Fullstendig navn:** Kommuneplaner (landsdekkende kopi)\
-**Versjon:** 2025-09-16\
-**Opprettet dato:** 2025-09-16\
-**Endret dato:** 2025-09-16\
-**Språk:** nor\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Unik identifikator:** 41435fda-93ba-48a8-bd56-79a9287b6dad<br>
+> **Fullstendig navn:** Kommuneplaner (landsdekkende kopi)<br>
+> **Versjon:** 2025-09-16<br>
+> **Opprettet dato:** 2025-09-16<br>
+> **Endret dato:** 2025-09-16<br>
+> **Språk:** nor<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ## Om produktet Kommuneplaner (landsdekkende kopi)
 
 
-**Romlig representasjonstype:** Vektor\
-**Romlig oppløsning:** \
-**Begrensninger:** **Ressursbegrensninger**:
+> **Romlig representasjonstype:** Vektor<br>
+> **Romlig oppløsning:** <br>
+> **Begrensninger:** **Ressursbegrensninger**:
 
 - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 
@@ -59,8 +59,8 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplaner . Denne holde
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+- **Klassifisering**: Ugradert<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
