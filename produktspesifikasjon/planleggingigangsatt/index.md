@@ -42,19 +42,19 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 > **Romlig representasjonstype:** Rasterbilde/digital terrengmodell<br>
 > **Romlig oppløsning:** **Avstand**:
-
-- **Måleenhet**: meter
-- **Verdi**: 0.01<br>
+>
+> - **Måleenhet**: meter
+> - **Verdi**: 0.01<br>
 > **Begrensninger:** **Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Åpne data
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
-- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
-
-**Sikkerhetsbegrensninger**:
-
-- **Klassifisering**: Ugradert<br>
+>
+> - **Tilgangsbegrensninger**: Åpne data
+> - **Bruksbegrensninger**: Lisens
+> - **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
+> - **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
+>
+> **Sikkerhetsbegrensninger**:
+>
+> - **Klassifisering**: Ugradert<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
