@@ -37,39 +37,12 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 **Språk:** nor\
 **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Generelt om spesifikasjonen
+## Om produktet Reguleringsplanforslag - Høring og offentlig ettersyn
 
 
-### Sammendrag
-
-Reguleringsplanforslag er et forslag til et nytt arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder - planområdet. Reguleringsplanforslaget er utarbeidet som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Datasettet genereres fra den landsdekkende kopien av reguleringsplanforslag. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering fra kommunene sine data.
-
-### Formål
-
-Dekke Norge digitalt parter sine behov for tilgang til reguleringsplanforslag (geografiske data - vektordata), spesielt i forbindelse med offentlig ettersyn og for å kunne gi høringsuttalelser.
-
-### Bruksområde
-
-Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
-
-### Romlig representasjonstype
-
-Vektor
-
-### Tilleggsinformasjon
-
-Det er kun de geografiske dataene (vektordataene) av reguleringsplanforslagene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
-Et reguleringsplanforslag kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.
-Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.
-- Under grunnen (tunnel) = 1
-- På grunnen/vannoverflate = 2
-- Over grunnen (bru) = 3
-- På bunnen (vann/sjø) = 4
-- I vannsøylen = 5
-
-### Begrensninger
-
-**Juridiske begrensninger**:
+**Romlig representasjonstype:** Vektor\
+**Romlig oppløsning:** \
+**Begrensninger:** **Juridiske begrensninger**:
 
 - **Tilgangsbegrensninger**: Norge digitalt begrenset
 - **Bruksbegrensninger**: Lisens
@@ -79,9 +52,18 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert
+- **Klassifisering**: Ugradert\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Spesifikasjonsomfang
+### Formål
+
+Dekke Norge digitalt parter sine behov for tilgang til reguleringsplanforslag (geografiske data - vektordata), spesielt i forbindelse med offentlig ettersyn og for å kunne gi høringsuttalelser.
+
+### Bruksområde
+
+Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
+
+## Omfang
 
 - **Omfang**:
 
@@ -89,11 +71,11 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
   - **Nivå**: dataset
   - **Utstrekning**: - **Beskrivelse**: National
 
-## Innhold og struktur
+## Datainnhold og struktur
 
 **Beskrivelse**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner.
 
-## Kvalitet
+## Datakvalitet
 
 **Nivå**: dataset
 
@@ -109,7 +91,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 - På bunnen (vann/sjø) = 4
 - I vannsøylen = 5
 
-## Datavedlikehold
+## Vedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
 
@@ -293,3 +275,14 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
   **relasjon**: service
   **type**: text/html
   **tittel**: Tjeneste
+
+## Tilleggsinformasjon
+
+Det er kun de geografiske dataene (vektordataene) av reguleringsplanforslagene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
+Et reguleringsplanforslag kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.
+Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.
+- Under grunnen (tunnel) = 1
+- På grunnen/vannoverflate = 2
+- Over grunnen (bru) = 3
+- På bunnen (vann/sjø) = 4
+- I vannsøylen = 5
