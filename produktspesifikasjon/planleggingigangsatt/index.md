@@ -107,28 +107,14 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 ## Referansesystem
 
-**Romlige referansesystemer**:
-
-- **kode**: EPSG:25832
-  **navn**: EUREF89 UTM sone 32, 2d
-
-- **kode**: EPSG:25833
-  **navn**: EUREF89 UTM sone 33, 2d
-
-- **kode**: EPSG:25835
-  **navn**: EUREF89 UTM sone 35, 2d
-
-- **kode**: EPSG:3035
-  **navn**: EUREF89 / ETRS89-LAEA Europe
-
-- **kode**: EPSG:4326
-  **navn**: WGS84 Geografisk
-
-- **kode**: EPSG:3857
-  **navn**: Web Mercator / Pseudo-Mercator
-
-- **kode**: EPSG:25832
-  **navn**: EUREF89 UTM sone 32, 2d
+| EPSG-kode | Navn på referansesystem |
+| --- | --- |
+| [EPSG:25832](https://epsg.io/25832) | [EUREF89 UTM sone 32, 2d](https://register.geonorge.no/epsg-koder) |
+| [EPSG:25833](https://epsg.io/25833) | [EUREF89 UTM sone 33, 2d](https://register.geonorge.no/epsg-koder) |
+| [EPSG:25835](https://epsg.io/25835) | [EUREF89 UTM sone 35, 2d](https://register.geonorge.no/epsg-koder) |
+| [EPSG:3035](https://epsg.io/3035) | [EUREF89 / ETRS89-LAEA Europe](https://register.geonorge.no/epsg-koder) |
+| [EPSG:4326](https://epsg.io/4326) | [WGS84 Geografisk](https://register.geonorge.no/epsg-koder) |
+| [EPSG:3857](https://epsg.io/3857) | [Web Mercator / Pseudo-Mercator](https://register.geonorge.no/epsg-koder) |
 
 ## Datakvalitet
 
