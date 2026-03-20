@@ -46,24 +46,24 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
 
 > **Romlig representasjonstype:** Vektor<br>
 > **Romlig oppløsning:** **Avstand**:
-
-- **Måleenhet**: meter
-- **Verdi**: 0.01<br>
+>
+> - **Måleenhet**: meter
+> - **Verdi**: 0.01<br>
 > **Begrensninger:** **Ressursbegrensninger**:
-
-- **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Norge digitalt begrenset
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norge digitalt-lisens
-- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
-- **Andre begrensninger**: Nedlasting av data begrenset til Norge digitalt avtaleparter.
-
-**Sikkerhetsbegrensninger**:
-
-- **Klassifisering**: Ugradert<br>
+>
+> - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
+>
+> **Juridiske begrensninger**:
+>
+> - **Tilgangsbegrensninger**: Norge digitalt begrenset
+> - **Bruksbegrensninger**: Lisens
+> - **Lisens**: Norge digitalt-lisens
+> - **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+> - **Andre begrensninger**: Nedlasting av data begrenset til Norge digitalt avtaleparter.
+>
+> **Sikkerhetsbegrensninger**:
+>
+> - **Klassifisering**: Ugradert<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
