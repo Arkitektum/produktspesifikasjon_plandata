@@ -31,42 +31,20 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette 
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** de8cade6-06be-4626-a867-fcd603bda27b\
-**Fullstendig navn:** Kommuneplanforslag - Høring og offentlig ettersyn\
-**Versjon:** 2025-10-17\
-**Opprettet dato:** 2025-10-17\
-**Endret dato:** 2025-10-17\
-**Språk:** nor\
+**Unik identifikator:** de8cade6-06be-4626-a867-fcd603bda27b<br>
+**Fullstendig navn:** Kommuneplanforslag - Høring og offentlig ettersyn<br>
+**Versjon:** 2025-10-17<br>
+**Opprettet dato:** 2025-10-17<br>
+**Endret dato:** 2025-10-17<br>
+**Språk:** nor<br>
 **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Generelt om spesifikasjonen
+## Om produktet Kommuneplanforslag - Høring og offentlig ettersyn
 
 
-### Sammendrag
-
-Kommuneplanen skal være kommunens overordnede styringsdokument. Den skal gi rammer for virksomhetenes planer og tiltak, og planer for bruk og vern av arealer i kommunen. Alle kommuner skal ha en kommuneplan. En samlet kommuneplan består både av en samfunnsdel med handlingsdel og en arealdel. Kommunen bestemmer gjennom vedtak av kommunal planstrategi om kommunen skal gjennomføre en full kommuneplanrevisjon av alle delene, eller om bare deler av kommuneplanen skal revideres, og hva revisjonen skal gå ut på. Kommuneplanen skal ivareta både kommunale, regionale og nasjonale mål, interesser og oppgaver, og bør omfatte alle viktige mål og oppgaver i kommunen. Den skal ta utgangspunkt i den kommunale planstrategien og legge retningslinjer og pålegg fra statlige og regionale myndigheter til grunn. Det kan utarbeides kommunedelplan for bestemte områder, temaer eller virksomhetsområder. Kommuneplanforslag er i denne sammenheng plankartet som utarbeides i forbindelse med revisjonen av kommuneplanen.
-
-Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette holdes oppdatert med data fra de originale plandataene i kommunene. Oppdateringen skjer ved synkronisering fra kommunene sine data.
-
-### Formål
-
-Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene.
-
-### Bruksområde
-
-Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
-
-### Romlig representasjonstype
-
-Vektor
-
-### Tilleggsinformasjon
-
-Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
-
-### Begrensninger
-
-**Ressursbegrensninger**:
+**Romlig representasjonstype:** Vektor<br>
+**Romlig oppløsning:** <br>
+**Begrensninger:** **Ressursbegrensninger**:
 
 - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 
@@ -79,9 +57,18 @@ Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjenge
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert
+- **Klassifisering**: Ugradert<br>
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Spesifikasjonsomfang
+### Formål
+
+Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene.
+
+### Bruksområde
+
+Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
+
+## Omfang
 
 - **Omfang**:
 
@@ -89,11 +76,11 @@ Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjenge
   - **Nivå**: dataset
   - **Utstrekning**: - **Beskrivelse**: National
 
-## Innhold og struktur
+## Datainnhold og struktur
 
 **Beskrivelse**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag.
 
-## Kvalitet
+## Datakvalitet
 
 **Nivå**: dataset
 
@@ -101,7 +88,7 @@ Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjenge
 
 **Beskrivelse**: Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
 
-## Datavedlikehold
+## Vedlikehold
 
 **Vedlikeholdsfrekvens**: Hvert halvår
 
@@ -294,3 +281,7 @@ Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjenge
   **relasjon**: service
   **type**: text/html
   **tittel**: Tjeneste
+
+## Tilleggsinformasjon
+
+Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
