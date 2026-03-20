@@ -91,7 +91,7 @@ package "Objekttyper" {
     + nasjonalArealplanId.kommunenummer [0..1] : CharacterString
   }
 
-  class object {
+  class object <<dataType>> {
     + planid [0..1] : CharacterString
     + kommunenummer [0..1] : CharacterString
   }

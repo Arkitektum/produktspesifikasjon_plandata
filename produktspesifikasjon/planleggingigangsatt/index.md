@@ -37,12 +37,25 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 **Språk:** nor\
 **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Generelt om spesifikasjonen
+## Om produktet Planområde for planlegging igangsatt
 
 
-### Sammendrag
+**Romlig representasjonstype:** Rasterbilde/digital terrengmodell\
+**Romlig oppløsning:** **Avstand**:
 
-Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.
+- **Måleenhet**: meter
+- **Verdi**: 0.01\
+**Begrensninger:** **Juridiske begrensninger**:
+
+- **Tilgangsbegrensninger**: Åpne data
+- **Bruksbegrensninger**: Lisens
+- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
+- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
+
+**Sikkerhetsbegrensninger**:
+
+- **Klassifisering**: Ugradert\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
@@ -52,31 +65,7 @@ Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at n
 
 Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
 
-### Romlig representasjonstype
-
-Rasterbilde/digital terrengmodell
-
-### Romlig oppløsning
-
-**Avstand**:
-
-- **Måleenhet**: meter
-- **Verdi**: 0.01
-
-### Begrensninger
-
-**Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Åpne data
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norsk lisens for offentlige data (NLOD) 2.0
-- **Lisenslenke**: <https://data.norge.no/nlod/no/2.0>
-
-**Sikkerhetsbegrensninger**:
-
-- **Klassifisering**: Ugradert
-
-## Spesifikasjonsomfang
+## Omfang
 
 - **Omfang**:
 
@@ -90,7 +79,7 @@ Rasterbilde/digital terrengmodell
     #### innsynstjeneste
     Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
-## Innhold og struktur
+## Datainnhold og struktur
 
 **Beskrivelse**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
 
@@ -114,7 +103,7 @@ Rasterbilde/digital terrengmodell
 
 <a href="innsynstjeneste/innsynstjeneste_feature_catalogue.png" title="Klikk for stor visning"><img src="innsynstjeneste/innsynstjeneste_feature_catalogue.png" alt="Datamodell innsynstjeneste" style="max-width: 100%; height: auto;" /></a>
 
-## Kvalitet
+## Datakvalitet
 
 **Nivå**: dataset
 
@@ -122,13 +111,13 @@ Rasterbilde/digital terrengmodell
 
 
 
-## Datafangst
+## Datafangst og produksjon
 
 **Datainnsamling og prosessering**:
 
 - **Prosesstrinn**: - **Beskrivelse**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
 
-## Datavedlikehold
+## Vedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
 
@@ -227,3 +216,4 @@ Rasterbilde/digital terrengmodell
   **relasjon**: service
   **type**: text/html
   **tittel**: Tjeneste
+
