@@ -47,6 +47,38 @@
     "description": "dataobjekt for igangsatt planlegging etter pbl",
     "attributes": [
       {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et dataobjekt\n\nFølger dataobjektet og identifiserer det i hele dets levetid.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt.\n\nSkal være en uuid, slik at den er unik, uavhengig av navnerommet",
+            "cardinality": "1"
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt.\n\nNavnerom anbefales å være en http-URI og må være registrert i data.geonorge.no\nFor plan anbefales navnerommet http://data.geonorge.no/sosi/plan",
+            "cardinality": "1"
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans)",
+            "cardinality": "0..1"
+          }
+        ]
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "tidspunkt for siste endring på dataobjektet",
+        "cardinality": "1"
+      },
+      {
         "name": "nasjonalArealplanId",
         "type": "NasjonalArealplanId",
         "description": "landsdekkende entydig og unik identifikasjon av en arealplan (pbl. §§ 6-4, 9-1, og 12-1, samt kart- og planforskriften § 9 andre og sjette ledd).\n\nDenne identifikatoren tildeles planen når planprosessen starter, og den kan ikke endres undervegs av forslagstiller.",
@@ -133,6 +165,38 @@
     "name": "Planområde",
     "description": "område for planlegging igangsatt etter pbl 2008.\n\nOmrådet skal være sammenhengende i grunnriss, men kan dekke flere vertikalnivåer",
     "attributes": [
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et dataobjekt\n\nFølger dataobjektet og identifiserer det i hele dets levetid.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt.\n\nSkal være en uuid, slik at den er unik, uavhengig av navnerommet",
+            "cardinality": "1"
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt.\n\nNavnerom anbefales å være en http-URI og må være registrert i data.geonorge.no\nFor plan anbefales navnerommet http://data.geonorge.no/sosi/plan",
+            "cardinality": "1"
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans)",
+            "cardinality": "0..1"
+          }
+        ]
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "tidspunkt for siste endring på dataobjektet",
+        "cardinality": "1"
+      },
       {
         "name": "område",
         "type": "GM_Surface",
