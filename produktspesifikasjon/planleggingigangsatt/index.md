@@ -29,23 +29,23 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
-**Fullstendig navn:** Planområde for planlegging igangsatt<br>
-**Versjon:** 2025-10-17<br>
-**Opprettet dato:** 2025-10-17<br>
-**Endret dato:** 2025-10-17<br>
-**Språk:** nor<br>
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
+> **Fullstendig navn:** Planområde for planlegging igangsatt<br>
+> **Versjon:** 2025-10-17<br>
+> **Opprettet dato:** 2025-10-17<br>
+> **Endret dato:** 2025-10-17<br>
+> **Språk:** nor<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ## Om produktet Planområde for planlegging igangsatt
 
 
-**Romlig representasjonstype:** Rasterbilde/digital terrengmodell<br>
-**Romlig oppløsning:** **Avstand**:
+> **Romlig representasjonstype:** Rasterbilde/digital terrengmodell<br>
+> **Romlig oppløsning:** **Avstand**:
 
 - **Måleenhet**: meter
 - **Verdi**: 0.01<br>
-**Begrensninger:** **Juridiske begrensninger**:
+> **Begrensninger:** **Juridiske begrensninger**:
 
 - **Tilgangsbegrensninger**: Åpne data
 - **Bruksbegrensninger**: Lisens
@@ -55,7 +55,7 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 **Sikkerhetsbegrensninger**:
 
 - **Klassifisering**: Ugradert<br>
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
