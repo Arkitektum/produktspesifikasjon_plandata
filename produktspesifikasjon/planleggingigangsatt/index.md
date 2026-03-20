@@ -7,40 +7,38 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Planområde for planlegging igangsatt
 
+*Datasettet viser område(r) hvor det er varslet at planlegging skal igangsettes etter plan- og bygningsloven (pbl). Formålet er å kunne identifisere og vise hvor planarbeid er startet, slik at naboer, berørte parter, høringsmyndigheter og kommunen får informasjon om planinitiativet.*
+
+**Nøkkelord:** planområde, planomriss, Arealplan, Plan
+
+**Emnekategorier:** Plan og eiendom
+
+**Geografisk utstrekning:** **Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-10-17
+  - **Til**: 2025-10-17
+
+## Om spesifikasjonen
+
+
+**Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2\
+**Fullstendig navn:** Planområde for planlegging igangsatt\
+**Versjon:** 2025-10-17\
+**Opprettet dato:** 2025-10-17\
+**Endret dato:** 2025-10-17\
+**Språk:** nor\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
+
 ## Generelt om spesifikasjonen
 
-
-### Unik identifisering
-
-779a554b-fc3e-48a6-b202-561b07e9d4c2
-
-#### Fullstendig navn
-
-Planområde for planlegging igangsatt
-
-#### Versjon
-
-2025-10-17
-
-### Referansedato
-
-2025-10-17
-
-### Ansvarlig organisasjon
-
-Direktoratet for byggkvalitet
-
-### Språk
-
-nor
-
-### Hovedtema
-
-planområde, planomriss, Arealplan, Plan
-
-### Temakategori
-
-Plan og eiendom
 
 ### Sammendrag
 
@@ -64,21 +62,6 @@ Rasterbilde/digital terrengmodell
 
 - **Måleenhet**: meter
 - **Verdi**: 0.01
-
-### Utstrekning
-
-**Geografisk utstrekning**:
-
-- **Vest**: 2.0
-- **Øst**: 33.0
-- **Sør**: 57.0
-- **Nord**: 72.0
-
-**Tidsmessig utstrekning**:
-
-- **Tidsperiode**:
-  - **Fra**: 2025-10-17
-  - **Til**: 2025-10-17
 
 ### Begrensninger
 
