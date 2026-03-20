@@ -31,20 +31,20 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette 
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** de8cade6-06be-4626-a867-fcd603bda27b\
-**Fullstendig navn:** Kommuneplanforslag - Høring og offentlig ettersyn\
-**Versjon:** 2025-10-17\
-**Opprettet dato:** 2025-10-17\
-**Endret dato:** 2025-10-17\
-**Språk:** nor\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Unik identifikator:** de8cade6-06be-4626-a867-fcd603bda27b<br>
+> **Fullstendig navn:** Kommuneplanforslag - Høring og offentlig ettersyn<br>
+> **Versjon:** 2025-10-17<br>
+> **Opprettet dato:** 2025-10-17<br>
+> **Endret dato:** 2025-10-17<br>
+> **Språk:** nor<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ## Om produktet Kommuneplanforslag - Høring og offentlig ettersyn
 
 
-**Romlig representasjonstype:** Vektor\
-**Romlig oppløsning:** \
-**Begrensninger:** **Ressursbegrensninger**:
+> **Romlig representasjonstype:** Vektor<br>
+> **Romlig oppløsning:** <br>
+> **Begrensninger:** **Ressursbegrensninger**:
 
 - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 
@@ -57,8 +57,8 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette 
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+- **Klassifisering**: Ugradert<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
