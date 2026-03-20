@@ -26,13 +26,13 @@ package "Objekttyper" {
 
   class Arealplan <<featureType>> {
     + objid [0..1] : Integer
-    + nasjonalArealplanId [0..1] : Object
+    + nasjonalArealplanId [0..1] : NasjonalArealplanId
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
     + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
     + forslagsstillertype [0..1] : CharacterString
     + lovreferanse [0..1] : CharacterString
-    + identifikasjon [0..1] : Object
+    + identifikasjon [0..1] : Identifikasjon
     + forsteDigitaliseringsdato [0..1] : DateTime
     + oppdateringsdato [0..1] : DateTime
     + link [0..1] : CharacterString
@@ -43,26 +43,12 @@ package "Objekttyper" {
     + geometry [1] : GM_Object
   }
 
-  Arealplan *-- Arealplan_nasjonalArealplanId : nasjonalArealplanId [0..1]
-  Arealplan *-- Arealplan_identifikasjon : identifikasjon [0..1]
-
-  class Arealplan_nasjonalArealplanId {
-    + nasjonalArealplanId.planid [0..1] : CharacterString
-    + nasjonalArealplanId.kommunenummer [0..1] : CharacterString
-  }
-
-  class Arealplan_identifikasjon {
-    + identifikasjon.lokalId [0..1] : CharacterString
-    + identifikasjon.navnerom [0..1] : CharacterString
-    + identifikasjon.versjonId [0..1] : CharacterString
-  }
-
   class "Planområde" as Planomr_de <<featureType>> {
     + objid [0..1] : Integer
-    + identifikasjon [0..1] : Object
+    + identifikasjon [0..1] : Identifikasjon
     + arealplan [0..1] : Integer
     + førsteDigitaliseringsdato [0..1] : DateTime
-    + nasjonalArealplanId [0..1] : Object
+    + nasjonalArealplanId [0..1] : NasjonalArealplanId
     + plannavn [0..1] : CharacterString
     + plantype [0..1] : CharacterString
     + kunngjøringsdatoVarselOmPlanoppstart [0..1] : Date
@@ -77,23 +63,15 @@ package "Objekttyper" {
     + geometry [1] : GM_Object
   }
 
-  Planomr_de *-- Planomr_de_identifikasjon : identifikasjon [0..1]
-  Planomr_de *-- Planomr_de_nasjonalArealplanId : nasjonalArealplanId [0..1]
-
-  class Planomr_de_identifikasjon {
-    + identifikasjon.lokalId [0..1] : CharacterString
-    + identifikasjon.navnerom [0..1] : CharacterString
-    + identifikasjon.versjonId [0..1] : CharacterString
-  }
-
-  class Planomr_de_nasjonalArealplanId {
-    + nasjonalArealplanId.planid [0..1] : CharacterString
-    + nasjonalArealplanId.kommunenummer [0..1] : CharacterString
-  }
-
-  class object <<dataType>> {
+  class NasjonalArealplanId <<dataType>> {
     + planid [0..1] : CharacterString
     + kommunenummer [0..1] : CharacterString
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
   }
 }
 
