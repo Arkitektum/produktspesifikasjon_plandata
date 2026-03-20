@@ -7,40 +7,38 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Reguleringsplanforslag - Høring og offentlig ettersyn
 
+*Reguleringsplanforslag er et forslag til et nytt arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder - planområdet. Reguleringsplanforslaget er utarbeidet som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Datasettet genereres fra den landsdekkende kopien av reguleringsplanforslag. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering fra kommunene sine data.*
+
+**Nøkkelord:** Reguleringsplanforslag, Reguleringsplan, Arealplan, Områdeplan, Detaljplan, Plan
+
+**Emnekategorier:** Plan og eiendom
+
+**Geografisk utstrekning:** **Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-10-17
+  - **Til**: 2025-10-17
+
+## Om spesifikasjonen
+
+
+**Unik identifikator:** c114a146-821f-4570-aefe-a65e67c0edba\
+**Fullstendig navn:** Reguleringsplanforslag - Høring og offentlig ettersyn\
+**Versjon:** 2025-10-17\
+**Opprettet dato:** 2025-10-17\
+**Endret dato:** 2025-10-17\
+**Språk:** nor\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
+
 ## Generelt om spesifikasjonen
 
-
-### Unik identifisering
-
-c114a146-821f-4570-aefe-a65e67c0edba
-
-#### Fullstendig navn
-
-Reguleringsplanforslag - Høring og offentlig ettersyn
-
-#### Versjon
-
-2025-10-17
-
-### Referansedato
-
-2025-10-17
-
-### Ansvarlig organisasjon
-
-Direktoratet for byggkvalitet
-
-### Språk
-
-nor
-
-### Hovedtema
-
-Reguleringsplanforslag, Reguleringsplan, Arealplan, Områdeplan, Detaljplan, Plan
-
-### Temakategori
-
-Plan og eiendom
 
 ### Sammendrag
 
@@ -57,21 +55,6 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 ### Romlig representasjonstype
 
 Vektor
-
-### Utstrekning
-
-**Geografisk utstrekning**:
-
-- **Vest**: 2.0
-- **Øst**: 33.0
-- **Sør**: 57.0
-- **Nord**: 72.0
-
-**Tidsmessig utstrekning**:
-
-- **Tidsperiode**:
-  - **Fra**: 2025-10-17
-  - **Til**: 2025-10-17
 
 ### Tilleggsinformasjon
 
