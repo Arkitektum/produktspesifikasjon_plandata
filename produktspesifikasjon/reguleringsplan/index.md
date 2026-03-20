@@ -7,40 +7,42 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 # Produktspesifikasjon: Reguleringsplaner (landsdekkende kopi)
 
+*Fra 1.1.2026 vil Direktoratet for byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen er oppdatert med distribusjoner.
+
+Reguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.
+
+Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering eller periodisk kopiering fra kommunene sine data.*
+
+**Nøkkelord:** Reguleringsplan, Arealplan, Områdeplan, Detaljregulering, Norges fastland, Norge, Kommune, Arealbruk, Plan
+
+**Emnekategorier:** Plan og eiendom
+
+**Geografisk utstrekning:** **Geografisk utstrekning**:
+
+- **Vest**: 2.0
+- **Øst**: 33.0
+- **Sør**: 57.0
+- **Nord**: 72.0
+
+**Tidsmessig utstrekning**:
+
+- **Tidsperiode**:
+  - **Fra**: 2025-09-16
+  - **Til**: 2025-09-16
+
+## Om spesifikasjonen
+
+
+**Unik identifikator:** dac27348-5c2e-4a6a-9497-c4c792108cae\
+**Fullstendig navn:** Reguleringsplaner (landsdekkende kopi)\
+**Versjon:** 2025-09-16\
+**Opprettet dato:** 2025-09-16\
+**Endret dato:** 2025-09-16\
+**Språk:** nor\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
+
 ## Generelt om spesifikasjonen
 
-
-### Unik identifisering
-
-dac27348-5c2e-4a6a-9497-c4c792108cae
-
-#### Fullstendig navn
-
-Reguleringsplaner (landsdekkende kopi)
-
-#### Versjon
-
-2025-09-16
-
-### Referansedato
-
-2025-09-16
-
-### Ansvarlig organisasjon
-
-Direktoratet for byggkvalitet
-
-### Språk
-
-nor
-
-### Hovedtema
-
-Reguleringsplan, Arealplan, Områdeplan, Detaljregulering, Norges fastland, Norge, Kommune, Arealbruk, Plan
-
-### Temakategori
-
-Plan og eiendom
 
 ### Sammendrag
 
@@ -69,21 +71,6 @@ Vektor
 
 - **Måleenhet**: meter
 - **Verdi**: 0.01
-
-### Utstrekning
-
-**Geografisk utstrekning**:
-
-- **Vest**: 2.0
-- **Øst**: 33.0
-- **Sør**: 57.0
-- **Nord**: 72.0
-
-**Tidsmessig utstrekning**:
-
-- **Tidsperiode**:
-  - **Fra**: 2025-09-16
-  - **Til**: 2025-09-16
 
 ### Tilleggsinformasjon
 
