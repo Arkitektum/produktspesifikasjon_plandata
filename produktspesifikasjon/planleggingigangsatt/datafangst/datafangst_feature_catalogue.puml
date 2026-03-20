@@ -31,6 +31,8 @@ package "Objekttyper" {
   class Arealplan <<featureType>> {
     + identifikasjon [1] : Identifikasjon
     + oppdateringsdato [1] : Date
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
     + nasjonalArealplanId [1] : NasjonalArealplanId
     + plantype [1] : RpPlantype
     + plannavn [0..1] : CharacterString
@@ -38,6 +40,8 @@ package "Objekttyper" {
   }
 
   class "Planområde" as Planomr_de <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
     + identifikasjon [1] : Identifikasjon
     + oppdateringsdato [1] : Date
     + område [1] : GM_Surface
