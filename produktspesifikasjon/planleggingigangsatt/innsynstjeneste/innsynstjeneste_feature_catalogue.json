@@ -2,16 +2,7 @@
   {
     "name": "Arealplan",
     "description": "Dataobjekt for igangsatt planlegging etter pbl",
-    "geometry": {
-      "itemType": "feature",
-      "type": "geometry-any",
-      "crs": [
-        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
-      ],
-      "storageCrs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
-      "format": "geometry-any",
-      "ogcRole": "primary-geometry"
-    },
+    "geometry": {},
     "attributes": [
       {
         "name": "objid",
@@ -108,20 +99,22 @@
         "type": "string",
         "cardinality": "0..1",
         "description": "link"
-      },
-      {
-        "name": "linkPlanomrade",
-        "type": "string",
-        "cardinality": "0..1",
-        "description": "linkPlanomrade"
-      },
-      {
-        "name": "linkPlandokumenter",
-        "type": "string",
-        "cardinality": "0..1",
-        "description": "linkPlandokumenter"
       }
-    ]
+    ],
+    "relationships": {
+      "associations": [
+        {
+          "target": "Planområde",
+          "role": "planomrade",
+          "cardinality": "0..1"
+        },
+        {
+          "target": "Plandokumenter",
+          "role": "plandokumenter",
+          "cardinality": "0..1"
+        }
+      ]
+    }
   },
   {
     "name": "Planområde",
@@ -244,19 +237,21 @@
         "type": "string",
         "cardinality": "0..1",
         "description": "link"
-      },
-      {
-        "name": "linkArealplan",
-        "type": "string",
-        "cardinality": "0..1",
-        "description": "linkArealplan"
-      },
-      {
-        "name": "linkPlandokumenter",
-        "type": "string",
-        "cardinality": "0..1",
-        "description": "linkPlandokumenter"
       }
-    ]
+    ],
+    "relationships": {
+      "associations": [
+        {
+          "target": "Arealplan",
+          "role": "arealplan",
+          "cardinality": "0..1"
+        },
+        {
+          "target": "Plandokumenter",
+          "role": "plandokumenter",
+          "cardinality": "0..1"
+        }
+      ]
+    }
   }
 ]

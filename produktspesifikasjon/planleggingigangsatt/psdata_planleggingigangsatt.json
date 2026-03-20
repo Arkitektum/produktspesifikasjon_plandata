@@ -25,7 +25,7 @@
     "topicCategory": [
       "Plan og eiendom"
     ],
-    "spatialRepresentationType": "Rasterbilde/digital terrengmodell",
+    "spatialRepresentationType": "Vektor",
     "spatialResolution": {
       "distance": {
         "uom": "meter",
@@ -107,6 +107,38 @@
   "dataContentAndStructureSection": {
     "narrativeDescription": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
   },
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4326",
+        "name": "WGS84 Geografisk"
+      },
+      {
+        "code": "EPSG:3857",
+        "name": "Web Mercator / Pseudo-Mercator"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ]
+  },
   "dataQualitySection": {
     "scope": {
       "level": "dataset"
@@ -114,7 +146,7 @@
   },
   "maintenanceSection": {
     "maintenanceAndUpdateFrequency": "Kontinuerlig",
-    "maintenanceAndUpdateStatement": "Planlagt"
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert"
   },
   "dataCaptureAndProductionSection": {
     "DataAcquisitionAndProcessing": {
@@ -202,7 +234,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-01-28",
+    "metadataDate": "2026-03-20",
     "language": "nor",
     "contact": {
       "organizationName": "Direktoratet for byggkvalitet",

@@ -36,11 +36,6 @@ package "Objekttyper" {
     + forsteDigitaliseringsdato [0..1] : DateTime
     + oppdateringsdato [0..1] : DateTime
     + link [0..1] : CharacterString
-    + linkPlanomrade [0..1] : CharacterString
-    + linkPlandokumenter [0..1] : CharacterString
-
-    ..Geometri..
-    + geometry [1] : GM_Object
   }
 
   class "Planområde" as Planomr_de <<featureType>> {
@@ -56,8 +51,6 @@ package "Objekttyper" {
     + lovreferanse [0..1] : CharacterString
     + oppdateringsdato [0..1] : DateTime
     + link [0..1] : CharacterString
-    + linkArealplan [0..1] : CharacterString
-    + linkPlandokumenter [0..1] : CharacterString
 
     ..Geometri..
     + geometry [1] : GM_Object
@@ -74,5 +67,10 @@ package "Objekttyper" {
     + versjonId [0..1] : CharacterString
   }
 }
+
+  Arealplan --> Planomr_de : planomrade [0..1]
+  Arealplan --> Plandokumenter : plandokumenter [0..1]
+  Planomr_de --> Arealplan : arealplan [0..1]
+  Planomr_de --> Plandokumenter : plandokumenter [0..1]
 
 @enduml
