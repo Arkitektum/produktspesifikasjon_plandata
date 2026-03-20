@@ -33,23 +33,23 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
 ## Om spesifikasjonen
 
 
-**Unik identifikator:** dac27348-5c2e-4a6a-9497-c4c792108cae\
-**Fullstendig navn:** Reguleringsplaner (landsdekkende kopi)\
-**Versjon:** 2025-09-16\
-**Opprettet dato:** 2025-09-16\
-**Endret dato:** 2025-09-16\
-**Språk:** nor\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Unik identifikator:** dac27348-5c2e-4a6a-9497-c4c792108cae<br>
+> **Fullstendig navn:** Reguleringsplaner (landsdekkende kopi)<br>
+> **Versjon:** 2025-09-16<br>
+> **Opprettet dato:** 2025-09-16<br>
+> **Endret dato:** 2025-09-16<br>
+> **Språk:** nor<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ## Om produktet Reguleringsplaner (landsdekkende kopi)
 
 
-**Romlig representasjonstype:** Vektor\
-**Romlig oppløsning:** **Avstand**:
+> **Romlig representasjonstype:** Vektor<br>
+> **Romlig oppløsning:** **Avstand**:
 
 - **Måleenhet**: meter
-- **Verdi**: 0.01\
-**Begrensninger:** **Ressursbegrensninger**:
+- **Verdi**: 0.01<br>
+> **Begrensninger:** **Ressursbegrensninger**:
 
 - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 
@@ -63,8 +63,8 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert\
-**Kontaktinformasjon:** Direktoratet for byggkvalitet
+- **Klassifisering**: Ugradert<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
 
