@@ -10,8 +10,6 @@
 
 Dataobjekt for igangsatt planlegging etter pbl
 
-Geometri:<br />Elementtype: feature<br />Type: geometry-any<br />Lagrings-CRS:<br />• <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><http://www.opengis.net/def/crs/OGC/1.3/CRS84></a><br />Koordinatreferansesystem (crs):<br />• <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><http://www.opengis.net/def/crs/OGC/1.3/CRS84></a>
-
 Egenskaper
 
 <table class="feature-attribute-table">
@@ -25,16 +23,8 @@ Egenskaper
       <td><strong>geometry</strong></td>
     </tr>
     <tr>
-      <th scope="row">Definisjon:</th>
-      <td>Elementtype: feature</td>
-    </tr>
-    <tr>
       <th scope="row">Type:</th>
-      <td>geometry-any</td>
-    </tr>
-    <tr>
-      <th scope="row">OGC-rolle:</th>
-      <td>primary-geometry</td>
+      <td>geometry</td>
     </tr>
   </tbody>
 </table>
@@ -423,55 +413,11 @@ Egenskaper
   </tbody>
 </table>
 
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>linkPlanomrade</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>linkPlanomrade</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>string</td>
-    </tr>
-  </tbody>
-</table>
+Relasjoner
 
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>linkPlandokumenter</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>linkPlandokumenter</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>string</td>
-    </tr>
-  </tbody>
-</table>
+**Assosiasjoner**
+Planområde – rolle: planomrade – kardinalitet: 0..1
+Plandokumenter – rolle: plandokumenter – kardinalitet: 0..1
 
 #### Planområde
 
@@ -915,52 +861,8 @@ Egenskaper
   </tbody>
 </table>
 
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>linkArealplan</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>linkArealplan</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>string</td>
-    </tr>
-  </tbody>
-</table>
+Relasjoner
 
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
-      <td><strong>linkPlandokumenter</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Definisjon:</th>
-      <td>linkPlandokumenter</td>
-    </tr>
-    <tr>
-      <th scope="row">Multiplisitet:</th>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>string</td>
-    </tr>
-  </tbody>
-</table>
+**Assosiasjoner**
+Arealplan – rolle: arealplan – kardinalitet: 0..1
+Plandokumenter – rolle: plandokumenter – kardinalitet: 0..1

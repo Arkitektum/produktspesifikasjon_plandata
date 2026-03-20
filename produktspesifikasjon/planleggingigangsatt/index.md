@@ -13,7 +13,7 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 
 **Emnekategorier:** Plan og eiendom
 
-**Geografisk utstrekning:** **Geografisk utstrekning**:
+**Geografisk utstrekning**:
 
 - **Vest**: 2.0
 - **Øst**: 33.0
@@ -29,9 +29,7 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ## Om spesifikasjonen
 
 
-> **Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
-> **Fullstendig navn:** Planområde for planlegging igangsatt<br>
-> **Versjon:** 2025-10-17<br>
+> **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2025-10-17<br>
 > **Endret dato:** 2025-10-17<br>
 > **Språk:** nor<br>
@@ -40,11 +38,15 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 ## Om produktet Planområde for planlegging igangsatt
 
 
-> **Romlig representasjonstype:** Rasterbilde/digital terrengmodell<br>
+> **Romlig representasjonstype:** Vektor<br>
+> **Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet
+>
 > **Romlig oppløsning:** **Avstand**:
 >
 > - **Måleenhet**: meter
-> - **Verdi**: 0.01<br>
+> - **Verdi**: 0.01
+>
 > **Begrensninger:** **Juridiske begrensninger**:
 >
 > - **Tilgangsbegrensninger**: Åpne data
@@ -54,8 +56,7 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 >
 > **Sikkerhetsbegrensninger**:
 >
-> - **Klassifisering**: Ugradert<br>
-> **Kontaktinformasjon:** Direktoratet for byggkvalitet
+> - **Klassifisering**: Ugradert
 
 ### Formål
 
@@ -71,7 +72,8 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
   - **Identifikasjon**: hele datasettet
   - **Nivå**: dataset
-  - **Utstrekning**: - **Beskrivelse**: National
+  - **Utstrekning**:
+    - **Beskrivelse**: National
   - **Nivåbeskrivelse**:
     #### datafangst
     Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
@@ -103,6 +105,31 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 <a href="innsynstjeneste/innsynstjeneste_feature_catalogue.png" title="Klikk for stor visning"><img src="innsynstjeneste/innsynstjeneste_feature_catalogue.png" alt="Datamodell innsynstjeneste" style="max-width: 100%; height: auto;" /></a>
 
+## Referansesystem
+
+**Romlige referansesystemer**:
+
+- **kode**: EPSG:25832
+  **navn**: EUREF89 UTM sone 32, 2d
+
+- **kode**: EPSG:25833
+  **navn**: EUREF89 UTM sone 33, 2d
+
+- **kode**: EPSG:25835
+  **navn**: EUREF89 UTM sone 35, 2d
+
+- **kode**: EPSG:3035
+  **navn**: EUREF89 / ETRS89-LAEA Europe
+
+- **kode**: EPSG:4326
+  **navn**: WGS84 Geografisk
+
+- **kode**: EPSG:3857
+  **navn**: Web Mercator / Pseudo-Mercator
+
+- **kode**: EPSG:25832
+  **navn**: EUREF89 UTM sone 32, 2d
+
 ## Datakvalitet
 
 **Nivå**: dataset
@@ -115,32 +142,34 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 **Datainnsamling og prosessering**:
 
-- **Prosesstrinn**: - **Beskrivelse**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
+- **Prosesstrinn**:
+  - **Beskrivelse**: datafangst skjer gjennom tjenesten varsel om planoppstart på fellestjenester plan som fylles ut av forslagsstiller eller plankonsulent
 
 ## Vedlikehold
 
 **Vedlikeholdsfrekvens**: Kontinuerlig
 
-**Status**: Planlagt
+**Status**: Kontinuerlig oppdatert
 
 ## Leveranse
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: OGC API-Features
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
       - **Tjenesteegenskap**:
         - **type**: OGC API-Features
         - **Verdi**: OGC:API-Features
-  - **Leveranseformat**: - **Formatnavn**: GeoJSON
+  - **Leveranseformat**:
+    - **Formatnavn**: GeoJSON
 
 - **Leveranse**:
 
   - **Leveransemedium**:
-    - **unitsOfDelivery**: landsfiler
+    - **Leveranseenheter**: landsfiler
     - **Medienavn**: WMS-tjeneste
     - **Leveransetjeneste**:
       - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
@@ -167,7 +196,8 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
       - **Tjenesteegenskap**:
         - **type**: Planområde for planlegging igangsatt
         - **Verdi**: WMS-tjeneste
-  - **Leveranseformat**: - **Formatnavn**: PNG
+  - **Leveranseformat**:
+    - **Formatnavn**: PNG
   - **Leveranseomfang**: Tjeneste
 
 ## Metadata
@@ -176,7 +206,7 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-01-28
+**Metadatadato**: 2026-03-20
 
 **språk**: nor
 
