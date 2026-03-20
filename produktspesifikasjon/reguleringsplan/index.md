@@ -41,52 +41,15 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
 **Språk:** nor\
 **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Generelt om spesifikasjonen
+## Om produktet Reguleringsplaner (landsdekkende kopi)
 
 
-### Sammendrag
-
-Fra 1.1.2026 vil Direktoratet for byggkvalitet opprettholde «Norge digitalt arealplankartløsning» (NAP) med datasett for reguleringsplaner og denne oppføringen er oppdatert med distribusjoner.
-
-Reguleringsplan er et arealplankart med tilhørende bestemmelser som fastlegger bruk, flerbruk og vern i bestemte områder, og som gir grunnlag for avklaring av hvilke bygge- og anleggstiltak som kan gjennomføres i planområdet. Kommunestyret skal sørge for at det blir utarbeidet reguleringsplan for de områder i kommunen hvor dette følger av loven eller av kommuneplanens arealdel, samt der det ellers er behov for å sikre forsvarlig planavklaring og gjennomføring av bygge- og anleggstiltak, flerbruk og vern i forhold til berørte private og offentlige interesser. For gjennomføring av større bygge- og anleggstiltak og andre tiltak som kan få vesentlige virkninger for miljø og samfunn, kreves det reguleringsplan. Reguleringsplan kan utarbeides som en områderegulering for et større område eller som en detaljregulering for enkelttiltak eller mindre områder. Staten kan, når viktige statlige eller regionale interesser tilsier det, vedta statlig reguleringsplan. Private har rett til å fremme forslag til detaljregulering.
-
-Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne holdes oppdatert med data fra de originale plandataene som forvaltes i kommunene. Oppdateringen skjer ved synkronisering eller periodisk kopiering fra kommunene sine data.
-
-### Formål
-
-Dekke Norge digitalt parter sine behov for tilgang til reguleringsplaner (geografiske data - vektordata).
-Vise plan for bruk, vern og utforming av arealer og fysiske omgivelser i bestemte områder.
-
-### Bruksområde
-
-Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.
-
-### Romlig representasjonstype
-
-Vektor
-
-### Romlig oppløsning
-
-**Avstand**:
+**Romlig representasjonstype:** Vektor\
+**Romlig oppløsning:** **Avstand**:
 
 - **Måleenhet**: meter
-- **Verdi**: 0.01
-
-### Tilleggsinformasjon
-
-Det er kun de geografiske dataene (vektordataene) av reguleringsplanene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
-
-En reguleringsplan kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.
-Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.
-- Under grunnen (tunnel) = 1
-- På grunnen/vannoverflate = 2
-- Over grunnen (bru) = 3
-- På bunnen (vann/sjø) = 4
-- I vannsøylen = 5
-
-### Begrensninger
-
-**Ressursbegrensninger**:
+- **Verdi**: 0.01\
+**Begrensninger:** **Ressursbegrensninger**:
 
 - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 
@@ -100,9 +63,19 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 
 **Sikkerhetsbegrensninger**:
 
-- **Klassifisering**: Ugradert
+- **Klassifisering**: Ugradert\
+**Kontaktinformasjon:** Direktoratet for byggkvalitet
 
-## Spesifikasjonsomfang
+### Formål
+
+Dekke Norge digitalt parter sine behov for tilgang til reguleringsplaner (geografiske data - vektordata).
+Vise plan for bruk, vern og utforming av arealer og fysiske omgivelser i bestemte områder.
+
+### Bruksområde
+
+Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.
+
+## Omfang
 
 - **Omfang**:
 
@@ -110,11 +83,11 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
   - **Nivå**: dataset
   - **Utstrekning**: - **Beskrivelse**: National
 
-## Innhold og struktur
+## Datainnhold og struktur
 
 **Beskrivelse**: Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringplaner.
 
-## Kvalitet
+## Datakvalitet
 
 **Nivå**: dataset
 
@@ -131,7 +104,7 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
 - På bunnen (vann/sjø) = 4
 - I vannsøylen = 5
 
-## Datavedlikehold
+## Vedlikehold
 
 **Vedlikeholdsfrekvens**: Daglig
 
@@ -315,3 +288,15 @@ Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikaln
   **relasjon**: service
   **type**: text/html
   **tittel**: Tjeneste
+
+## Tilleggsinformasjon
+
+Det er kun de geografiske dataene (vektordataene) av reguleringsplanene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.
+
+En reguleringsplan kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.
+Datasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.
+- Under grunnen (tunnel) = 1
+- På grunnen/vannoverflate = 2
+- Over grunnen (bru) = 3
+- På bunnen (vann/sjø) = 4
+- I vannsøylen = 5
