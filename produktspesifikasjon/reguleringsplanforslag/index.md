@@ -43,16 +43,16 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 > **Romlig representasjonstype:** Vektor<br>
 > **Romlig oppløsning:** <br>
 > **Begrensninger:** **Juridiske begrensninger**:
-
-- **Tilgangsbegrensninger**: Norge digitalt begrenset
-- **Bruksbegrensninger**: Lisens
-- **Lisens**: Norge digitalt-lisens
-- **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
-- **Andre begrensninger**: Nedlasting av data begrenset til Norge digitalt avtaleparter.
-
-**Sikkerhetsbegrensninger**:
-
-- **Klassifisering**: Ugradert<br>
+>
+> - **Tilgangsbegrensninger**: Norge digitalt begrenset
+> - **Bruksbegrensninger**: Lisens
+> - **Lisens**: Norge digitalt-lisens
+> - **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+> - **Andre begrensninger**: Nedlasting av data begrenset til Norge digitalt avtaleparter.
+>
+> **Sikkerhetsbegrensninger**:
+>
+> - **Klassifisering**: Ugradert<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
 
 ### Formål
