@@ -44,9 +44,13 @@ Datasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette 
 > **Unik identifikator:** de8cade6-06be-4626-a867-fcd603bda27b<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
 >
-> **Romlig oppløsning:** 
+> **Romlig oppløsning:**
 >
-> **Begrensninger:** **Ressursbegrensninger**:
+>
+>
+> **Begrensninger:**
+>
+> **Ressursbegrensninger**:
 >
 > - **Bruksbegrensninger**: Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen.
 >
@@ -71,12 +75,12 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
 ## Omfang
 
-- **Omfang**:
+### hele datasettet
 
-  - **Identifikasjon**: hele datasettet
-  - **Nivå**: dataset
-  - **Utstrekning**:
-    - **Beskrivelse**: National
+**Nivå**: dataset
+
+**Utstrekning**: National
+
 
 ## Datainnhold og struktur
 
@@ -98,147 +102,17 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
 ## Leveranse
 
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: WMS-tjeneste
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
-      - **Tjenesteegenskap**:
-        - **type**: WMS-tjeneste
-        - **Verdi**: OGC:WMS
-  - **Leveranseformat**:
-    - **Formatnavn**: PNG
-
-    - **Formatnavn**: JPEG
-
-    - **Formatnavn**: GeoTIFF
-
-    - **Formatnavn**: BMP
-
-    - **Formatnavn**: TIFF
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: OGC API-Features
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommuneplanforslag>
-      - **Tjenesteegenskap**:
-        - **type**: OGC API-Features
-        - **Verdi**: OGC:API-Features
-  - **Leveranseformat**:
-    - **Formatnavn**: GeoJSON
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: OGC API-Features
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/rest/kommunedelplanforslag>
-      - **Tjenesteegenskap**:
-        - **type**: OGC API-Features
-        - **Verdi**: OGC:API-Features
-  - **Leveranseformat**:
-    - **Formatnavn**: GeoJSON
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Atom Feed
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/atom>
-      - **Tjenesteegenskap**:
-        - **type**: Atom Feed
-        - **Verdi**: W3C:AtomFeed
-  - **Leveranseformat**:
-    - **Formatnavn**: PostGIS
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Atom Feed
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommunedelplanforslag/atom>
-      - **Tjenesteegenskap**:
-        - **type**: Atom Feed
-        - **Verdi**: W3C:AtomFeed
-  - **Leveranseformat**:
-    - **Formatnavn**: PostGIS
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Geonorge filnedlastning
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommuneplanforslag/download>
-      - **Tjenesteegenskap**:
-        - **type**: Geonorge filnedlastning
-        - **Verdi**: GEONORGE:FILEDOWNLOAD
-  - **Leveranseformat**:
-    - **Formatnavn**: PostGIS
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Egen nedlastningsside
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/klimagasskalkulator/>
-      - **Tjenesteegenskap**:
-        - **type**: Egen nedlastningsside
-        - **Verdi**: WWW:DOWNLOAD-1.0-http--download
-  - **Leveranseformat**:
-    - **Formatnavn**: GeoJSON
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Geonorge filnedlastning
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/download/kommunedelplanforslag/download>
-      - **Tjenesteegenskap**:
-        - **type**: Geonorge filnedlastning
-        - **Verdi**: GEONORGE:FILEDOWNLOAD
-  - **Leveranseformat**:
-    - **Formatnavn**: PostGIS
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: Geonorge nedlastning
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/nedlasting/api/capabilities/>
-      - **Tjenesteegenskap**:
-        - **type**: Geonorge nedlastning
-        - **Verdi**: GEONORGE:DOWNLOAD
-  - **Leveranseformat**:
-    - **Formatnavn**: GeoPackage
-
-    - **Formatnavn**: GML
-
-    - **Formatnavn**: PostGIS
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Medienavn**: Kommuneplanforslag - Høring og offentlig ettersyn
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities>
-      - **Tjenesteegenskap**:
-        - **type**: Kommuneplanforslag - Høring og offentlig ettersyn
-        - **Verdi**: WMS-tjeneste
-  - **Leveranseformat**:
-    - **Formatnavn**: PNG
-  - **Leveranseomfang**: Tjeneste
+| Tjeneste | Endepunkt | Type | Format | Leveranseenheter |
+| --- | --- | --- | --- | --- |
+| WMS-tjeneste | [Lenke](https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities) | OGC:WMS | PNG, JPEG, GeoTIFF, BMP, TIFF | landsfiler |
+| OGC API-Features | [Lenke](https://nap.ft.dibk.no/services/rest/kommuneplanforslag) | OGC:API-Features | GeoJSON | landsfiler |
+| OGC API-Features | [Lenke](https://nap.ft.dibk.no/services/rest/kommunedelplanforslag) | OGC:API-Features | GeoJSON | landsfiler |
+| Atom Feed | [Lenke](https://nap.ft.dibk.no/services/download/kommuneplanforslag/atom) | W3C:AtomFeed | PostGIS | landsfiler |
+| Atom Feed | [Lenke](https://nap.ft.dibk.no/services/download/kommunedelplanforslag/atom) | W3C:AtomFeed | PostGIS | landsfiler |
+| Geonorge filnedlastning | [Lenke](https://nap.ft.dibk.no/services/download/kommuneplanforslag/download) | GEONORGE:FILEDOWNLOAD | PostGIS | landsfiler |
+| Egen nedlastningsside | [Lenke](https://nap.ft.dibk.no/services/download/klimagasskalkulator/) | WWW:DOWNLOAD-1.0-http--download | GeoJSON | landsfiler |
+| Geonorge filnedlastning | [Lenke](https://nap.ft.dibk.no/services/download/kommunedelplanforslag/download) | GEONORGE:FILEDOWNLOAD | PostGIS | landsfiler |
+| Geonorge nedlastning | [Lenke](https://nap.ft.dibk.no/services/nedlasting/api/capabilities/) | GEONORGE:DOWNLOAD | GeoPackage, GML, PostGIS | landsfiler |
 
 ## Metadata
 
