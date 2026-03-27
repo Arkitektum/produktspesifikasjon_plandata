@@ -42,12 +42,16 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 > **Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
 > **Kontaktinformasjon:** Direktoratet for byggkvalitet
 >
-> **Romlig oppløsning:** **Avstand**:
+> **Romlig oppløsning:**
+>
+> **Avstand**:
 >
 > - **Måleenhet**: meter
 > - **Verdi**: 0.01
 >
-> **Begrensninger:** **Juridiske begrensninger**:
+> **Begrensninger:**
+>
+> **Juridiske begrensninger**:
 >
 > - **Tilgangsbegrensninger**: Åpne data
 > - **Bruksbegrensninger**: Lisens
@@ -68,21 +72,21 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 ## Omfang
 
-**Identifikasjon**: datafangst
+### datafangst
+
 **Nivå**: dataset
+
 **Utstrekning**: National
 
-**Nivåbeskrivelse**:
+**Nivåbeskrivelse**: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 
-Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+### innsynstjeneste
 
-**Identifikasjon**: innsynstjeneste
 **Nivå**: dataset
+
 **Utstrekning**: National
 
-**Nivåbeskrivelse**:
-
-Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+**Nivåbeskrivelse**: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Datainnhold og struktur
 
@@ -142,52 +146,10 @@ Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Leveranse
 
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: OGC API-Features
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
-      - **Tjenesteegenskap**:
-        - **type**: OGC API-Features
-        - **Verdi**: OGC:API-Features
-  - **Leveranseformat**:
-    - **Formatnavn**: GeoJSON
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Leveranseenheter**: landsfiler
-    - **Medienavn**: WMS-tjeneste
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
-      - **Tjenesteegenskap**:
-        - **type**: WMS-tjeneste
-        - **Verdi**: OGC:WMS
-  - **Leveranseformat**:
-    - **Formatnavn**: PNG
-
-    - **Formatnavn**: BMP
-
-    - **Formatnavn**: GeoTIFF
-
-    - **Formatnavn**: JPEG
-
-    - **Formatnavn**: TIFF
-
-- **Leveranse**:
-
-  - **Leveransemedium**:
-    - **Medienavn**: Planområde for planlegging igangsatt
-    - **Leveransetjeneste**:
-      - **Tjenesteendepunkt**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
-      - **Tjenesteegenskap**:
-        - **type**: Planområde for planlegging igangsatt
-        - **Verdi**: WMS-tjeneste
-  - **Leveranseformat**:
-    - **Formatnavn**: PNG
-  - **Leveranseomfang**: Tjeneste
+| Tjeneste | Endepunkt | Type | Format | Leveranseenheter |
+| --- | --- | --- | --- | --- |
+| OGC API-Features | [Lenke](https://plandata.ft.dibk.no/services/rest/planleggingigangsatt) | OGC:API-Features | GeoJSON | landsfiler |
+| WMS-tjeneste | [Lenke](https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities) | OGC:WMS | PNG, BMP, GeoTIFF, JPEG, TIFF | landsfiler |
 
 ## Metadata
 
