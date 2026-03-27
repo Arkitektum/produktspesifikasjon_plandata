@@ -68,18 +68,21 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 ## Omfang
 
-- **Omfang**:
+**Identifikasjon**: datafangst
+**Nivå**: dataset
+**Utstrekning**: National
 
-  - **Identifikasjon**: hele datasettet
-  - **Nivå**: dataset
-  - **Utstrekning**:
-    - **Beskrivelse**: National
-  - **Nivåbeskrivelse**:
-    #### datafangst
-    Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+**Nivåbeskrivelse**:
 
-    #### innsynstjeneste
-    Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+
+**Identifikasjon**: innsynstjeneste
+**Nivå**: dataset
+**Utstrekning**: National
+
+**Nivåbeskrivelse**:
+
+Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Datainnhold og struktur
 
