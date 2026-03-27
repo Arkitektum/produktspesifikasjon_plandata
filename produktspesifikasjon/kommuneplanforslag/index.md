@@ -71,12 +71,9 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
 ## Omfang
 
-- **Omfang**:
-
-  - **Identifikasjon**: hele datasettet
-  - **Nivå**: dataset
-  - **Utstrekning**:
-    - **Beskrivelse**: National
+**Identifikasjon**: hele datasettet
+**Nivå**: dataset
+**Utstrekning**: National
 
 ## Datainnhold og struktur
 
