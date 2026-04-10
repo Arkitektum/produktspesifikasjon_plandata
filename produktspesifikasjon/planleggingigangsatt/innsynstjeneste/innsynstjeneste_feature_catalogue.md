@@ -12,23 +12,6 @@ Egenskaper
   <tbody>
     <tr>
       <th scope="row">Navn:</th>
-      <td><strong>geometry</strong></td>
-    </tr>
-    <tr>
-      <th scope="row">Type:</th>
-      <td>geometry</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">Navn:</th>
       <td><strong>objid</strong></td>
     </tr>
     <tr>

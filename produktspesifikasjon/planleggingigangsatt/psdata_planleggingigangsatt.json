@@ -1,5 +1,7 @@
 {
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
   "title": "Planområde for planlegging igangsatt",
+  "format": "text/html",
   "date": {
     "creation": "2025-10-17",
     "revision": "2025-10-17"
@@ -95,11 +97,15 @@
   "scopeSection": [
     {
       "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
         "scopeIdentification": "datafangst",
         "level": "dataset",
-        "extent": {
-          "description": "National"
-        },
         "levelDescription": "Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart."
       }
     },
@@ -107,16 +113,10 @@
       "specificationScope": {
         "scopeIdentification": "innsynstjeneste",
         "level": "dataset",
-        "extent": {
-          "description": "National"
-        },
         "levelDescription": "Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt."
       }
     }
   ],
-  "dataContentAndStructureSection": {
-    "narrativeDescription": "Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger."
-  },
   "referenceSystemSection": {
     "spatialReferenceSystem": [
       {
@@ -258,32 +258,6 @@
       "code": "779a554b-fc3e-48a6-b202-561b07e9d4c2",
       "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
       "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/779a554b-fc3e-48a6-b202-561b07e9d4c2"
-    },
-    "links": [
-      {
-        "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2",
-        "rel": "describedby",
-        "type": "application/xml",
-        "title": "Metadata (ISO 19139)"
-      },
-      {
-        "href": "https://plandata.ft.dibk.no/services/rest/planleggingigangsatt",
-        "rel": "enclosure",
-        "type": "text/html",
-        "title": "Nedlasting"
-      },
-      {
-        "href": "https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities",
-        "rel": "alternate",
-        "type": "text/html",
-        "title": "Kartvisning"
-      },
-      {
-        "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/",
-        "rel": "service",
-        "type": "text/html",
-        "title": "Tjeneste"
-      }
-    ]
+    }
   }
 }

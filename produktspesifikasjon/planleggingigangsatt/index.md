@@ -33,14 +33,14 @@ logo: "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg"
 > **Opprettet dato:** 2025-10-17<br>
 > **Endret dato:** 2025-10-17<br>
 > **Språk:** nor<br>
-> **Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet, [ftb@dibk.no](mailto:ftb@dibk.no)
 
 ## Om produktet Planområde for planlegging igangsatt
 
 
 > **Romlig representasjonstype:** Vektor<br>
 > **Unik identifikator:** 779a554b-fc3e-48a6-b202-561b07e9d4c2<br>
-> **Kontaktinformasjon:** Direktoratet for byggkvalitet
+> **Kontaktinformasjon:** Direktoratet for byggkvalitet, [ftb@dibk.no](mailto:ftb@dibk.no)
 >
 > **Romlig oppløsning:**
 >
@@ -72,11 +72,15 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 ## Omfang
 
-### datafangst
+### Hele datasettet
 
 **Nivå**: dataset
 
-**Utstrekning**: National
+**Nivåbeskrivelse**: Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser
+
+### datafangst
+
+**Nivå**: dataset
 
 **Nivåbeskrivelse**: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 
@@ -84,33 +88,31 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 
 **Nivå**: dataset
 
-**Utstrekning**: National
-
 **Nivåbeskrivelse**: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 
 ## Datainnhold og struktur
 
-**Beskrivelse**: Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og høringsparter, i varsel om oppstart av planarbeid, som underlag i saksbehandling, uttalelser fra høringsmyndigheter og registrering i  kommunale planregister, samt for visning i kartløsninger.
+
 
 ### Datamodell - datafangst
 
 
 
-[Objektkatalog - datafangst](datafangst/objektkatalog.html)
-
-
-
 <a href="datafangst/datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst/datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
+
+
+
+➡️ [Se full datamodell for omfang "datafangst" (diagram og objektkatalog)](datafangst/objektkatalog.html)
 
 ### Datamodell - innsynstjeneste
 
 
 
-[Objektkatalog - innsynstjeneste](innsynstjeneste/objektkatalog.html)
-
-
-
 <a href="innsynstjeneste/innsynstjeneste_feature_catalogue.png" title="Klikk for stor visning"><img src="innsynstjeneste/innsynstjeneste_feature_catalogue.png" alt="Datamodell innsynstjeneste" style="max-width: 100%; height: auto;" /></a>
+
+
+
+➡️ [Se full datamodell for omfang "innsynstjeneste" (diagram og objektkatalog)](innsynstjeneste/objektkatalog.html)
 
 ## Referansesystem
 
@@ -126,8 +128,6 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 ## Datakvalitet
 
 **Nivå**: dataset
-
-
 
 
 
@@ -175,26 +175,4 @@ Datasettet brukes som grunnlag ved oversendelse av planinitiativ til kommunen og
 - **kode**: 779a554b-fc3e-48a6-b202-561b07e9d4c2
 - **koderom**: <https://kartkatalog.geonorge.no/metadata/>
 - **Metadatalenke**: <https://kartkatalog.geonorge.no/metadata/779a554b-fc3e-48a6-b202-561b07e9d4c2>
-
-**Lenker**:
-
-- **lenke**: <https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=779a554b-fc3e-48a6-b202-561b07e9d4c2>
-  **relasjon**: describedby
-  **type**: application/xml
-  **tittel**: Metadata (ISO 19139)
-
-- **lenke**: <https://plandata.ft.dibk.no/services/rest/planleggingigangsatt>
-  **relasjon**: enclosure
-  **type**: text/html
-  **tittel**: Nedlasting
-
-- **lenke**: <https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/?service=WMS&request=GetCapabilities>
-  **relasjon**: alternate
-  **type**: text/html
-  **tittel**: Kartvisning
-
-- **lenke**: #!?zoom=3&lon=306722&lat=7197864&wms=<https://plandata.ft.dibk.no/services/wms/planleggingigangsatt/>
-  **relasjon**: service
-  **type**: text/html
-  **tittel**: Tjeneste
 
