@@ -1,5 +1,7 @@
 {
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
   "title": "Reguleringsplanforslag - Høring og offentlig ettersyn",
+  "format": "text/html",
   "date": {
     "creation": "2025-10-17",
     "revision": "2025-10-17"
@@ -93,23 +95,15 @@
   "scopeSection": [
     {
       "specificationScope": {
-        "scopeIdentification": "hele datasettet",
+        "scopeIdentification": "Hele datasettet",
         "level": "dataset",
-        "extent": {
-          "description": "National"
-        }
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
       }
     }
   ],
-  "dataContentAndStructureSection": {
-    "narrativeDescription": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens reguleringsplaner."
-  },
   "dataQualitySection": {
     "scope": {
       "level": "dataset"
-    },
-    "resourceLineage": {
-      "statement": "Det er kun de geografiske dataene (vektordataene) av reguleringsplanforslagene som er tilgjengelige for nedlasting. De tilhørende plandokumenter/bestemmelser finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.\nEt reguleringsplanforslag kan inneholde ett eller flere vertikalnivåer; under grunnen, på grunnen/vannoverflaten, over grunnen, på bunnen og i vannsøylen.\nDatasettet er delt i vertikalnivå (vn1 til vn5) avhengig av i hvilket vertikalnivå forslaget ligger, eventuelt flere vertikalnivåer.\n- Under grunnen (tunnel) = 1\n- På grunnen/vannoverflate = 2\n- Over grunnen (bru) = 3\n- På bunnen (vann/sjø) = 4\n- I vannsøylen = 5"
     }
   },
   "maintenanceSection": {
@@ -341,38 +335,6 @@
       "code": "c114a146-821f-4570-aefe-a65e67c0edba",
       "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
       "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/c114a146-821f-4570-aefe-a65e67c0edba"
-    },
-    "links": [
-      {
-        "href": "https://www.geonorge.no/geonetwork/srv/nor/csw?service=CSW&request=GetRecordById&version=2.0.2&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=c114a146-821f-4570-aefe-a65e67c0edba",
-        "rel": "describedby",
-        "type": "application/xml",
-        "title": "Metadata (ISO 19139)"
-      },
-      {
-        "href": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
-        "rel": "enclosure",
-        "type": "text/html",
-        "title": "Nedlasting"
-      },
-      {
-        "href": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
-        "rel": "enclosure",
-        "type": "text/html",
-        "title": "Distribusjon"
-      },
-      {
-        "href": "https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/?service=WMS&request=GetCapabilities",
-        "rel": "alternate",
-        "type": "text/html",
-        "title": "Kartvisning"
-      },
-      {
-        "href": "#!?zoom=3&lon=306722&lat=7197864&wms=https://nap.ft.dibk.no/services/wms/reguleringsplanforslag/",
-        "rel": "service",
-        "type": "text/html",
-        "title": "Tjeneste"
-      }
-    ]
+    }
   }
 }
