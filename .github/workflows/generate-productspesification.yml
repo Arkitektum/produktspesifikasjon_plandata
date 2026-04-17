@@ -18,7 +18,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: set-matrix
         run: |
           set -euo pipefail
@@ -43,7 +43,7 @@ jobs:
     strategy:
       matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Load produktspesifikasjon config
         id: config
         env:
@@ -210,6 +210,8 @@ jobs:
           feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
+          ogc-username: ${{ secrets.CLIENTID }}
+          ogc-password: ${{ secrets.CLIENTKEY }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
           scopes: ${{ steps.config.outputs.scopes }}
@@ -284,7 +286,7 @@ jobs:
           echo "Markdown: ${{ steps.prepare.outputs.spec-markdown }}"
           echo "psdata:  ${{ steps.prepare.outputs.psdata-path }}"
       - name: Create pull request with produktspesifikasjon
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: update produktspesifikasjon
           title: update produktspesifikasjon
