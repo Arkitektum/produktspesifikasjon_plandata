@@ -111,6 +111,20 @@
         "level": "dataset",
         "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
       }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "datafangst",
+        "level": "dataset",
+        "levelDescription": "NPAD reguleringsplaner 2018"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "innsynstjeneste",
+        "level": "dataset",
+        "levelDescription": "Innsynstjeneste for reguleringsplaner"
+      }
     }
   ],
   "dataQualitySection": {
