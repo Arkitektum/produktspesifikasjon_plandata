@@ -1,0 +1,10 @@
+metadataId: 8b4304ea-4fb0-479c-a24d-fa225e2c6e97
+output_directory: produktspesifikasjon
+product_slug: FKB-Bygning
+updated: 2026-04-10
+
+scopes:
+  - name: nedlastingstjeneste
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Bygning-5.1.1.xml
+    generator: xmi
+    description: Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede bygningsdata.
