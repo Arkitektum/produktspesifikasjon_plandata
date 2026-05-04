@@ -1,0 +1,145 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title FKB-Bygning - nedlastingstjeneste - Bygninger
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Bygninger" {
+
+  class AnnenBygning <<featureType>> {
+    + område [1] : GM_Surface
+    + posisjon [0..1] : GM_Point
+    + medium [1] : Medium
+  }
+
+  class Bygning <<featureType>> {
+    + område [0..1] : GM_Surface
+    + posisjon [1] : GM_Point
+    + bygningsnummer [1] : Integer
+    + bygningstype [1] : Bygningstype
+    + bygningsstatus [1] : Bygningsstatus
+    + kommunenummer [1] : Kommunenummer
+    + medium [1] : Medium
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Arkade <<BeskrivendeBygningslinjer>> {
+  }
+  class BygningBru <<Bygningsvedheng>> {
+  }
+  class BygningsavgrensningTiltak <<Bygningsavgrensning>> {
+  }
+  class Bygningsdelelinje <<Bygningsavgrensning>> {
+  }
+  class Bygningslinje <<BeskrivendeBygningslinjer>> {
+  }
+  class Fasadeliv <<Bygningsavgrensning>> {
+  }
+  class Fellesegenskaper <<Generelle elementer>> {
+  }
+  class FiktivBygningsavgrensning <<Bygningsavgrensning>> {
+  }
+  class Grunnmur <<Bygningsavgrensning>> {
+  }
+  class Hjelpelinje3D <<BeskrivendeBygningslinjer>> {
+  }
+  class Hjelpepunkt3D <<BeskrivendeBygningslinjer>> {
+  }
+  class "Låvebru" as L_vebru <<Bygningsvedheng>> {
+  }
+  class "Mønelinje" as M_nelinje <<BeskrivendeBygningslinjer>> {
+  }
+  class Portrom <<BeskrivendeBygningslinjer>> {
+  }
+  class TakMur <<BeskrivendeBygningslinjer>> {
+  }
+  class Takkant <<Bygningsavgrensning>> {
+  }
+  class "Takplatå" as Takplat_ <<BeskrivendeBygningslinjer>> {
+  }
+  class "TakplatåTopp" as Takplat_Topp <<BeskrivendeBygningslinjer>> {
+  }
+  class Taksprang <<BeskrivendeBygningslinjer>> {
+  }
+  class TaksprangBunn <<BeskrivendeBygningslinjer>> {
+  }
+  class TrappBygg <<Bygningsvedheng>> {
+  }
+  class "VeggFrittstående" as VeggFrittst_ende <<Bygningsvedheng>> {
+  }
+  class Veranda <<Bygningsvedheng>> {
+  }
+}
+
+Fellesegenskaper <|-- AnnenBygning
+AnnenBygning --> Taksprang : beskrivesAvTaksprang [0..*]
+AnnenBygning --> Hjelpepunkt3D : beskrivesAvHjelpepunkt3D [0..*]
+AnnenBygning --> Veranda : vedhengVeranda [0..*]
+AnnenBygning --> L_vebru : vedhengLåvebru [0..*]
+AnnenBygning --> Takplat_ : beskrivesAvTakplatå [0..*]
+AnnenBygning --> Fasadeliv : avgrensesAvFasadeliv [0..*]
+AnnenBygning --> TakMur : beskrivesAvTakmur [0..*]
+AnnenBygning --> TaksprangBunn : beskrivesAvTaksprangBunn [0..*]
+AnnenBygning --> FiktivBygningsavgrensning : avgrensesAvFiktivBygningsavgrensning [0..*]
+AnnenBygning --> Portrom : beskrivesAvPortrom [0..*]
+AnnenBygning --> Bygningslinje : beskrivesAvBygningslinje [0..*]
+AnnenBygning --> Takplat_Topp : beskrivesAvTakplatåTopp [0..*]
+AnnenBygning --> TrappBygg : vedhengTrappBygg [0..*]
+AnnenBygning --> Arkade : beskrivesAvArkade [0..*]
+AnnenBygning --> Takkant : avgrensesAvTakkant [0..*]
+AnnenBygning --> VeggFrittst_ende : vedhengVeggFrittstående [0..*]
+AnnenBygning --> Hjelpelinje3D : beskrivesAvHjelpelinje3D [0..*]
+AnnenBygning --> M_nelinje : beskrivesAvMønelinje [0..*]
+AnnenBygning --> Grunnmur : avgrensesAvGrunnmur [0..*]
+AnnenBygning --> BygningBru : vedhengBygningBru [0..*]
+AnnenBygning --> BygningsavgrensningTiltak : avgrensesAvBygningsavgrensningTiltak [0..*]
+Fellesegenskaper <|-- Bygning
+Bygning --> Takkant : avgrensesAvTakkant [0..*]
+Bygning --> TrappBygg : vedhengTrappBygg [0..*]
+Bygning --> Veranda : vedhengVeranda [0..*]
+Bygning --> M_nelinje : beskrivesAvMønelinje [0..*]
+Bygning --> Taksprang : beskrivesAvTaksprang [0..*]
+Bygning --> Hjelpelinje3D : beskrivesAvHjelpelinje3D [0..*]
+Bygning --> Takplat_ : beskrivesAvTakplatå [0..*]
+Bygning --> L_vebru : vedhengLåvebru [0..*]
+Bygning --> TakMur : beskrivesAvTakmur [0..*]
+Bygning --> BygningsavgrensningTiltak : avgrensesAvBygningsavgrensningTiltak [0..*]
+Bygning --> FiktivBygningsavgrensning : avgrensesAvFiktivBygningsavgrensning [0..*]
+Bygning --> Bygningslinje : beskrivesAvBygningslinje [0..*]
+Bygning --> Fasadeliv : avgrensesAvFasadeliv [0..*]
+Bygning --> Portrom : beskrivesAvPortrom [0..*]
+Bygning --> Takplat_Topp : beskrivesAvTakplatåTopp [0..*]
+Bygning --> Arkade : beskrivesAvArkade [0..*]
+Bygning --> TaksprangBunn : beskrivesAvTaksprangBunn [0..*]
+Bygning --> Bygningsdelelinje : avgrensesAvBygningsdelelinje [0..*]
+Bygning --> Hjelpepunkt3D : beskrivesAvHjelpepunkt3D [0..*]
+Bygning --> Grunnmur : avgrensesAvGrunnmur [0..*]
+Bygning --> VeggFrittst_ende : vedhengVeggFrittstående [0..*]
+Bygning --> BygningBru : vedhengBygningBru [0..*]
+
+@enduml

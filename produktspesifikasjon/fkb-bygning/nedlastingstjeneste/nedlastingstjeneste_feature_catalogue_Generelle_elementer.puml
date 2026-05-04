@@ -1,0 +1,69 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title FKB-Bygning - nedlastingstjeneste - Generelle elementer
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Generelle elementer" {
+
+  abstract class "KvalitetPåkrevd" as KvalitetP_krevd <<featureType>> {
+    + kvalitet [1] : Posisjonskvalitet
+  }
+
+  abstract class KvalitetOpsjonell <<featureType>> {
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  abstract class Fellesegenskaper <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
+    + sluttdato [0..1] : Date
+    + datafangstdato [1] : Date
+    + verifiseringsdato [0..1] : Date
+    + registreringsversjon [0..1] : Registreringsversjon
+    + informasjon [0..1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + datafangstmetode [1] : Datafangstmetode
+    + nøyaktighet [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
+    + datafangstmetodeHøyde [0..1] : Datafangstmetode
+    + nøyaktighetHøyde [0..1] : Integer
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+}
+
+Fellesegenskaper <|-- KvalitetP_krevd
+Fellesegenskaper <|-- KvalitetOpsjonell
+
+@enduml

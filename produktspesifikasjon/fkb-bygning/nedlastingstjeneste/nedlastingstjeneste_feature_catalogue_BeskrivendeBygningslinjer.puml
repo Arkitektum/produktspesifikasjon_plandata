@@ -1,0 +1,102 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title FKB-Bygning - nedlastingstjeneste - BeskrivendeBygningslinjer
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "BeskrivendeBygningslinjer" {
+
+  class "TakplatåTopp" as Takplat_Topp <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  abstract class BeskrivendeBygningsdetalj <<featureType>> {
+    + treDNivå [1] : TreDNivå
+  }
+
+  class Portrom <<featureType>> {
+    + grense [1] : GM_Curve
+    + høydereferanse [1] : Høydereferanse
+  }
+
+  class Hjelpepunkt3D <<featureType>> {
+    + posisjon [1] : GM_Point
+  }
+
+  class Taksprang <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class TaksprangBunn <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "Mønelinje" as M_nelinje <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Hjelpelinje3D <<featureType>> {
+    + senterlinje [1] : GM_Curve
+  }
+
+  class TakMur <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Arkade <<featureType>> {
+    + grense [1] : GM_Curve
+    + høydereferanse [1] : Høydereferanse
+  }
+
+  class Bygningslinje <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "Takplatå" as Takplat_ <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class "KvalitetPåkrevd" as KvalitetP_krevd <<Generelle elementer>> {
+  }
+}
+
+BeskrivendeBygningsdetalj <|-- Takplat_Topp
+KvalitetP_krevd <|-- BeskrivendeBygningsdetalj
+BeskrivendeBygningsdetalj <|-- Portrom
+BeskrivendeBygningsdetalj <|-- Hjelpepunkt3D
+BeskrivendeBygningsdetalj <|-- Taksprang
+BeskrivendeBygningsdetalj <|-- TaksprangBunn
+BeskrivendeBygningsdetalj <|-- M_nelinje
+BeskrivendeBygningsdetalj <|-- Hjelpelinje3D
+BeskrivendeBygningsdetalj <|-- TakMur
+BeskrivendeBygningsdetalj <|-- Arkade
+BeskrivendeBygningsdetalj <|-- Bygningslinje
+BeskrivendeBygningsdetalj <|-- Takplat_
+
+@enduml
