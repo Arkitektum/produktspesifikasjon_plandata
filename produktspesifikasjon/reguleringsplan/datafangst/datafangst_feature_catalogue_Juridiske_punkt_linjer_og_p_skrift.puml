@@ -1,0 +1,70 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Reguleringsplaner (landsdekkende kopi) - datafangst - Juridiske punkt/linjer og påskrift
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Juridiske punkt/linjer og påskrift" {
+
+  class "RpPåskrift" as RpP_skrift <<featureType>> {
+    + posisjon [1] : Punkt
+    + generellTekststreng [1] : CharacterString
+    + påskriftType [0..1] : PåskriftType
+  }
+
+  class RpJuridiskLinje <<featureType>> {
+    + senterlinje [1] : Kurve
+    + juridisklinje [1] : RpJuridiskLinjeType
+  }
+
+  class RpJuridiskPunkt <<featureType>> {
+    + posisjon [1] : Punkt
+    + juridiskpunkt [1] : RpJuridiskPunktType
+  }
+
+  class "RpRegulertHøyde" as RpRegulertH_yde <<featureType>> {
+    + senterlinje [1] : Kurve
+    + høydefraplanbestemmelse [1] : HøydeFraPlanbestemmelse
+  }
+
+  class "HøydeFraPlanbestemmelse" as H_ydeFraPlanbestemmelse <<dataType>> {
+    + regulerthøyde [1] : Real
+    + høyderefansesystem [1] : Høydereferansesystem
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Kobling_PunktLinje <<Planområde>> {
+  }
+}
+
+Kobling_PunktLinje <|-- RpP_skrift
+Kobling_PunktLinje <|-- RpJuridiskLinje
+Kobling_PunktLinje <|-- RpJuridiskPunkt
+Kobling_PunktLinje <|-- RpRegulertH_yde
+
+@enduml
