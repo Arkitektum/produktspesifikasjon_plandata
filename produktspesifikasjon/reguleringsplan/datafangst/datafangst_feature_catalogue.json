@@ -45,7 +45,8 @@
     "relationships": {
       "inheritance": [],
       "associations": []
-    }
+    },
+    "package": "Fellesegenskaper"
   },
   {
     "name": "Fellesegenskaper_Planområde",
@@ -111,7 +112,8 @@
     "relationships": {
       "inheritance": [],
       "associations": []
-    }
+    },
+    "package": "Fellesegenskaper"
   },
   {
     "name": "Fellesegenskaper_LinjerOgPunkt",
@@ -460,7 +462,8 @@
     "relationships": {
       "inheritance": [],
       "associations": []
-    }
+    },
+    "package": "Fellesegenskaper"
   },
   {
     "name": "RpGrense",
@@ -479,7 +482,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Planområde"
   },
   {
     "name": "Kobling_Delområde",
@@ -2661,7 +2665,8 @@
         "Fellesegenskaper_Delområde"
       ],
       "associations": []
-    }
+    },
+    "package": "Planområde"
   },
   {
     "name": "Kobling_PunktLinje",
@@ -4843,7 +4848,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Planområde"
   },
   {
     "name": "RpOmråde",
@@ -7232,7 +7238,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Planområde"
   },
   {
     "name": "RbFormålOmråde",
@@ -7991,7 +7998,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Arealformål"
   },
   {
     "name": "RpFormålGrense",
@@ -8010,7 +8018,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Arealformål"
   },
   {
     "name": "RpArealformålOmråde",
@@ -9156,7 +9165,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Arealformål"
   },
   {
     "name": "RpStøySone",
@@ -9220,7 +9230,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpDetaljeringSone",
@@ -9275,7 +9286,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpDetaljeringGrense",
@@ -9293,7 +9305,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpBåndleggingGrense",
@@ -9311,7 +9324,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpInfrastrukturSone",
@@ -9374,7 +9388,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpGjennomføringGrense",
@@ -9393,7 +9408,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbFornyelseGrense",
@@ -9412,7 +9428,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpBestemmelseGrense",
@@ -9430,7 +9447,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbRekkefølgeOmråde",
@@ -9480,7 +9498,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpBåndleggingSone",
@@ -9565,7 +9584,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpAngittHensynGrense",
@@ -9583,7 +9603,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbRekkefølgeGrense",
@@ -9602,7 +9623,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpInfrastrukturGrense",
@@ -9620,7 +9642,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbRestriksjonGrense",
@@ -9639,7 +9662,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpStøyGrense",
@@ -9657,7 +9681,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpSikringSone",
@@ -9724,7 +9749,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpAngittHensynSone",
@@ -9807,7 +9833,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbFornyelseOmråde",
@@ -9853,7 +9880,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "PblMidlByggAnleggGrense",
@@ -9872,7 +9900,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbFareOmråde",
@@ -9948,7 +9977,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbBevaringOmråde",
@@ -10006,7 +10036,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpSikringGrense",
@@ -10024,7 +10055,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "PblMidlByggAnleggOmråde",
@@ -10086,7 +10118,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbRestriksjonOmråde",
@@ -10144,7 +10177,8 @@
           "cardinality": "0..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpFareGrense",
@@ -10163,7 +10197,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RbBevaringGrense",
@@ -10182,7 +10217,8 @@
         "Fellesegenskaper_LinjerOgPunkt"
       ],
       "associations": []
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpBestemmelseOmråde",
@@ -10283,7 +10319,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpGjennomføringSone",
@@ -10346,7 +10383,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpFareSone",
@@ -10424,7 +10462,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Bestemmelser/hensyn"
   },
   {
     "name": "RpPåskrift",
@@ -10496,7 +10535,8 @@
         "Kobling_PunktLinje"
       ],
       "associations": []
-    }
+    },
+    "package": "Juridiske punkt/linjer og påskrift"
   },
   {
     "name": "RpJuridiskLinje",
@@ -10622,7 +10662,8 @@
         "Kobling_PunktLinje"
       ],
       "associations": []
-    }
+    },
+    "package": "Juridiske punkt/linjer og påskrift"
   },
   {
     "name": "RpJuridiskPunkt",
@@ -10696,7 +10737,8 @@
         "Kobling_PunktLinje"
       ],
       "associations": []
-    }
+    },
+    "package": "Juridiske punkt/linjer og påskrift"
   },
   {
     "name": "RpRegulertHøyde",
@@ -10762,6 +10804,7 @@
         "Kobling_PunktLinje"
       ],
       "associations": []
-    }
+    },
+    "package": "Juridiske punkt/linjer og påskrift"
   }
 ]
