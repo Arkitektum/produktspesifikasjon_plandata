@@ -1,0 +1,381 @@
+@startuml
+title Reguleringsplaner (landsdekkende kopi) - datafangst - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  abstract class "Fellesegenskaper_Delområde" as Fellesegenskaper_Delomr_de <<featureType>> {
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+  }
+
+  abstract class "Fellesegenskaper_Planområde" as Fellesegenskaper_Planomr_de <<featureType>> {
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + prosesshistorie [0..*] : CharacterString
+    + informasjon [0..*] : CharacterString
+    + link [0..*] : CharacterString
+  }
+
+  abstract class Fellesegenskaper_LinjerOgPunkt <<featureType>> {
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  class RpGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  abstract class "Kobling_Delområde" as Kobling_Delomr_de <<featureType>> {
+    + arealplanId [1] : NasjonalArealplanId
+    + vertikalnivå [1] : Vertikalnivå
+  }
+
+  abstract class Kobling_PunktLinje <<featureType>> {
+    + arealplanId [1] : NasjonalArealplanId
+    + vertikalnivå [1] : Vertikalnivå
+  }
+
+  class "RpOmråde" as RpOmr_de <<featureType>> {
+    + område [1] : Flate
+    + arealplanId [1] : NasjonalArealplanId
+    + plantype [1] : RpPlantype
+    + planstatus [1] : Planstatus
+    + plannavn [1] : CharacterString
+    + planbestemmelse [1] : Planbestemmelse
+    + ikrafttredelsesdato [0..1] : Date
+    + vertikalnivå [1] : Vertikalnivå
+    + lovreferanse [1] : LovreferanseType
+    + lovreferanseBeskrivelse [0..1] : CharacterString
+    + gjennomføringsfrist [0..1] : Date
+    + forslagsstillerType [0..1] : ForslagsstillerType
+    + vedtakEndeligPlanDato [0..1] : Date
+    + kunngjøringsdato [0..1] : Date
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+  }
+
+  class "RbFormålOmråde" as RbForm_lOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformBrukFormål
+    + reguleringsformålsutdyping [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + utnytting [0..1] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
+    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
+  }
+
+  class "RpFormålGrense" as RpForm_lGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpArealformålOmråde" as RpArealform_lOmr_de <<featureType>> {
+    + område [1] : Flate
+    + eierform [1] : EierformType
+    + arealformål [1] : RpArealformål
+    + beskrivelse [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + utnytting [0..*] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
+    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
+  }
+
+  class "RpStøySone" as RpSt_ySone <<featureType>> {
+    + område [1] : Flate
+    + støy [1] : RpStøySoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpDetaljeringSone <<featureType>> {
+    + område [1] : Flate
+    + detaljering [1] : RpDetaljeringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpDetaljeringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpBåndleggingGrense" as RpB_ndleggingGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpInfrastrukturSone <<featureType>> {
+    + område [1] : Flate
+    + infrastruktur [1] : RpInfrastrukturSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class "RpGjennomføringGrense" as RpGjennomf_ringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RbFornyelseGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpBestemmelseGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformRekkefølge
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class "RpBåndleggingSone" as RpB_ndleggingSone <<featureType>> {
+    + område [1] : Flate
+    + båndlegging [1] : RpBåndleggingSoneType
+    + båndlagtFremTil [0..1] : Date
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpAngittHensynGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbRekkefølgeGrense" as RbRekkef_lgeGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpInfrastrukturGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RbRestriksjonGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpStøyGrense" as RpSt_yGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpSikringSone <<featureType>> {
+    + område [1] : Flate
+    + sikring [1] : RpSikringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpAngittHensynSone <<featureType>> {
+    + område [1] : Flate
+    + angittHensyn [1] : RpAngittHensynSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformFornyelse
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class PblMidlByggAnleggGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbFareOmråde" as RbFareOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformFare
+    + feltbetegnelse [0..1] : CharacterString
+    + reguleringsformålsutdyping [0..1] : CharacterString
+  }
+
+  class "RbBevaringOmråde" as RbBevaringOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformBevaring
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class RpSikringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "PblMidlByggAnleggOmråde" as PblMidlByggAnleggOmr_de <<featureType>> {
+    + område [1] : Flate
+    + bestemmelseOmrådeNavn [1] : CharacterString
+    + saksnummer [0..1] : Saksnummer
+    + avgjørelsesdato [1] : Date
+    + GyldigTilDato [1] : Date
+  }
+
+  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformRestriksjon
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class RpFareGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RbBevaringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<featureType>> {
+    + område [1] : Flate
+    + bestemmelseOmrådeNavn [1] : CharacterString
+    + type [1] : RpBestemmelseHjemmel
+  }
+
+  class "RpGjennomføringSone" as RpGjennomf_ringSone <<featureType>> {
+    + område [1] : Flate
+    + gjennomføring [1] : RpGjennomføringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpFareSone <<featureType>> {
+    + område [1] : Flate
+    + fare [1] : RpFareSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class "RpPåskrift" as RpP_skrift <<featureType>> {
+    + posisjon [1] : Punkt
+    + generellTekststreng [1] : CharacterString
+    + påskriftType [0..1] : PåskriftType
+  }
+
+  class RpJuridiskLinje <<featureType>> {
+    + senterlinje [1] : Kurve
+    + juridisklinje [1] : RpJuridiskLinjeType
+  }
+
+  class RpJuridiskPunkt <<featureType>> {
+    + posisjon [1] : Punkt
+    + juridiskpunkt [1] : RpJuridiskPunktType
+  }
+
+  class "RpRegulertHøyde" as RpRegulertH_yde <<featureType>> {
+    + senterlinje [1] : Kurve
+    + høydefraplanbestemmelse [1] : HøydeFraPlanbestemmelse
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+  }
+
+  class NasjonalArealplanId <<dataType>> {
+    + kommunenummer [0..1] : Kommunenummer
+    + landkode [0..1] : Landskode
+    + planidentifikasjon [1] : CharacterString
+  }
+
+  class Utnytting <<dataType>> {
+    + utnyttingstype [1] : Utnyttingstype
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+  }
+
+  class Saksnummer <<dataType>> {
+    + saksår [1] : Integer
+    + sakssekvensnummer [1] : Integer
+  }
+
+  class "HøydeFraPlanbestemmelse" as H_ydeFraPlanbestemmelse <<dataType>> {
+    + regulerthøyde [1] : Real
+    + høyderefansesystem [1] : Høydereferansesystem
+  }
+}
+
+  Fellesegenskaper_LinjerOgPunkt <|-- RpGrense
+  Fellesegenskaper_Delomr_de <|-- Kobling_Delomr_de
+  Fellesegenskaper_LinjerOgPunkt <|-- Kobling_PunktLinje
+  Fellesegenskaper_Planomr_de <|-- RpOmr_de
+  RpOmr_de --> RpGrense : planavgrensning [0..*]
+  Kobling_Delomr_de <|-- RbForm_lOmr_de
+  RbForm_lOmr_de --> RpForm_lGrense : avgrensning [0..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpForm_lGrense
+  Kobling_Delomr_de <|-- RpArealform_lOmr_de
+  RpArealform_lOmr_de --> RpForm_lGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RpSt_ySone
+  RpSt_ySone --> RpSt_yGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RpDetaljeringSone
+  RpDetaljeringSone --> RpDetaljeringGrense : avgrensning [1..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpDetaljeringGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RpB_ndleggingGrense
+  Kobling_Delomr_de <|-- RpInfrastrukturSone
+  RpInfrastrukturSone --> RpInfrastrukturGrense : avgrensning [1..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpGjennomf_ringGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RbFornyelseGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RpBestemmelseGrense
+  Kobling_Delomr_de <|-- RbRekkef_lgeOmr_de
+  RbRekkef_lgeOmr_de --> RbRekkef_lgeGrense : rekkefølgeAvgrensning [0..*]
+  Kobling_Delomr_de <|-- RpB_ndleggingSone
+  RpB_ndleggingSone --> RpB_ndleggingGrense : avgrensning [1..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpAngittHensynGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RbRekkef_lgeGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RpInfrastrukturGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RbRestriksjonGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RpSt_yGrense
+  Kobling_Delomr_de <|-- RpSikringSone
+  RpSikringSone --> RpSikringGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RpAngittHensynSone
+  RpAngittHensynSone --> RpAngittHensynGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RbFornyelseOmr_de
+  RbFornyelseOmr_de --> RbFornyelseGrense : avgrensning [0..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- PblMidlByggAnleggGrense
+  Kobling_Delomr_de <|-- RbFareOmr_de
+  RbFareOmr_de --> RpFareGrense : avgrensning [0..*]
+  Kobling_Delomr_de <|-- RbBevaringOmr_de
+  RbBevaringOmr_de --> RbBevaringGrense : avgrensning [0..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpSikringGrense
+  Kobling_Delomr_de <|-- PblMidlByggAnleggOmr_de
+  PblMidlByggAnleggOmr_de --> PblMidlByggAnleggGrense : avgrensning [0..*]
+  Kobling_Delomr_de <|-- RbRestriksjonOmr_de
+  RbRestriksjonOmr_de --> RbRestriksjonGrense : avgrensning [0..*]
+  Fellesegenskaper_LinjerOgPunkt <|-- RpFareGrense
+  Fellesegenskaper_LinjerOgPunkt <|-- RbBevaringGrense
+  Kobling_Delomr_de <|-- RpBestemmelseOmr_de
+  RpBestemmelseOmr_de --> RpBestemmelseGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RpGjennomf_ringSone
+  RpGjennomf_ringSone --> RpGjennomf_ringGrense : avgrensning [1..*]
+  Kobling_Delomr_de <|-- RpFareSone
+  RpFareSone --> RpFareGrense : avgrensning [1..*]
+  Kobling_PunktLinje <|-- RpP_skrift
+  Kobling_PunktLinje <|-- RpJuridiskLinje
+  Kobling_PunktLinje <|-- RpJuridiskPunkt
+  Kobling_PunktLinje <|-- RpRegulertH_yde
+
+@enduml
