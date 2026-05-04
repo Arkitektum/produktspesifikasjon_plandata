@@ -1,0 +1,280 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title FKB-Bygning - nedlastingstjeneste - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  abstract class "KvalitetPåkrevd" as KvalitetP_krevd <<featureType>> {
+    + kvalitet [1] : Posisjonskvalitet
+  }
+
+  abstract class KvalitetOpsjonell <<featureType>> {
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  abstract class Fellesegenskaper <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [1] : Date
+    + sluttdato [0..1] : Date
+    + datafangstdato [1] : Date
+    + verifiseringsdato [0..1] : Date
+    + registreringsversjon [0..1] : Registreringsversjon
+    + informasjon [0..1] : CharacterString
+  }
+
+  class AnnenBygning <<featureType>> {
+    + område [1] : GM_Surface
+    + posisjon [0..1] : GM_Point
+    + medium [1] : Medium
+  }
+
+  class Bygning <<featureType>> {
+    + område [0..1] : GM_Surface
+    + posisjon [1] : GM_Point
+    + bygningsnummer [1] : Integer
+    + bygningstype [1] : Bygningstype
+    + bygningsstatus [1] : Bygningsstatus
+    + kommunenummer [1] : Kommunenummer
+    + medium [1] : Medium
+  }
+
+  class FiktivBygningsavgrensning <<featureType>> {
+    + grense [1] : GM_Curve
+    + medium [1] : Medium
+  }
+
+  class BygningsavgrensningTiltak <<featureType>> {
+    + grense [1] : GM_Curve
+    + medium [1] : Medium
+    + høydereferanse [1] : Høydereferanse
+    + lavestegulv [0..1] : Real
+  }
+
+  class Takkant <<featureType>> {
+    + grense [1] : GM_Curve
+    + medium [1] : Medium
+    + treDNivå [1] : TreDNivå
+    + takskjegg [0..1] : Integer
+  }
+
+  class Fasadeliv <<featureType>> {
+    + grense [1] : GM_Curve
+    + medium [1] : Medium
+    + høydereferanse [1] : Høydereferanse
+    + skalAvgrenseBygning [1] : Boolean
+  }
+
+  class Bygningsdelelinje <<featureType>> {
+    + grense [1] : GM_Curve
+    + treDNivå [1] : TreDNivå
+  }
+
+  class Grunnmur <<featureType>> {
+    + grense [1] : GM_Curve
+    + medium [1] : Medium
+    + høydereferanse [1] : Høydereferanse
+  }
+
+  class "TakplatåTopp" as Takplat_Topp <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  abstract class BeskrivendeBygningsdetalj <<featureType>> {
+    + treDNivå [1] : TreDNivå
+  }
+
+  class Portrom <<featureType>> {
+    + grense [1] : GM_Curve
+    + høydereferanse [1] : Høydereferanse
+  }
+
+  class Hjelpepunkt3D <<featureType>> {
+    + posisjon [1] : GM_Point
+  }
+
+  class Taksprang <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class TaksprangBunn <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "Mønelinje" as M_nelinje <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Hjelpelinje3D <<featureType>> {
+    + senterlinje [1] : GM_Curve
+  }
+
+  class TakMur <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Arkade <<featureType>> {
+    + grense [1] : GM_Curve
+    + høydereferanse [1] : Høydereferanse
+  }
+
+  class Bygningslinje <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "Takplatå" as Takplat_ <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class "Låvebru" as L_vebru <<featureType>> {
+    ' Ingen attributter
+  }
+
+  abstract class Bygningsvedheng <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class BygningBru <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class Veranda <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + medium [1] : Medium
+  }
+
+  class TrappBygg <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class "VeggFrittstående" as VeggFrittst_ende <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + medium [1] : Medium
+  }
+
+  class TakoverbyggKant <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Takoverbygg <<featureType>> {
+    + område [1] : GM_Surface
+    + posisjon [0..1] : GM_Point
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + datafangstmetode [1] : Datafangstmetode
+    + nøyaktighet [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
+    + datafangstmetodeHøyde [0..1] : Datafangstmetode
+    + nøyaktighetHøyde [0..1] : Integer
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+}
+
+  Fellesegenskaper <|-- KvalitetP_krevd
+  Fellesegenskaper <|-- KvalitetOpsjonell
+  Fellesegenskaper <|-- AnnenBygning
+  AnnenBygning --> Taksprang : beskrivesAvTaksprang [0..*]
+  AnnenBygning --> Hjelpepunkt3D : beskrivesAvHjelpepunkt3D [0..*]
+  AnnenBygning --> Veranda : vedhengVeranda [0..*]
+  AnnenBygning --> L_vebru : vedhengLåvebru [0..*]
+  AnnenBygning --> Takplat_ : beskrivesAvTakplatå [0..*]
+  AnnenBygning --> Fasadeliv : avgrensesAvFasadeliv [0..*]
+  AnnenBygning --> TakMur : beskrivesAvTakmur [0..*]
+  AnnenBygning --> TaksprangBunn : beskrivesAvTaksprangBunn [0..*]
+  AnnenBygning --> FiktivBygningsavgrensning : avgrensesAvFiktivBygningsavgrensning [0..*]
+  AnnenBygning --> Portrom : beskrivesAvPortrom [0..*]
+  AnnenBygning --> Bygningslinje : beskrivesAvBygningslinje [0..*]
+  AnnenBygning --> Takplat_Topp : beskrivesAvTakplatåTopp [0..*]
+  AnnenBygning --> TrappBygg : vedhengTrappBygg [0..*]
+  AnnenBygning --> Arkade : beskrivesAvArkade [0..*]
+  AnnenBygning --> Takkant : avgrensesAvTakkant [0..*]
+  AnnenBygning --> VeggFrittst_ende : vedhengVeggFrittstående [0..*]
+  AnnenBygning --> Hjelpelinje3D : beskrivesAvHjelpelinje3D [0..*]
+  AnnenBygning --> M_nelinje : beskrivesAvMønelinje [0..*]
+  AnnenBygning --> Grunnmur : avgrensesAvGrunnmur [0..*]
+  AnnenBygning --> BygningBru : vedhengBygningBru [0..*]
+  AnnenBygning --> BygningsavgrensningTiltak : avgrensesAvBygningsavgrensningTiltak [0..*]
+  Fellesegenskaper <|-- Bygning
+  Bygning --> Takkant : avgrensesAvTakkant [0..*]
+  Bygning --> TrappBygg : vedhengTrappBygg [0..*]
+  Bygning --> Veranda : vedhengVeranda [0..*]
+  Bygning --> M_nelinje : beskrivesAvMønelinje [0..*]
+  Bygning --> Taksprang : beskrivesAvTaksprang [0..*]
+  Bygning --> Hjelpelinje3D : beskrivesAvHjelpelinje3D [0..*]
+  Bygning --> Takplat_ : beskrivesAvTakplatå [0..*]
+  Bygning --> L_vebru : vedhengLåvebru [0..*]
+  Bygning --> TakMur : beskrivesAvTakmur [0..*]
+  Bygning --> BygningsavgrensningTiltak : avgrensesAvBygningsavgrensningTiltak [0..*]
+  Bygning --> FiktivBygningsavgrensning : avgrensesAvFiktivBygningsavgrensning [0..*]
+  Bygning --> Bygningslinje : beskrivesAvBygningslinje [0..*]
+  Bygning --> Fasadeliv : avgrensesAvFasadeliv [0..*]
+  Bygning --> Portrom : beskrivesAvPortrom [0..*]
+  Bygning --> Takplat_Topp : beskrivesAvTakplatåTopp [0..*]
+  Bygning --> Arkade : beskrivesAvArkade [0..*]
+  Bygning --> TaksprangBunn : beskrivesAvTaksprangBunn [0..*]
+  Bygning --> Bygningsdelelinje : avgrensesAvBygningsdelelinje [0..*]
+  Bygning --> Hjelpepunkt3D : beskrivesAvHjelpepunkt3D [0..*]
+  Bygning --> Grunnmur : avgrensesAvGrunnmur [0..*]
+  Bygning --> VeggFrittst_ende : vedhengVeggFrittstående [0..*]
+  Bygning --> BygningBru : vedhengBygningBru [0..*]
+  KvalitetOpsjonell <|-- FiktivBygningsavgrensning
+  KvalitetOpsjonell <|-- BygningsavgrensningTiltak
+  KvalitetP_krevd <|-- Takkant
+  KvalitetP_krevd <|-- Fasadeliv
+  Fellesegenskaper <|-- Bygningsdelelinje
+  KvalitetP_krevd <|-- Grunnmur
+  BeskrivendeBygningsdetalj <|-- Takplat_Topp
+  KvalitetP_krevd <|-- BeskrivendeBygningsdetalj
+  BeskrivendeBygningsdetalj <|-- Portrom
+  BeskrivendeBygningsdetalj <|-- Hjelpepunkt3D
+  BeskrivendeBygningsdetalj <|-- Taksprang
+  BeskrivendeBygningsdetalj <|-- TaksprangBunn
+  BeskrivendeBygningsdetalj <|-- M_nelinje
+  BeskrivendeBygningsdetalj <|-- Hjelpelinje3D
+  BeskrivendeBygningsdetalj <|-- TakMur
+  BeskrivendeBygningsdetalj <|-- Arkade
+  BeskrivendeBygningsdetalj <|-- Bygningslinje
+  BeskrivendeBygningsdetalj <|-- Takplat_
+  Bygningsvedheng <|-- L_vebru
+  KvalitetP_krevd <|-- Bygningsvedheng
+  Bygningsvedheng <|-- BygningBru
+  Bygningsvedheng <|-- Veranda
+  Bygningsvedheng <|-- TrappBygg
+  Bygningsvedheng <|-- VeggFrittst_ende
+  KvalitetP_krevd <|-- TakoverbyggKant
+  Fellesegenskaper <|-- Takoverbygg
+  Takoverbygg --> FiktivBygningsavgrensning : avgrensesAvFiktivBygningsavgrensning [0..*]
+  Takoverbygg --> TakoverbyggKant : avgrensesAvTakoverbyggKant [0..*]
+
+@enduml

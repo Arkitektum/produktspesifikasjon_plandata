@@ -1,0 +1,1248 @@
+[
+  {
+    "name": "KvalitetPåkrevd",
+    "description": "abstrakt objekttype med påkrevet kvalitetsangivelse",
+    "attributes": [
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\n\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "datafangstmetode",
+            "type": "Datafangstmetode",
+            "description": "metode for datafangst.\nEgenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.",
+            "cardinality": "1",
+            "valueDomain": {
+              "definition": "metode for datafangst.\n\nDatafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode"
+            }
+          },
+          {
+            "name": "nøyaktighet",
+            "type": "Integer",
+            "description": "standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavvik, men dersom man har en beregnet verdi skal denne benyttes.\n\nFor objekter med punktgeometri benyttes verdi for punktstandardavvik. For objekter med kurvegeometri benyttes standardavviket for tverravviket fra kurva. For objekter med overflate- eller volumgeometri er forståelsen at standardavviket beregnes ut fra (3D) avvikene mellom sann posisjon og nærmeste punkt på overflata.\n\nMerknad:\nVerdien er ment å beskrive nøyaktigheten til objektet sammenlignet med sann verdi. Standardavvik er i utgangspunktet et mål på det tilfeldige avviket og det innebærer at vi forutsetter at det systematiske avviket i liten grad påvirker nøyaktigheten til posisjoneringa. For fotogrammetriske data settes som hovedregel verdien lik kravet til standardavvik ved datafangst. Se standarden Geodatakvalitet for nærmere definisjon av standardavvik og hvordan dette defineres, beregnes og kontrolleres.",
+            "cardinality": "0..1"
+          },
+          {
+            "name": "synbarhet",
+            "type": "Synbarhet",
+            "description": "beskrivelse av hvor godt objektene framgår i datagrunnlaget for posisjonering (f.eks. flybildene).",
+            "cardinality": "0..1",
+            "valueDomain": {
+              "definition": "synbarhet beskriver hvor godt objektene framgår i datagrunnlaget for posisjonering (f.eks. flybildene).",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/synbarhet"
+            }
+          },
+          {
+            "name": "datafangstmetodeHøyde",
+            "type": "Datafangstmetode",
+            "description": "metoden brukt for høyderegistrering av posisjon.\n\nDet er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.",
+            "cardinality": "0..1",
+            "valueDomain": {
+              "definition": "metode for datafangst.\n\nDatafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode"
+            }
+          },
+          {
+            "name": "nøyaktighetHøyde",
+            "type": "Integer",
+            "description": "standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavviket, men dersom man faktisk har standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavvik, men dersom man har en beregnet verdi skal denne benyttes.\n\nMerknad:\nVerdien er ment å beskrive nøyaktigheten til objektet sammenlignet med sann verdi. Standardavvik er i utgangspunktet et mål på det tilfeldige avviket og det innebærer at vi forutsetter at det systematiske avviket i liten grad påvirker nøyaktigheten til posisjoneringa. For fotogrammetriske data settes som hovedregel verdien lik kravet til standardavvik ved datafangst. Se standarden Geodatakvalitet for nærmere definisjon av standardavvik og hvordan dette defineres, beregnes og kontrolleres.",
+            "cardinality": "0..1"
+          }
+        ]
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": []
+    },
+    "package": "Generelle elementer"
+  },
+  {
+    "name": "KvalitetOpsjonell",
+    "description": "abstrakt objekttype med valgfri kvalitetsangivelse",
+    "attributes": [
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\n\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "datafangstmetode",
+            "type": "Datafangstmetode",
+            "description": "metode for datafangst.\nEgenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.",
+            "cardinality": "1",
+            "valueDomain": {
+              "definition": "metode for datafangst.\n\nDatafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode"
+            }
+          },
+          {
+            "name": "nøyaktighet",
+            "type": "Integer",
+            "description": "standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavvik, men dersom man har en beregnet verdi skal denne benyttes.\n\nFor objekter med punktgeometri benyttes verdi for punktstandardavvik. For objekter med kurvegeometri benyttes standardavviket for tverravviket fra kurva. For objekter med overflate- eller volumgeometri er forståelsen at standardavviket beregnes ut fra (3D) avvikene mellom sann posisjon og nærmeste punkt på overflata.\n\nMerknad:\nVerdien er ment å beskrive nøyaktigheten til objektet sammenlignet med sann verdi. Standardavvik er i utgangspunktet et mål på det tilfeldige avviket og det innebærer at vi forutsetter at det systematiske avviket i liten grad påvirker nøyaktigheten til posisjoneringa. For fotogrammetriske data settes som hovedregel verdien lik kravet til standardavvik ved datafangst. Se standarden Geodatakvalitet for nærmere definisjon av standardavvik og hvordan dette defineres, beregnes og kontrolleres.",
+            "cardinality": "0..1"
+          },
+          {
+            "name": "synbarhet",
+            "type": "Synbarhet",
+            "description": "beskrivelse av hvor godt objektene framgår i datagrunnlaget for posisjonering (f.eks. flybildene).",
+            "cardinality": "0..1",
+            "valueDomain": {
+              "definition": "synbarhet beskriver hvor godt objektene framgår i datagrunnlaget for posisjonering (f.eks. flybildene).",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/synbarhet"
+            }
+          },
+          {
+            "name": "datafangstmetodeHøyde",
+            "type": "Datafangstmetode",
+            "description": "metoden brukt for høyderegistrering av posisjon.\n\nDet er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.",
+            "cardinality": "0..1",
+            "valueDomain": {
+              "definition": "metode for datafangst.\n\nDatafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/datafangstmetode"
+            }
+          },
+          {
+            "name": "nøyaktighetHøyde",
+            "type": "Integer",
+            "description": "standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavviket, men dersom man faktisk har standardavviket til posisjoneringa av objektet oppgitt i cm\n\nI de aller fleste sammenhenger benyttes en anslått eller forventet verdi for standardavvik, men dersom man har en beregnet verdi skal denne benyttes.\n\nMerknad:\nVerdien er ment å beskrive nøyaktigheten til objektet sammenlignet med sann verdi. Standardavvik er i utgangspunktet et mål på det tilfeldige avviket og det innebærer at vi forutsetter at det systematiske avviket i liten grad påvirker nøyaktigheten til posisjoneringa. For fotogrammetriske data settes som hovedregel verdien lik kravet til standardavvik ved datafangst. Se standarden Geodatakvalitet for nærmere definisjon av standardavvik og hvordan dette defineres, beregnes og kontrolleres.",
+            "cardinality": "0..1"
+          }
+        ]
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": []
+    },
+    "package": "Generelle elementer"
+  },
+  {
+    "name": "Fellesegenskaper",
+    "description": "abstrakt objekttype som bærer sentrale egenskaper som er anbefalt for bruk i produktspesifikasjoner.",
+    "attributes": [
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt\n\nMerknad FKB:\nUnik identifikasjon av et objekt, ivaretas av den ansvarlige produsent/forvalter, og som kan benyttes av eksterne applikasjoner som referanse til objektet.\nDen unike identifikatoren er unik for kartobjektet og skal ikke endres i kartobjektets levetid. Dette må ikke forveksles med en tematisk identifikator (for eksempel bygningsnummer) som unikt identifiserer et objekt i virkeligheten. En bygning med samme bygningsnummer vil kunne representeres i mange kartprodukter der det finnes en unik identifikasjon i hver av dem.\nFor FKB benyttes UUID (Universally unique identifier) som lokalId. Dette innebærer at lokalId alene alltid vil være unik. Likevel skal alltid navnerom også angis. Navnerom angir FKB-datasettet.",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator av et objekt\n\nMerknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet. For FKB-data benyttes UUID som lokalId.",
+            "cardinality": "1"
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI\n\nEksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0\n\nMerknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no",
+            "cardinality": "1"
+          },
+          {
+            "name": "versjonId",
+            "type": "CharacterString",
+            "description": "identifikasjon av en spesiell versjon av et geografisk objekt (instans)",
+            "cardinality": "0..1"
+          }
+        ]
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "tidspunkt for siste endring på objektet\n\nMerknad FKB:\n\nDenne datoen viser datasystemets siste endring på dataobjektet. Egenskapen settes av forvaltningssystemet etter følgende regler:\n\ni. Oppdateringsdato er tidspunkt for oppdatering av databasen og settes av forvaltningsbasen (ikke av klienten).\n\nii. Oppdateringsdato skal endres også hvis det er kopidata som blir endret eller importert i en ”kopibase”.\n\niii. Når avgrensingslinjene til en flate endres, skal flateobjektet få ny oppdateringsdato.\n\niv. Oppdateringsdato skal endres hvis en egenskap endres.",
+        "cardinality": "1"
+      },
+      {
+        "name": "sluttdato",
+        "type": "DateTime",
+        "description": "Tid for når denne versjonen av objektet var erstattet eller opphørt å eksistere.\n\nMerknad FKB:\nEgenskapen settes av forvaltningssystemet. Sluttdato skal kun sendes med ut fra forvaltningssystemet i sammenhenger der objektenes historikk er interessant.",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "datafangstdato",
+        "type": "Date",
+        "description": "dato når objektet siste gang ble registrert/observert/målt i terrenget",
+        "cardinality": "1"
+      },
+      {
+        "name": "verifiseringsdato",
+        "type": "Date",
+        "description": "dato når dataene er fastslått å være i samsvar med virkeligheten.\n\nMerknad FKB:\nBrukes for eksempel i de sammenhenger hvor det er foretatt fotogrammetrisk ajourhold, og hvor det ikke er registrert endringer på objektet (det virkelige objektet er i samsvar med dataobjektet)",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "registreringsversjon",
+        "type": "Registreringsversjon",
+        "description": "angivelse av hvilken produktspesifikasjon som er utgangspunkt  for dataene",
+        "cardinality": "0..1",
+        "valueDomain": {
+          "definition": "FKB-verjson som ligger til grunn for registrering. Mest relevant for data som er fotogrammetrisk registrert.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/registreringsversjon"
+        }
+      },
+      {
+        "name": "informasjon",
+        "type": "CharacterString",
+        "description": "generell opplysning.\n\nMerknad FKB:\nMulighet til å legge inn utfyllende informasjon om objektet. Egenskapen bør bare brukes til å legge inn ekstra informasjon om enkeltobjekter. Egenskapen bør ikke brukes til å systematisk angi ekstrainformasjon om mange/alle objekter i et datasett.",
+        "cardinality": "0..1"
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    },
+    "package": "Generelle elementer"
+  },
+  {
+    "name": "AnnenBygning",
+    "description": "bygning som ikke er registrert  i matrikkelen",
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_Surface",
+        "description": "objektets utstrekning",
+        "cardinality": "1"
+      },
+      {
+        "name": "posisjon",
+        "type": "GM_Point",
+        "description": "sted som objektet eksisterer på",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": [
+        {
+          "target": "Taksprang",
+          "role": "beskrivesAvTaksprang",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Hjelpepunkt3D",
+          "role": "beskrivesAvHjelpepunkt3D",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Veranda",
+          "role": "vedhengVeranda",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Låvebru",
+          "role": "vedhengLåvebru",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Takplatå",
+          "role": "beskrivesAvTakplatå",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Fasadeliv",
+          "role": "avgrensesAvFasadeliv",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TakMur",
+          "role": "beskrivesAvTakmur",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TaksprangBunn",
+          "role": "beskrivesAvTaksprangBunn",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "FiktivBygningsavgrensning",
+          "role": "avgrensesAvFiktivBygningsavgrensning",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Portrom",
+          "role": "beskrivesAvPortrom",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Bygningslinje",
+          "role": "beskrivesAvBygningslinje",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TakplatåTopp",
+          "role": "beskrivesAvTakplatåTopp",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TrappBygg",
+          "role": "vedhengTrappBygg",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Arkade",
+          "role": "beskrivesAvArkade",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Takkant",
+          "role": "avgrensesAvTakkant",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "VeggFrittstående",
+          "role": "vedhengVeggFrittstående",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Hjelpelinje3D",
+          "role": "beskrivesAvHjelpelinje3D",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Mønelinje",
+          "role": "beskrivesAvMønelinje",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Grunnmur",
+          "role": "avgrensesAvGrunnmur",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "BygningBru",
+          "role": "vedhengBygningBru",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "BygningsavgrensningTiltak",
+          "role": "avgrensesAvBygningsavgrensningTiltak",
+          "cardinality": "0..*"
+        }
+      ]
+    },
+    "package": "Bygninger"
+  },
+  {
+    "name": "Bygning",
+    "description": "bygning som er registrert i matrikkelen",
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_Surface",
+        "description": "objektets utstrekning",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "posisjon",
+        "type": "GM_Point",
+        "description": "sted som objektet eksisterer på. Punktet er en kopi av bygningspunktet i matrikkelen",
+        "cardinality": "1"
+      },
+      {
+        "name": "bygningsnummer",
+        "type": "Integer",
+        "description": "nummerering av bygninger fra Matrikkelen. Nummeret er unikt og landsdekkende.",
+        "cardinality": "1"
+      },
+      {
+        "name": "bygningstype",
+        "type": "Bygningstype",
+        "description": "beskrivelse av hva bygningen faktisk er brukt til, eventuelt hva bygningen er godkjent til.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "Bygningstyper fra matrikkelen som benyttes i FKB-Bygning",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/bygningstype"
+        }
+      },
+      {
+        "name": "bygningsstatus",
+        "type": "Bygningsstatus",
+        "description": "informasjon om bygningens status",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "Bygningsstatuskoder fra matrikkelen som benyttes i FKB-Bygning",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/bygningsstatus"
+        }
+      },
+      {
+        "name": "kommunenummer",
+        "type": "Kommunenummer",
+        "description": "nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "nummerering av kommuner i henhold til SSB sin offisielle liste.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer"
+        }
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": [
+        {
+          "target": "Takkant",
+          "role": "avgrensesAvTakkant",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TrappBygg",
+          "role": "vedhengTrappBygg",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Veranda",
+          "role": "vedhengVeranda",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Mønelinje",
+          "role": "beskrivesAvMønelinje",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Taksprang",
+          "role": "beskrivesAvTaksprang",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Hjelpelinje3D",
+          "role": "beskrivesAvHjelpelinje3D",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Takplatå",
+          "role": "beskrivesAvTakplatå",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Låvebru",
+          "role": "vedhengLåvebru",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TakMur",
+          "role": "beskrivesAvTakmur",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "BygningsavgrensningTiltak",
+          "role": "avgrensesAvBygningsavgrensningTiltak",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "FiktivBygningsavgrensning",
+          "role": "avgrensesAvFiktivBygningsavgrensning",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Bygningslinje",
+          "role": "beskrivesAvBygningslinje",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Fasadeliv",
+          "role": "avgrensesAvFasadeliv",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Portrom",
+          "role": "beskrivesAvPortrom",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TakplatåTopp",
+          "role": "beskrivesAvTakplatåTopp",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Arkade",
+          "role": "beskrivesAvArkade",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TaksprangBunn",
+          "role": "beskrivesAvTaksprangBunn",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Bygningsdelelinje",
+          "role": "avgrensesAvBygningsdelelinje",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Hjelpepunkt3D",
+          "role": "beskrivesAvHjelpepunkt3D",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "Grunnmur",
+          "role": "avgrensesAvGrunnmur",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "VeggFrittstående",
+          "role": "vedhengVeggFrittstående",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "BygningBru",
+          "role": "vedhengBygningBru",
+          "cardinality": "0..*"
+        }
+      ]
+    },
+    "package": "Bygninger"
+  },
+  {
+    "name": "FiktivBygningsavgrensning",
+    "description": "fiktiv avgrensing av bygning\nMerknad: Brukes når deler av takkant, fasadeliv, grunnmur eller bygningsdelelinje er ukjent for at det skal bli mulig å danne en flate.  Fiktiv bygningsavgrensing benyttes også for å lage flater for underjordiske bygninger og som fiktiv linje på takoverbygg der takoverbyggkant mangler.",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetOpsjonell"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "BygningsavgrensningTiltak",
+    "description": "Bygningsavgrensning hentet fra FKB-Tiltak. Dataene er tatt fra plan og er ikke innmålt i terrenget.",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      },
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      },
+      {
+        "name": "lavestegulv",
+        "type": "Real",
+        "description": "høydeverdi for laveste gulvhøyde på tiltaket.\n\nMerknad:\nObjektets geometri angir høyeste høydeverdi (Høydereferanse = top). Denne egenskapen gir mulighet til å i tillegg angi tiltakets laveste høyde. Egenskapen brukes primært for bygninger/tiltak under bakken.",
+        "cardinality": "0..1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetOpsjonell"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "Takkant",
+    "description": "bygningens ytre takflateavgrensing\nMerknad: Høydereferansen er de målte punktene på taket.\nMerknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som takkant- og den ikke synlige som fiktiv bygningsavgrensning.",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      },
+      {
+        "name": "treDNivå",
+        "type": "TreDNivå",
+        "description": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i. Tilsvarer LOD i CityGML.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/tredniv%c3%a5"
+        }
+      },
+      {
+        "name": "takskjegg",
+        "type": "Integer",
+        "description": "avstanden fra veggliv til takkant målt i cm",
+        "cardinality": "0..1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "Fasadeliv",
+    "description": "bygningens ytre avgrensing i fasaderiss",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      },
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      },
+      {
+        "name": "skalAvgrenseBygning",
+        "type": "Boolean",
+        "description": "angivelse av om fasadeliv skal benyttes til å danne bygningsflate. Defaultverdi er Nei, dvs. at fasadeliv kun benyttes til flateavgrensning dersom skalAvgrenseBygning = Ja.\n\nMerknad:\nFasadeliv (hele eller deler av fasaden) vil i mange tilfeller eksistere i tillegg til Takkant. Egenskapen kan da benyttes til å angi at enten takriss eller fasadelivriss skal danne Bygningsavgrensning for bygningsflaten (normalt benyttes Takkant til riss hvis begge eksisterer).",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "Bygningsdelelinje",
+    "description": "linje mellom to bygninger (bygninger registrert i Matrikkelen) som står inntil hverandre\nMerknad: Det kan ofte være vanskelig å registrere bygningsdelelinjer nøyaktig. Usikkerhet i fastleggelsen av bygningsdelelinjen skal synliggjøres gjennom kvalitetskoding (f.eks posisjonskvalitet 81 50).",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "treDNivå",
+        "type": "TreDNivå",
+        "description": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i. Tilsvarer LOD i CityGML.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/tredniv%c3%a5"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "Grunnmur",
+    "description": "bygningens ytteravgrensning langs grunnmur\nMerknad: Høydereferanse  angis med høydereferanse. Grunnrissreferanse er ytterkant av grunnmur.\nMerknad: Benyttes hovedsaklig for bygning under oppføring. For bygninger som revet/nedbrent benyttes objekttyper ruin og mur i FKB-BygnAnlegg",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      },
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsavgrensning"
+  },
+  {
+    "name": "TakplatåTopp",
+    "description": "takkant i indre rom i bygårder der det indre rommet ikke går ned til terrengoverflaten\nMERKNAD: Objekttypen skal benyttes som en utfyllende linje for å beskrive bygningsvolumet. Benyttes kun der Takplatå er benyttet for å beskrive tak inne i en bygning (for eksempel en bygård).",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "BeskrivendeBygningsdetalj",
+    "description": "bygningsdetalj som ligger innenfor bygningsavgrensning, og som ikke er knyttet til bygningens avgrensning",
+    "attributes": [
+      {
+        "name": "treDNivå",
+        "type": "TreDNivå",
+        "description": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "hvilken 3D framstillingsmulighet (angitt i 6 nivåer) bygningen kan framstilles i. Tilsvarer LOD i CityGML.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/bygning/5.0/tredniv%c3%a5"
+        }
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Portrom",
+    "description": "avgrensing av en tunnel gjennom en bygning",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Hjelpepunkt3D",
+    "description": "punkt for å kunne danne gode 3-D modeller av oppstikkende detaljer som for eksempel spir",
+    "attributes": [
+      {
+        "name": "posisjon",
+        "type": "GM_Point",
+        "description": "sted som objektet eksisterer på",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Taksprang",
+    "description": "topp av takkant inne på en bygningskropp\nMerknad: ikke ytterkant som registreres som takkant",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "TaksprangBunn",
+    "description": "bunn av takkant inne på en bygningskropp\nMerknad: Ikke ytterkant som er takkant",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Mønelinje",
+    "description": "linje som beskriver den horisontale knekklinje på toppen av taket (høyeste topp)",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Hjelpelinje3D",
+    "description": "linje for å kunne danne gode 3D modeller av bygninger",
+    "attributes": [
+      {
+        "name": "senterlinje",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "TakMur",
+    "description": "opphøyde kanter ved takkant\nMerknad: Eksempel på kanter der TakMur skal benyttes er gavlvegger og brannvegger som stikker opp over takflaten",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Arkade",
+    "description": "avgrensing av en tunnel gjennom en bygning",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      },
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Bygningslinje",
+    "description": "linje som beskriver bygningsdetalj innenfor en takflate  og som ikke kan beskrives av andre objekttyper\nEksempel: Valming på tak",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Takplatå",
+    "description": "innsøkk i form av laveste vannrette flate på hovedvolum på bygningskropp\nEksempel: Arker som går inn i hovedtaket og \"terrasse\" inne i en bygård.",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "BeskrivendeBygningsdetalj"
+      ],
+      "associations": []
+    },
+    "package": "BeskrivendeBygningslinjer"
+  },
+  {
+    "name": "Låvebru",
+    "description": "kjørerampe til et landbruksbygg\nMerknad: Kjørerampe i tilknytning til et industri og lagerbygg beskrives som Annet vegareal/avkjørsel og Brukonstruksjon",
+    "attributes": [],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Bygningsvedheng"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "Bygningsvedheng",
+    "description": "bygningsdetaljer som ligger i tilknytning til  bygningen, og som ikke er knyttet til bygningens avgrensning",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": true,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "BygningBru",
+    "description": "bru tilknyttet bygning som brukes som adkomst til bygninger, og bruer mellom bygninger\nMerknad:  Brukes på bygninger som ikke er driftsbygninger i landbruket. I det siste tilfellet brukes låvebru",
+    "attributes": [],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Bygningsvedheng"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "Veranda",
+    "description": "bygningsvedheng som omfatter veranda,  terrasse, altan, balkong og lasterampe\nMerknad: Garasje med veranda på taket er enten en del av bygningsenheten den ligger til eller - hvis den er tildelt eget bygningsnummer - en bygning.",
+    "attributes": [
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "koordinatregistering utført på topp eller bunn av et objekt",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nPå bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Bygningsvedheng"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "TrappBygg",
+    "description": "omfatter trapper som danner adkomsten til hus og trapp inntil hus",
+    "attributes": [],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Bygningsvedheng"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "VeggFrittstående",
+    "description": "vegg oppsatt for skjerming",
+    "attributes": [
+      {
+        "name": "høydereferanse",
+        "type": "Høydereferanse",
+        "description": "angivelse av om registreringen er utført på topp eller bunn av et element- f.eks. en skråning- mur osv.",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "koordinatregistering utført på topp eller bunn av et objekt",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse"
+        }
+      },
+      {
+        "name": "medium",
+        "type": "Medium",
+        "description": "objektets beliggenhet i forhold til jordoverflaten",
+        "cardinality": "1",
+        "valueDomain": {
+          "definition": "objektets beliggenhet i forhold til jordoverflaten\n\nEksempel:\nVeg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Bygningsvedheng"
+      ],
+      "associations": []
+    },
+    "package": "Bygningsvedheng"
+  },
+  {
+    "name": "TakoverbyggKant",
+    "description": "avgrensing av takoverbygg",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger objektets sentrale del (ytterkant)",
+        "cardinality": "1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "KvalitetPåkrevd"
+      ],
+      "associations": []
+    },
+    "package": "Takoverbygg"
+  },
+  {
+    "name": "Takoverbygg",
+    "description": "byggverk med ingen eller få vegger, og som ikke er registrert som bygning i matrikkelen\nEksempel:  'carport' eller tak over bensinpumper",
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_Surface",
+        "description": "objektets utstrekning",
+        "cardinality": "1"
+      },
+      {
+        "name": "posisjon",
+        "type": "GM_Point",
+        "description": "sted som objektet eksisterer på",
+        "cardinality": "0..1"
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [
+        "Fellesegenskaper"
+      ],
+      "associations": [
+        {
+          "target": "FiktivBygningsavgrensning",
+          "role": "avgrensesAvFiktivBygningsavgrensning",
+          "cardinality": "0..*"
+        },
+        {
+          "target": "TakoverbyggKant",
+          "role": "avgrensesAvTakoverbyggKant",
+          "cardinality": "0..*"
+        }
+      ]
+    },
+    "package": "Takoverbygg"
+  }
+]
