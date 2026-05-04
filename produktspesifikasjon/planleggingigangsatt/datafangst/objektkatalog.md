@@ -1,5 +1,19 @@
 ### Datamodell
 
+#### Oversikt
+
+<a href="datafangst_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_overview.png" alt="Datamodell datafangst - oversikt" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Fellesegenskaper
+
+<a href="datafangst_feature_catalogue_Fellesegenskaper.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Fellesegenskaper.png" alt="Datamodell datafangst - Fellesegenskaper" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Planområde
+
+<a href="datafangst_feature_catalogue_Planomr_de.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Planomr_de.png" alt="Datamodell datafangst - Planområde" style="max-width: 100%; height: auto;" /></a>
+
+#### Komplett diagram
+
 <a href="datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
 
 #### Fellesegenskaper (abstrakt)
