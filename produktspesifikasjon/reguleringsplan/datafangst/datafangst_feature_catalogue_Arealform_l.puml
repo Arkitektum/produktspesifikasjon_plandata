@@ -1,0 +1,80 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Reguleringsplaner (landsdekkende kopi) - datafangst - Arealformål
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Arealformål" {
+
+  class "RbFormålOmråde" as RbForm_lOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformBrukFormål
+    + reguleringsformålsutdyping [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + utnytting [0..1] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
+    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
+  }
+
+  class "RpFormålGrense" as RpForm_lGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpArealformålOmråde" as RpArealform_lOmr_de <<featureType>> {
+    + område [1] : Flate
+    + eierform [1] : EierformType
+    + arealformål [1] : RpArealformål
+    + beskrivelse [0..1] : CharacterString
+    + feltbetegnelse [0..1] : CharacterString
+    + utnytting [0..*] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
+    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
+  }
+
+  class Utnytting <<dataType>> {
+    + utnyttingstype [1] : Utnyttingstype
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Fellesegenskaper_LinjerOgPunkt <<Fellesegenskaper>> {
+  }
+  class "Kobling_Delområde" as Kobling_Delomr_de <<Planområde>> {
+  }
+}
+
+Kobling_Delomr_de <|-- RbForm_lOmr_de
+RbForm_lOmr_de --> RpForm_lGrense : avgrensning [0..*]
+Fellesegenskaper_LinjerOgPunkt <|-- RpForm_lGrense
+Kobling_Delomr_de <|-- RpArealform_lOmr_de
+RpArealform_lOmr_de --> RpForm_lGrense : avgrensning [1..*]
+
+@enduml

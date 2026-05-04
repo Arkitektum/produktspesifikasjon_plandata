@@ -1,0 +1,88 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Reguleringsplaner (landsdekkende kopi) - datafangst - Planområde
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Planområde" {
+
+  class RpGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  abstract class "Kobling_Delområde" as Kobling_Delomr_de <<featureType>> {
+    + arealplanId [1] : NasjonalArealplanId
+    + vertikalnivå [1] : Vertikalnivå
+  }
+
+  abstract class Kobling_PunktLinje <<featureType>> {
+    + arealplanId [1] : NasjonalArealplanId
+    + vertikalnivå [1] : Vertikalnivå
+  }
+
+  class "RpOmråde" as RpOmr_de <<featureType>> {
+    + område [1] : Flate
+    + arealplanId [1] : NasjonalArealplanId
+    + plantype [1] : RpPlantype
+    + planstatus [1] : Planstatus
+    + plannavn [1] : CharacterString
+    + planbestemmelse [1] : Planbestemmelse
+    + ikrafttredelsesdato [0..1] : Date
+    + vertikalnivå [1] : Vertikalnivå
+    + lovreferanse [1] : LovreferanseType
+    + lovreferanseBeskrivelse [0..1] : CharacterString
+    + gjennomføringsfrist [0..1] : Date
+    + forslagsstillerType [0..1] : ForslagsstillerType
+    + vedtakEndeligPlanDato [0..1] : Date
+    + kunngjøringsdato [0..1] : Date
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+  }
+
+  class NasjonalArealplanId <<dataType>> {
+    + kommunenummer [0..1] : Kommunenummer
+    + landkode [0..1] : Landskode
+    + planidentifikasjon [1] : CharacterString
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class "Fellesegenskaper_Delområde" as Fellesegenskaper_Delomr_de <<Fellesegenskaper>> {
+  }
+  class Fellesegenskaper_LinjerOgPunkt <<Fellesegenskaper>> {
+  }
+  class "Fellesegenskaper_Planområde" as Fellesegenskaper_Planomr_de <<Fellesegenskaper>> {
+  }
+}
+
+Fellesegenskaper_LinjerOgPunkt <|-- RpGrense
+Fellesegenskaper_Delomr_de <|-- Kobling_Delomr_de
+Fellesegenskaper_LinjerOgPunkt <|-- Kobling_PunktLinje
+Fellesegenskaper_Planomr_de <|-- RpOmr_de
+RpOmr_de --> RpGrense : planavgrensning [0..*]
+
+@enduml

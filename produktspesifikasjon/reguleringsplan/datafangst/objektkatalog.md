@@ -1,5 +1,31 @@
 ### Datamodell
 
+#### Oversikt
+
+<a href="datafangst_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_overview.png" alt="Datamodell datafangst - oversikt" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Arealformål
+
+<a href="datafangst_feature_catalogue_Arealform_l.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Arealform_l.png" alt="Datamodell datafangst - Arealformål" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Bestemmelser/hensyn
+
+<a href="datafangst_feature_catalogue_Bestemmelser_hensyn.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Bestemmelser_hensyn.png" alt="Datamodell datafangst - Bestemmelser/hensyn" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Fellesegenskaper
+
+<a href="datafangst_feature_catalogue_Fellesegenskaper.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Fellesegenskaper.png" alt="Datamodell datafangst - Fellesegenskaper" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Juridiske punkt/linjer og påskrift
+
+<a href="datafangst_feature_catalogue_Juridiske_punkt_linjer_og_p_skrift.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Juridiske_punkt_linjer_og_p_skrift.png" alt="Datamodell datafangst - Juridiske punkt/linjer og påskrift" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Planområde
+
+<a href="datafangst_feature_catalogue_Planomr_de.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue_Planomr_de.png" alt="Datamodell datafangst - Planområde" style="max-width: 100%; height: auto;" /></a>
+
+#### Komplett diagram
+
 <a href="datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
 
 #### Fellesegenskaper_Delområde (abstrakt)

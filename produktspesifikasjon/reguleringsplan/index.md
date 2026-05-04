@@ -108,11 +108,11 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
 
 
-<a href="datafangst/datafangst_feature_catalogue.png" title="Klikk for stor visning"><img src="datafangst/datafangst_feature_catalogue.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
+<a href="datafangst/datafangst_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="datafangst/datafangst_feature_catalogue_overview.png" alt="Datamodell datafangst" style="max-width: 100%; height: auto;" /></a>
 
 
 
-➡️ [Se full datamodell for omfang "datafangst" (diagram og objektkatalog)](datafangst/objektkatalog.html)
+➡️ [Se full datamodell for omfang "datafangst" (diagram per pakke og objektkatalog)](datafangst/objektkatalog.html)
 
 ### Datamodell - innsynstjeneste
 
@@ -122,7 +122,7 @@ Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidel
 
 
 
-➡️ [Se full datamodell for omfang "innsynstjeneste" (diagram og objektkatalog)](innsynstjeneste/objektkatalog.html)
+➡️ [Se full datamodell for omfang "innsynstjeneste" (diagram per pakke og objektkatalog)](innsynstjeneste/objektkatalog.html)
 
 ## Datakvalitet
 
