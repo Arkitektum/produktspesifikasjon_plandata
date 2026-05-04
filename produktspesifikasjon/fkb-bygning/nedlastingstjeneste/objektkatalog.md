@@ -1,5 +1,35 @@
 ### Datamodell
 
+#### Oversikt
+
+<a href="nedlastingstjeneste_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_overview.png" alt="Datamodell nedlastingstjeneste - oversikt" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: BeskrivendeBygningslinjer
+
+<a href="nedlastingstjeneste_feature_catalogue_BeskrivendeBygningslinjer.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_BeskrivendeBygningslinjer.png" alt="Datamodell nedlastingstjeneste - BeskrivendeBygningslinjer" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Bygninger
+
+<a href="nedlastingstjeneste_feature_catalogue_Bygninger.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_Bygninger.png" alt="Datamodell nedlastingstjeneste - Bygninger" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Bygningsavgrensning
+
+<a href="nedlastingstjeneste_feature_catalogue_Bygningsavgrensning.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_Bygningsavgrensning.png" alt="Datamodell nedlastingstjeneste - Bygningsavgrensning" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Bygningsvedheng
+
+<a href="nedlastingstjeneste_feature_catalogue_Bygningsvedheng.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_Bygningsvedheng.png" alt="Datamodell nedlastingstjeneste - Bygningsvedheng" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Generelle elementer
+
+<a href="nedlastingstjeneste_feature_catalogue_Generelle_elementer.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_Generelle_elementer.png" alt="Datamodell nedlastingstjeneste - Generelle elementer" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Takoverbygg
+
+<a href="nedlastingstjeneste_feature_catalogue_Takoverbygg.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_Takoverbygg.png" alt="Datamodell nedlastingstjeneste - Takoverbygg" style="max-width: 100%; height: auto;" /></a>
+
+#### Komplett diagram
+
 <a href="nedlastingstjeneste_feature_catalogue.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue.png" alt="Datamodell nedlastingstjeneste" style="max-width: 100%; height: auto;" /></a>
 
 #### KvalitetPåkrevd (abstrakt)
