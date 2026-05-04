@@ -40,7 +40,8 @@
     "relationships": {
       "inheritance": [],
       "associations": []
-    }
+    },
+    "package": "Fellesegenskaper"
   },
   {
     "name": "Arealplan",
@@ -127,7 +128,8 @@
           "cardinality": "1..*"
         }
       ]
-    }
+    },
+    "package": "Planområde"
   },
   {
     "name": "Planområde",
@@ -146,6 +148,7 @@
         "Fellesegenskaper"
       ],
       "associations": []
-    }
+    },
+    "package": "Planområde"
   }
 ]
