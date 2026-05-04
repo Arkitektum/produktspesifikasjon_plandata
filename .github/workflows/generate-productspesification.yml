@@ -286,7 +286,7 @@ jobs:
           echo "Markdown: ${{ steps.prepare.outputs.spec-markdown }}"
           echo "psdata:  ${{ steps.prepare.outputs.psdata-path }}"
       - name: Create pull request with produktspesifikasjon
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: update produktspesifikasjon
           title: update produktspesifikasjon
