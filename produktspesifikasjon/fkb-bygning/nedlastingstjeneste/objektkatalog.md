@@ -1,5 +1,7 @@
 ### Datamodell
 
+**Kilde:** [SOSI UML XMI-fil](https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Bygning-5.1.1.xml)
+
 #### Oversikt
 
 <a href="nedlastingstjeneste_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="nedlastingstjeneste_feature_catalogue_overview.png" alt="Datamodell nedlastingstjeneste - oversikt" style="max-width: 100%; height: auto;" /></a>
