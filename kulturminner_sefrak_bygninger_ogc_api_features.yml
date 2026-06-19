@@ -1,0 +1,9 @@
+metadataId: 61a7b45b-5375-41d0-9fc6-57e63c9c7f56
+output_directory: produktspesifikasjon
+product_slug: kulturminner_sefrak_bygninger_ogc_api_features
+updated: '2026-06-19'
+scopes:
+- name: Kulturminnersefrakbygninger
+  url: https://api.ra.no/KulturminnerSEFRAKbygninger
+  generator: ogc_feature_api
+  description: OGC API-Features fra Riksantikvaren
