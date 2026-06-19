@@ -1,0 +1,198 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Kulturminner - SEFRAK-bygninger OGC API - Features",
+  "format": "text/html",
+  "date": {
+    "creation": "2024-12-09",
+    "revision": "2024-12-09"
+  },
+  "contact": {
+    "organizationName": "Riksantikvaren",
+    "logo": "https://register.geonorge.no/data/organizations/974760819_riksantikvaren_liten.png",
+    "electronicMailAddress": "datatjenester@ra.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Kulturminner - SEFRAK-bygninger OGC API - Features",
+    "abstract": "REST-API som følger produktspesifikasjonen med samme navn.\n\nOGC-API er en gruppe standarder som blir utviklet av Open Geospatial Consortium for lettere å kunne tilgjengeliggjøre geografiske data på web. Ikke alle standardene som sammen utgjør OGC API, er fullførte. Denne implementasjonen kan derfor inneholde funksjonalitet som representerer uferdige versjoner av standarder (der det har kommet så langt at det finnes forslag). Det kan forekomme endringer der slikt er implementert. For oversikt over hvilke standarder som er ferdige, se OGC sine nettsider. I API-ets metadata ligger det dessuten informasjon om hvilke av standardenes konformitetsklasser som er implementert.",
+    "uniqueId": "61a7b45b-5375-41d0-9fc6-57e63c9c7f56",
+    "keyword": [
+      "Bygning",
+      "KulturminneBygning",
+      "Vern_Fredning",
+      "KulturminneBetegnelse",
+      "Ajourføring",
+      "FredningRubrikk",
+      "SefrakId",
+      "KulturminneDateringInfo",
+      "Hovedmålrubrikk",
+      "SefrakFunksjon",
+      "Endringsvurdering",
+      "Bygningsendring",
+      "Vern",
+      "Feltregistrert",
+      "vernedatoFredning",
+      "vernelovFredning",
+      "verneparagrafFredning",
+      "vernetypeFredning",
+      "objektnavn",
+      "bygningsnummer",
+      "bygningstype",
+      "ufullstendigAreal",
+      "ajourførtDato",
+      "ajourførtAv",
+      "fredning",
+      "sefrakKommune",
+      "registreringKretsnr",
+      "husLøpenr",
+      "sefrakTiltak",
+      "tidsangivelse",
+      "lengde",
+      "bredde",
+      "sefrakFunksjonskode",
+      "sefrakFunksjonsstatus",
+      "endringsgrad",
+      "vurdertDato",
+      "bygningsendringskode",
+      "endringsløpenummer",
+      "vernedato",
+      "vernelov",
+      "verneparagraf",
+      "vernetype",
+      "sefrakStatus",
+      "lokaltnavn",
+      "vernevedtak",
+      "fysiskMiljø",
+      "opprinneligSosialtMiljø",
+      "miljøovervåking",
+      "kulturminneHovedgruppe",
+      "kulturminneVerneverdi",
+      "forholdAndreHus",
+      "etasjetall",
+      "fasade",
+      "antallSkorsteiner",
+      "takform",
+      "taktekking",
+      "underbygningKonstr",
+      "yttervegg",
+      "kjeller",
+      "askeladdenID",
+      "feltregistrertAv"
+    ],
+    "restriction": {
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD) 2.0",
+        "licenseUrl": "https://data.norge.no/nlod/no/2.0"
+      }
+    },
+    "contact": [
+      {
+        "organizationName": "Riksantikvaren",
+        "electronicMailAddress": "datatjenester@ra.no",
+        "role": "owner"
+      },
+      {
+        "organizationName": "Riksantikvaren",
+        "electronicMailAddress": "datatjenester@ra.no",
+        "role": "pointOfContact"
+      },
+      {
+        "organizationName": "Riksantikvaren",
+        "electronicMailAddress": "datatjenester@ra.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Daglig",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2024-12-09",
+          "endPosition": "2024-12-09"
+        }
+      }
+    },
+    "date": {
+      "creation": "2024-12-09",
+      "publication": "2024-12-09",
+      "revision": "2024-12-09"
+    }
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Kulturminnersefrakbygninger",
+        "level": "dataset",
+        "levelDescription": "OGC API-Features fra Riksantikvaren"
+      }
+    }
+  ],
+  "dataQualitySection": {
+    "scope": {
+      "level": "service"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Kulturminner - SEFRAK",
+        "measureDescription": "Dataene er ikke vurdert iht produktspesifikasjonen",
+        "descriptiveResult": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Daglig"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://api.ra.no/KulturminnerSEFRAKbygninger",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2025-03-19",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Riksantikvaren",
+      "logo": "https://register.geonorge.no/data/organizations/974760819_riksantikvaren_liten.png",
+      "electronicMailAddress": "datatjenester@ra.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "61a7b45b-5375-41d0-9fc6-57e63c9c7f56",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/61a7b45b-5375-41d0-9fc6-57e63c9c7f56"
+    }
+  }
+}
