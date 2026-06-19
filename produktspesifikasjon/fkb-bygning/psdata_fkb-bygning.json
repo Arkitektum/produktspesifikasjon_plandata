@@ -4,7 +4,7 @@
   "format": "text/html",
   "date": {
     "creation": "2017-01-15",
-    "revision": "2026-05-01"
+    "revision": "2026-06-17"
   },
   "language": "nor",
   "contact": {
@@ -58,7 +58,7 @@
         "accessConstraints": "Norge digitalt begrenset",
         "useConstraints": "Lisens",
         "license": "Norge digitalt-lisens",
-        "licenseUrl": "https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/"
+        "licenseUrl": "https://www.kartverket.no/geodataarbeid/norge-digitalt/partsinformasjon/avtaler-og-vilkar/norge-digitalt-lisens"
       },
       "securityConstraints": {
         "classification": "Ugradert"
@@ -73,13 +73,13 @@
       },
       {
         "individualName": "Nils Ivar Nes",
-        "organizationName": "Kartverket",
+        "organizationName": "Geovekst",
         "electronicMailAddress": "kundesenter@kartverket.no",
         "role": "pointOfContact"
       },
       {
         "individualName": "Nils Ivar Nes",
-        "organizationName": "Kartverket",
+        "organizationName": "Geovekst",
         "electronicMailAddress": "kundesenter@kartverket.no",
         "role": "publisher"
       }
@@ -95,14 +95,14 @@
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2017-01-15",
-          "endPosition": "2026-05-01"
+          "endPosition": "2026-06-17"
         }
       }
     },
     "date": {
       "creation": "2017-01-15",
       "publication": "2017-01-15",
-      "revision": "2026-05-01"
+      "revision": "2026-06-17"
     },
     "language": "nor"
   },
@@ -118,7 +118,7 @@
       "specificationScope": {
         "scopeIdentification": "nedlastingstjeneste",
         "level": "dataset",
-        "levelDescription": "Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede bygningsdata."
+        "levelDescription": "Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede"
       }
     }
   ],
@@ -310,10 +310,10 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-05-03",
+    "metadataDate": "2026-06-18",
     "language": "nor",
     "contact": {
-      "organizationName": "Kartverket",
+      "organizationName": "Geovekst",
       "individualName": "Nils Ivar Nes",
       "logo": "https://register.geonorge.no/data/organizations/_geovekst_liten.png",
       "electronicMailAddress": "kundesenter@kartverket.no",

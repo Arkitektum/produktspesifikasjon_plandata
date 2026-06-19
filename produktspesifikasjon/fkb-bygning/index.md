@@ -32,14 +32,14 @@ FKB-data er ikke-sensistive og åpne data. FKB-dataene er finansiert gjennom Geo
 
 - **Tidsperiode**:
   - **Fra**: 2017-01-15
-  - **Til**: 2026-05-01
+  - **Til**: 2026-06-17
 
 ## Om spesifikasjonen
 
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2017-01-15<br>
-> **Endret dato:** 2026-05-01<br>
+> **Endret dato:** 2026-06-17<br>
 > **Språk:** nor<br>
 > **Kontaktinformasjon:** Geovekst, [kundesenter@kartverket.no](mailto:kundesenter@kartverket.no)
 
@@ -65,7 +65,7 @@ FKB-data er ikke-sensistive og åpne data. FKB-dataene er finansiert gjennom Geo
 > - **Tilgangsbegrensninger**: Norge digitalt begrenset
 > - **Bruksbegrensninger**: Lisens
 > - **Lisens**: Norge digitalt-lisens
-> - **Lisenslenke**: <https://www.geonorge.no/Geodataarbeid/geografisk-infrastruktur/Norge-digitalt/Avtaler-og-maler/Norge-digitalt-lisens/>
+> - **Lisenslenke**: <https://www.kartverket.no/geodataarbeid/norge-digitalt/partsinformasjon/avtaler-og-vilkar/norge-digitalt-lisens>
 >
 > **Sikkerhetsbegrensninger**:
 >
@@ -98,7 +98,7 @@ FKB kan brukes til:
 
 **Nivå**: dataset
 
-**Nivåbeskrivelse**: Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede bygningsdata.
+**Nivåbeskrivelse**: Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede
 
 ## Datainnhold og struktur
 
@@ -188,13 +188,13 @@ FKB kan brukes til:
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-05-03
+**Metadatadato**: 2026-06-18
 
 **språk**: nor
 
 **Kontakt**:
 
-- **Organisasjon**: Kartverket
+- **Organisasjon**: Geovekst
 - **Kontaktperson**: Nils Ivar Nes
 - **Logo**: <https://register.geonorge.no/data/organizations/_geovekst_liten.png>
 - **Epost**: kundesenter@kartverket.no
