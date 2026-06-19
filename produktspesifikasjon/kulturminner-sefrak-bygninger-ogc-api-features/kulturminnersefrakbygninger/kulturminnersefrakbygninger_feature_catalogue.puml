@@ -1,0 +1,75 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Kulturminner - SEFRAK-bygninger OGC API - Features - Kulturminnersefrakbygninger - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class "SEFRAK-bygninger" as SEFRAK_bygninger <<featureType>> {
+    + antallSkorsteiner [0..1] : Integer
+    + askeladdenId [0..1] : CharacterString
+    + bredde [0..1] : Integer
+    + bygningsendring [0..1] : CharacterString
+    + bygningsnummer [0..1] : Integer
+    + bygningstype [0..1] : CharacterString
+    + endingsgrad [0..1] : CharacterString
+    + etasjetall [0..1] : CharacterString
+    + fasade [0..1] : CharacterString
+    + feltregistrert [0..1] : CharacterString
+    + forholdAndreHus [0..1] : CharacterString
+    + fredning [0..1] : CharacterString
+    + fysiskMiljø [0..1] : CharacterString
+    + husløpenr [0..1] : CharacterString
+    + registreringkretsnr [0..1] : CharacterString
+    + SEFRAKkommune [0..1] : CharacterString
+    + kjeller [0..1] : CharacterString
+    + kulturminneHovedgruppe [0..1] : CharacterString
+    + kulturminneVerneverdi [0..1] : CharacterString
+    + lengde [0..1] : Integer
+    + lokaltNavn [0..1] : CharacterString
+    + id [0..1] : Integer
+    + objektnavn [0..1] : CharacterString
+    + opprinneligSosialtMiljø [0..1] : CharacterString
+    + sefrakFunksjon [0..1] : CharacterString
+    + sefrakStatus [0..1] : Integer
+    + sefrakTiltak [0..1] : CharacterString
+    + sefrakId [0..1] : CharacterString
+    + takform [0..1] : CharacterString
+    + taktekking [0..1] : CharacterString
+    + tidsangivelse [0..1] : CharacterString
+    + underbyggingsKonstr [0..1] : CharacterString
+    + vernevedtak [0..1] : CharacterString
+    + vurdertDato [0..1] : CharacterString
+    + yttervegg [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+}
+
+@enduml
