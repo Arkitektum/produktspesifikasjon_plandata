@@ -32,7 +32,7 @@ FKB-data er ikke-sensistive og åpne data. FKB-dataene er finansiert gjennom Geo
 
 - **Tidsperiode**:
   - **Fra**: 2017-01-15
-  - **Til**: 2026-06-17
+  - **Til**: 2026-06-18
 
 ## Om spesifikasjonen
 test
@@ -41,12 +41,19 @@ test
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2017-01-15<br>
-> **Endret dato:** 2026-06-17<br>
+> **Endret dato:** 2026-06-18<br>
 > **Språk:** nor<br>
 > **Kontaktinformasjon:** Geovekst, [kundesenter@kartverket.no](mailto:kundesenter@kartverket.no)
 
-## Om produktet FKB-Bygning
+## Mer om produktet
 
+sdfsdfs
+sdfs
+
+sdf 
+
+* sdfsdfsd
+* sdfsdfsf
 
 > **Romlig representasjonstype:** Vektor<br>
 > **Unik identifikator:** 8b4304ea-4fb0-479c-a24d-fa225e2c6e97<br>
@@ -190,7 +197,7 @@ FKB kan brukes til:
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-06-18
+**Metadatadato**: 2026-06-19
 
 **språk**: nor
 

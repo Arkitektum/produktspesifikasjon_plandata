@@ -4,7 +4,7 @@
   "format": "text/html",
   "date": {
     "creation": "2017-01-15",
-    "revision": "2026-06-17"
+    "revision": "2026-06-18"
   },
   "language": "nor",
   "contact": {
@@ -95,14 +95,14 @@
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2017-01-15",
-          "endPosition": "2026-06-17"
+          "endPosition": "2026-06-18"
         }
       }
     },
     "date": {
       "creation": "2017-01-15",
       "publication": "2017-01-15",
-      "revision": "2026-06-17"
+      "revision": "2026-06-18"
     },
     "language": "nor"
   },
@@ -310,7 +310,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-06-18",
+    "metadataDate": "2026-06-19",
     "language": "nor",
     "contact": {
       "organizationName": "Geovekst",
