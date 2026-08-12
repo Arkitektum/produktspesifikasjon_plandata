@@ -1,0 +1,11 @@
+metadataId: c114a146-821f-4570-aefe-a65e67c0edba
+output_directory: produktspesifikasjon
+product_slug: reguleringsplanforslag_horing_og_offentlig_ettersyn
+updated: '2026-08-12'
+scopes:
+- name: Innsyn vertikalnivå 2
+  url: https://nap.ft.dibk.no/services/rest/reguleringsplanforslag/vn2
+  generator: ogc_feature_api
+  description: OGC API-Features fra Direktoratet for byggkvalitet
+  username_secret: NAPCLIENTID
+  password_secret: NAPCLIENTKEY
