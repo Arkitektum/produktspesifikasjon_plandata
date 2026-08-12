@@ -1,0 +1,366 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Kommuneplanforslag - Høring og offentlig ettersyn",
+  "format": "text/html",
+  "date": {
+    "creation": "2025-10-17",
+    "revision": "2026-08-12"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Olaug Hana Nesheim",
+    "organizationName": "Direktoratet for byggkvalitet",
+    "logo": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+    "electronicMailAddress": "ftb@dibk.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Kommuneplanforslag - Høring og offentlig ettersyn",
+    "abstract": "Kommuneplanen skal være kommunens overordnede styringsdokument. Den skal gi rammer for virksomhetenes planer og tiltak, og planer for bruk og vern av arealer i kommunen. Alle kommuner skal ha en kommuneplan. En samlet kommuneplan består både av en samfunnsdel med handlingsdel og en arealdel. Kommunen bestemmer gjennom vedtak av kommunal planstrategi om kommunen skal gjennomføre en full kommuneplanrevisjon av alle delene, eller om bare deler av kommuneplanen skal revideres, og hva revisjonen skal gå ut på. Kommuneplanen skal ivareta både kommunale, regionale og nasjonale mål, interesser og oppgaver, og bør omfatte alle viktige mål og oppgaver i kommunen. Den skal ta utgangspunkt i den kommunale planstrategien og legge retningslinjer og pålegg fra statlige og regionale myndigheter til grunn. Det kan utarbeides kommunedelplan for bestemte områder, temaer eller virksomhetsområder. Kommuneplanforslag er i denne sammenheng plankartet som utarbeides i forbindelse med revisjonen av kommuneplanen.\n\nDatasettet genereres fra den landsdekkende kopien av kommuneplanforslag . Dette holdes oppdatert med data fra de originale plandataene i kommunene. Oppdateringen skjer ved synkronisering fra kommunene sine data.",
+    "purpose": {
+      "summary": "Dekke Norge digitalt partenes behov for overordnede arealplanforslag i kommunene.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Arealplanlegging, saksbehandling i henhold til plan og bygningsloven, utarbeidelse av statistikk, vurdering av tiltak/prosjekter, innsyn i kommunens arealplanforslag."
+      }
+    },
+    "topicCategory": [
+      "Plan og eiendom"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "supplementalInformation": "Det er kun de geografiske dataene (vektordataene) av arealdelen som er tilgjengelige for nedlasting. De tilhørende plandokumenter finnes i kommunenes planregistre. Det ligger en lenke på planområdene i de geografiske dataene som peker til kommunenes planregistre, og dermed gjør dokumentene lettere tilgjengelig for brukerne.",
+    "uniqueId": "de8cade6-06be-4626-a867-fcd603bda27b",
+    "keyword": [
+      "Kommuneplanforslag",
+      "Kommuneplan",
+      "Arealplan",
+      "Plan"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ikke egnet for kommunens arealplanarbeid. Oppdaterte data fås hos kommunen. Private forslagsstillere må henvende seg direkte til kommunen."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Norge digitalt begrenset",
+        "useConstraints": "Lisens",
+        "license": "Norge digitalt-lisens",
+        "licenseUrl": "https://www.kartverket.no/geodataarbeid/norge-digitalt/partsinformasjon/avtaler-og-vilkar/norge-digitalt-lisens"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Olaug Hana Nesheim",
+        "organizationName": "Direktoratet for byggkvalitet",
+        "electronicMailAddress": "ftb@dibk.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Hvert halvår",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2025-10-17",
+          "endPosition": "2026-08-12"
+        }
+      }
+    },
+    "date": {
+      "creation": "2025-10-17",
+      "publication": "2025-10-17",
+      "revision": "2026-08-12"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Kommuneplanforslag",
+        "level": "dataset",
+        "levelDescription": "OGC API-Features fra Direktoratet for byggkvalitet"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Kommunedelplanforslag",
+        "level": "dataset",
+        "levelDescription": "OGC API-Features fra Direktoratet for byggkvalitet"
+      }
+    }
+  ],
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Hvert halvår",
+    "maintenanceAndUpdateStatement": "Planlagt"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WMS-tjeneste",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities",
+            "serviceProperty": {
+              "type": "WMS-tjeneste",
+              "value": "OGC:WMS"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          },
+          {
+            "formatName": "JPEG"
+          },
+          {
+            "formatName": "GeoTIFF"
+          },
+          {
+            "formatName": "BMP"
+          },
+          {
+            "formatName": "TIFF"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/kommuneplanforslag",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/rest/kommunedelplanforslag",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommuneplanforslag/atom",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommunedelplanforslag/atom",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge filnedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommuneplanforslag/download",
+            "serviceProperty": {
+              "type": "Geonorge filnedlastning",
+              "value": "GEONORGE:FILEDOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/klimagasskalkulator/",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge filnedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/download/kommunedelplanforslag/download",
+            "serviceProperty": {
+              "type": "Geonorge filnedlastning",
+              "value": "GEONORGE:FILEDOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/nedlasting/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoPackage"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Kommuneplanforslag - Høring og offentlig ettersyn",
+          "deliveryService": {
+            "serviceEndpoint": "https://nap.ft.dibk.no/services/wms/kommuneplanforslag?SERVICE=WMS&REQUEST=GetCapabilities",
+            "serviceProperty": {
+              "type": "Kommuneplanforslag - Høring og offentlig ettersyn",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PNG"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-08-12",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Direktoratet for byggkvalitet",
+      "individualName": "Olaug Hana Nesheim",
+      "logo": "https://register.geonorge.no/data/organizations/974760223_DIBK_liten.jpg",
+      "electronicMailAddress": "ftb@dibk.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "de8cade6-06be-4626-a867-fcd603bda27b",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/de8cade6-06be-4626-a867-fcd603bda27b"
+    }
+  }
+}

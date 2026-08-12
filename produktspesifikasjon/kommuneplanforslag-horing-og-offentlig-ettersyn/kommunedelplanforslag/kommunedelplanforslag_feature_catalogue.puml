@@ -1,0 +1,1284 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Kommuneplanforslag - Høring og offentlig ettersyn - Kommunedelplanforslag - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class "KpOmråde" as KpOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + plantype [0..1] : CharacterString
+    + planstatus [0..1] : CharacterString
+    + plannavn [0..1] : CharacterString
+    + planbestemmelse [0..1] : CharacterString
+    + lovreferanse [0..1] : CharacterString
+    + lovreferanseBeskrivelse [0..1] : CharacterString
+    + ikrafttredelsesdato [0..1] : Date
+    + vedtakEndeligPlanDato [0..1] : Date
+    + kunngjøringsdato [0..1] : Date
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + prosesshistorie [0..1] : CharacterString
+    + informasjon [0..1] : CharacterString
+    + link [0..1] : CharacterString
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpArealbrukOmråde" as KpArealbrukOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruk [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + arealbruksutdyping [0..1] : CharacterString
+    + områdenavn [0..1] : CharacterString
+    + utnytting [0..1] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpArealformålOmråde" as KpArealform_lOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealformål [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + områdenavn [0..1] : CharacterString
+    + utnytting [0..1] : Utnytting
+    + uteoppholdsareal [0..1] : Integer
+    + eierform [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpArealGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBestemmelseOmråde" as KpBestemmelseOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + bestemmelseOmrådeNavn [0..1] : CharacterString
+    + type [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpBestemmelseGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRestriksjonOmråde" as KpRestriksjonOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + arealbruksrestriksjoner [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpRestriksjonGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRetningslinjeOmråde" as KpRetningslinjeOmr_de <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruksretningslinjer [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpRetningslinjeGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpAngittHensynSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + angittHensyn [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpAngittHensynGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBåndleggingSone" as KpB_ndleggingSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + båndlegging [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + båndlagtFremTil [0..1] : Date
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBåndleggingGrense" as KpB_ndleggingGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpDetaljeringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + detaljering [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpDetaljeringGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpFareSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + fare [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpFareGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpGjennomføringSone" as KpGjennomf_ringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + gjennomføring [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpGjennomføringGrense" as KpGjennomf_ringGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpInfrastrukturSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + infrastruktur [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpInfrastrukturLinje <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + infrastruktur [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpInfrastrukturGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpSikringSone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + sikring [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpSikringGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpStøySone" as KpSt_ySone <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + støy [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpStøyGrense" as KpSt_yGrense <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRegulertHøyde" as KpRegulertH_yde <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + høydefraplanbestemmelse [0..1] : Høydefraplanbestemmelse
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpJuridiskLinje <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + juridisklinje [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpSamferdselLinje <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + samferdselslinje [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + viktighet [0..1] : CharacterString
+    + holdningsklasse [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class KpSamferdselPunkt <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + symbolretning [0..1] : CharacterString
+    + samferdselspunkt [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + viktighet [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpPåskrift" as KpP_skrift <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + generellTekststreng [0..1] : CharacterString
+    + påskriftType [0..1] : CharacterString
+    + arealplanId [0..1] : ArealplanId
+    + identifikasjon [0..1] : Identifikasjon
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + kvalitet [0..1] : Kvalitet
+    + kopidata [0..1] : Kopidata
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpOmråde (flat)" as KpOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + plantype [0..1] : CharacterString
+    + planstatus [0..1] : CharacterString
+    + plannavn [0..1] : CharacterString
+    + planbestemmelse [0..1] : CharacterString
+    + lovreferanse [0..1] : CharacterString
+    + lovreferanseBeskrivelse [0..1] : CharacterString
+    + ikrafttredelsesdato [0..1] : Date
+    + vedtakEndeligPlanDato [0..1] : Date
+    + kunngjøringsdato [0..1] : Date
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + prosesshistorie [0..1] : CharacterString
+    + informasjon [0..1] : CharacterString
+    + link [0..1] : CharacterString
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpGrense (flat)" as KpGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpArealbrukOmråde (flat)" as KpArealbrukOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruk [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + arealbruksutdyping [0..1] : CharacterString
+    + områdenavn [0..1] : CharacterString
+    + utnyttingstype [0..1] : CharacterString
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+    + uteoppholdsareal [0..1] : Integer
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpArealformålOmråde (flat)" as KpArealform_lOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealformål [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + områdenavn [0..1] : CharacterString
+    + utnyttingstype [0..1] : CharacterString
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+    + uteoppholdsareal [0..1] : Integer
+    + eierform [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpArealGrense (flat)" as KpArealGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBestemmelseOmråde (flat)" as KpBestemmelseOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + bestemmelseOmrådeNavn [0..1] : CharacterString
+    + type [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBestemmelseGrense (flat)" as KpBestemmelseGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRestriksjonOmråde (flat)" as KpRestriksjonOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + arealbruksrestriksjoner [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRestriksjonGrense (flat)" as KpRestriksjonGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRetningslinjeOmråde (flat)" as KpRetningslinjeOmr_de__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + arealbruksretningslinjer [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRetningslinjeGrense (flat)" as KpRetningslinjeGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpAngittHensynSone (flat)" as KpAngittHensynSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + angittHensyn [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpAngittHensynGrense (flat)" as KpAngittHensynGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBåndleggingSone (flat)" as KpB_ndleggingSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + båndlegging [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + båndlagtFremTil [0..1] : Date
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpBåndleggingGrense (flat)" as KpB_ndleggingGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpDetaljeringSone (flat)" as KpDetaljeringSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + detaljering [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpDetaljeringGrense (flat)" as KpDetaljeringGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpFareSone (flat)" as KpFareSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + fare [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpFareGrense (flat)" as KpFareGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpGjennomføringSone (flat)" as KpGjennomf_ringSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + gjennomføring [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpGjennomføringGrense (flat)" as KpGjennomf_ringGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpInfrastrukturSone (flat)" as KpInfrastrukturSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + infrastruktur [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpInfrastrukturLinje (flat)" as KpInfrastrukturLinje__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + infrastruktur [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpInfrastrukturGrense (flat)" as KpInfrastrukturGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpSikringSone (flat)" as KpSikringSone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + sikring [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpSikringGrense (flat)" as KpSikringGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpStøySone (flat)" as KpSt_ySone__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + støy [0..1] : CharacterString
+    + hensynSonenavn [0..1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpStøyGrense (flat)" as KpSt_yGrense__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpRegulertHøyde (flat)" as KpRegulertH_yde__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + regulerthøyde [0..1] : Real
+    + høydereferansesystem [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpJuridiskLinje (flat)" as KpJuridiskLinje__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + juridisklinje [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpSamferdselLinje (flat)" as KpSamferdselLinje__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + samferdselslinje [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + viktighet [0..1] : CharacterString
+    + holdningsklasse [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpSamferdselPunkt (flat)" as KpSamferdselPunkt__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + symbolretning [0..1] : CharacterString
+    + samferdselspunkt [0..1] : CharacterString
+    + arealbruksstatus [0..1] : CharacterString
+    + vertikalnivå [0..1] : CharacterString
+    + viktighet [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class "KpPåskrift (flat)" as KpP_skrift__flat_ <<featureType>> {
+    + objid [0..1] : Integer
+    + objekttypenavn [0..1] : CharacterString
+    + generellTekststreng [0..1] : CharacterString
+    + påskriftType [0..1] : CharacterString
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+    + førsteDigitaliseringsdato [0..1] : DateTime
+    + oppdateringsdato [0..1] : DateTime
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+
+    ..Geometri..
+    + geometry [1] : GM_Object
+  }
+
+  class ArealplanId <<dataType>> {
+    + kommunenummer [0..1] : CharacterString
+    + landkode [0..1] : CharacterString
+    + planidentifikasjon [0..1] : CharacterString
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+
+  class Kopidata <<dataType>> {
+    + områdeId [0..1] : CharacterString
+    + originalDatavert [0..1] : CharacterString
+    + kopidato [0..1] : Date
+  }
+
+  class Kvalitet <<dataType>> {
+    + målemetode [0..1] : CharacterString
+    + nøyaktighet [0..1] : Integer
+  }
+
+  class Utnytting <<dataType>> {
+    + utnyttingstype [0..1] : CharacterString
+    + utnyttingstall [0..1] : Real
+    + utnyttingstall_minimum [0..1] : Real
+  }
+
+  class "Høydefraplanbestemmelse" as H_ydefraplanbestemmelse <<dataType>> {
+    + regulerthøyde [0..1] : Real
+    + høydereferansesystem [0..1] : CharacterString
+  }
+}
+
+@enduml
