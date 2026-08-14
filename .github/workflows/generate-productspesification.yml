@@ -185,7 +185,39 @@ jobs:
                   if item.strip()
               ]
 
+          # Tilleggsleveranser (outputs: komma-separert skalar, f.eks. "geopackage").
+          selected_outputs = [
+              o.strip()
+              for o in str(values.get("outputs", "")).split(",")
+              if o.strip()
+          ]
+          geopackage_output = "true" if "geopackage" in selected_outputs else "false"
+
+          # OGC-pålogging: les kun secret-NAVNene fra config (fra den første
+          # OGC-kilden som har dem). Selve verdien slås opp trygt med secrets[...]
+          # i action-steget under — vi rører ALDRI secret-verdier her, så
+          # workflowen trigger ikke GitHubs «malicious workflow»-varsel.
+          import json
+
+          ogc_username_secret = ""
+          ogc_password_secret = ""
+          for scope in scopes:
+              gen = str(scope.get("generator", "")).strip().lower()
+              if gen in ("ogc_feature_api", "ogc_api", "ogc"):
+                  if not ogc_username_secret and scope.get("username_secret"):
+                      ogc_username_secret = scope["username_secret"]
+                  if not ogc_password_secret and scope.get("password_secret"):
+                      ogc_password_secret = scope["password_secret"]
+          # Fjern secret-navnene fra scopene før de sendes videre.
+          for scope in scopes:
+              scope.pop("username_secret", None)
+              scope.pop("password_secret", None)
+
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh_out:
+              if ogc_username_secret:
+                  gh_out.write(f"ogc_username_secret={ogc_username_secret}\n")
+              if ogc_password_secret:
+                  gh_out.write(f"ogc_password_secret={ogc_password_secret}\n")
               for source, dest in required_map.items():
                   if values.get(source):
                       gh_out.write(f"{dest}={values[source]}\n")
@@ -199,8 +231,8 @@ jobs:
                       + ",".join(feature_filter)
                       + "\n"
                   )
+              gh_out.write(f"geopackage-output={geopackage_output}\n")
               if scopes:
-                  import json
                   gh_out.write("scopes=" + json.dumps(scopes) + "\n")
           PY
 
@@ -210,13 +242,18 @@ jobs:
           feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
-          ogc-username: ${{ secrets.CLIENTID }}
-          ogc-password: ${{ secrets.CLIENTKEY }}
+          # Slår opp secret-verdien dynamisk fra navnet i config (single-secret,
+          # ingen toJSON). Faller tilbake på CLIENTID/CLIENTKEY hvis config ikke
+          # oppgir navn (bakoverkompatibelt).
+          ogc-username: ${{ secrets[steps.config.outputs.ogc_username_secret] || secrets.CLIENTID }}
+          ogc-password: ${{ secrets[steps.config.outputs.ogc_password_secret] || secrets.CLIENTKEY }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
           scopes: ${{ steps.config.outputs.scopes }}
           updated: ${{ steps.config.outputs.updated }}
           xmi-model: ${{ steps.config.outputs.xmi-model }}
+          # Skriv også en tom GeoPackage av datamodellen når config har outputs: geopackage.
+          geopackage-output: ${{ steps.config.outputs.geopackage-output }}
 
       - name: Render UML to PNG
         run: |
