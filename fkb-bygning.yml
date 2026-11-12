@@ -6,5 +6,4 @@ scopes:
 - name: nedlastingstjeneste
   url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Bygning-5.1.1.xml
   generator: xmi
-  description: Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede
-    bygningsdata.
+  description: Datamodellen beskriver et nasjonalt produkt med fotogrammetrisk innsamlede bygningsdata.
